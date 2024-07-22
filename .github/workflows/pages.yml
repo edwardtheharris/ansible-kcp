@@ -99,8 +99,8 @@ jobs:
       - name: Install Python dependencies
         run: |
           python3 -m venv .venv
-          .venv/bin/pip install pipenv
-          .venv/pin/pipenv requirements --dev > requirements
+          .venv/bin/pip install -U pip pipenv
+          .venv/bin/pipenv requirements --dev > requirements
           python3 -m pip install -r requirements
       - name: Build the static site
         run: sphinx-build -a -E . deploy
