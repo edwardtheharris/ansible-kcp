@@ -4,6 +4,11 @@
 # ```
 # ---
 # Record the output to stdout and a temporary file.
+#
+# ```{literalinclude} roles/reset/tasks/main.yml
+# :language: yaml
+# :start-at: "- name: Reset existing cluster\n"
+# ```
 - name: Reset existing cluster
   ansible.builtin.command:
     chdir: /etc/kubeadm
