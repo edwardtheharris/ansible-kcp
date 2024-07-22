@@ -1,9 +1,10 @@
 ---
-abstract: The readme for some Ansible playbooks that have the goal of deploying
-    a Root Certificate Authority to a Linux host.
+
+abstract: >-
+  The readme for some Ansible roles for managing bare metal k8s clusters.
 authors: Xander Harris
 date: 2024-03-08
-title: Ansible CA Readme
+title: Ansible Bare Metal K8S
 ---
 
 ## Assumptions
@@ -27,27 +28,12 @@ is responsible for authentication, file, and routing services.
 ```{code-block} yaml
 :caption: /etc/ansible/hosts.yaml
 
-dc:
-  hosts:
-    dc01.example.com:
-      ansible_user: user
-    dc02.example.com:
-      ansible_user: user
-np:
-  hosts:
-    napalm.example.com:
-      ansible_user: user
 kcp:
   hosts:
     kcp01.example.com:
-      ansible_user: user
+      ansible_user: 1.2.3.4
     kcp02.example.com:
-      ansible_user: user
-ca:
-  hosts:
-    ca.example.com:
-      ansible_user: user
-      secret_ca_passphrase: secret-ca-passphrase
+      ansible_user: 1.2.3.4
 ```
 
 ```{toctree}

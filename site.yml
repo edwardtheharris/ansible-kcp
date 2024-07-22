@@ -1,0 +1,13 @@
+---
+###
+# ```{rubric} The main site deployment
+# ```
+# ---
+# This playbook defines the primary site deployment code for this repository.
+- name: Reset Kubernetes Control Planes
+  hosts: kcp
+  become: true
+  roles:
+    - role: reset
+      tags:
+        - reset

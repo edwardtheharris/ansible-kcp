@@ -6,25 +6,31 @@ name = "pypi"
 [packages]
 ansible = "*"
 ansible-creator = "*"
+ansible-lint = "*"
 ansible-navigator = "*"
 gitpython = "*"
 loguru = "*"
+pipenv = "*"
 redis = "*"
 
 [dev-packages]
 molecule = "*"
 pytest = "*"
 pytest-cov = "*"
+version-query = "*"
 
 [docs]
 myst-parser = {extras = ["linkify"], version = "*"}
+six = "*"
 sphinx = "*"
-sphinx-ansible = "*"
 sphinx-autobuild = "*"
+sphinx-book-theme = "*"
 sphinx-copybutton = "*"
 sphinx-design = "*"
 sphinx-favicon = "*"
-sphinx-nefertiti = "*"
+sphinx-git = "*"
+sphinx-last-updated-by-git = "*"
+sphinx-notfound-page = "*"
 sphinx-pyscript = "*"
 sphinx-tippy = "*"
 sphinx-togglebutton = "*"
@@ -32,11 +38,3 @@ sphinxcontrib-autoyaml = "*"
 sphinxemoji = "*"
 sphinxext-opengraph = "*"
 sphinxext-rediraffe = "*"
-sphinx-notfound-page = "*"
-
-[lint]
-ansible-lint = "*"
-
-[git]
-loguru = "*"
-gitpython = "*"

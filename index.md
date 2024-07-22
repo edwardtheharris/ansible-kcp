@@ -1,36 +1,47 @@
 ---
 abstract: This is a collection of Ansible playbooks that will create a CA usable
    for Kubernetes and etcd clusters.
-authors: Xander Harris
+authors:
+   - name: Xander Harris
+     email: xandertheharris@gmail.com
 date: 2024-03-08
-title: Ansible CA
+title: Ansible Bare Metal K8S
 ---
 
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/edwardtheharris/ansible-k8s-ca/ansible.yml?branch=main&style=flat-square&logo=ansible&label=Ansible%20Lint)
-![GitHub CodeQL](https://img.shields.io/github/actions/workflow/status/edwardtheharris/ansible-k8s-ca/codeql.yml?branch=main&style=flat-square&logo=githubactions&label=CodeQL)
-[![GitHub Pages Status](https://img.shields.io/github/actions/workflow/status/edwardtheharris/ansible-k8s-ca/pages.yml?branch=main&style=flat-square&logo=githubpages&label=GitHub%20Pages)](https://edwardtheharris.github.io/ansible-k8s-ca/)
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/edwardtheharris/ansible-k8s-ca/shell.yml?branch=main&style=flat-square&logo=gnubash&label=ShellCheck)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/edwardtheharris/ansible-kcp/ansible.yml?branch=main&style=flat-square&logo=ansible&label=Ansible%20Lint)
+![GitHub CodeQL](https://img.shields.io/github/actions/workflow/status/edwardtheharris/ansible-kcp/codeql.yml?branch=main&style=flat-square&logo=githubactions&label=CodeQL)
+[![GitHub Pages Status](https://img.shields.io/github/actions/workflow/status/edwardtheharris/ansible-kcp/pages.yml?branch=main&style=flat-square&logo=githubpages&label=GitHub%20Pages)](https://edwardtheharris.github.io/ansible-kcp/)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/edwardtheharris/ansible-kcp/shell.yml?branch=main&style=flat-square&logo=gnubash&label=ShellCheck)
 
-## Playbooks
+## Playbook
+
+```{rubric} site.yml
+```
+
+```{autoyaml} ./site.yml
+```
+
+### Roles
 
 ```{toctree}
 :maxdepth: 1
-:caption: Playbooks
+:caption: roles
 
-ca/index
-int/index
-sign/index
+roles/index
 ```
 
-```{index} playbooks; ca
+```{index} ansible; roles
 ```
 
 ## Readme
 
 ```{toctree}
-:maxdepth: 1
+:maxdepth: 3
 
+cicd
+license
 readme
+security
 ```
 
 ```{index} metadata; repository
