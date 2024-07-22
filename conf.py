@@ -70,7 +70,9 @@ html_theme = 'sphinx_book_theme'
 html_theme_options = {
     'logo': 'img/ansible.png',
     "repository_url": "https://github.com/edwardtheharris/ansible-kcp",
+    "use_edit_page_button": True,
     "use_repository_button": True,
+    "use_source_button": True,
 }
 myst_dmath_double_inline = True
 myst_enable_extensions = [
