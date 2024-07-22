@@ -101,9 +101,8 @@ jobs:
           python3 -m venv .venv
           .venv/bin/pip install -U pip pipenv
           .venv/bin/pipenv requirements --dev > requirements
-          python3 -m pip install -r requirements
-      - name: Build the static site
-        run: sphinx-build -a -E . deploy
+          .venv/bin/python3 -m pip install -r requirements
+          .venv/bin/sphinx-build -a -E . deploy
       - name: Upload artifact
         uses: actions/upload-pages-artifact@main
         with:
