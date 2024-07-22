@@ -96,7 +96,7 @@ jobs:
           cache: pipenv
       - name: Setup pages
         uses: actions/configure-pages@main
-      - name: Install Python dependencies
+      - name: Build pages
         run: |
           python3 -m venv .venv
           .venv/bin/pip install -U pip pipenv
