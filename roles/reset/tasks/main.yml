@@ -1,0 +1,15 @@
+---
+###
+# ```{rubric} Force reset an existing cluster
+# ```
+# ---
+# Record the output to stdout and a temporary file.
+- name: Reset existing cluster
+  ansible.builtin.command:
+    chdir: /etc/kubeadm
+    cmd: kubeadm reset -f &> /root/reset.md
+    removes: /etc/kubernetes/admin.conf
+  register: reset_out
+- name: Show output
+  ansible.builtin.debug:
+    var: reset_out

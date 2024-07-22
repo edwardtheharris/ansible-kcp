@@ -16,13 +16,6 @@
     owner: kube
     group: kube
     mode: ug+rwx,o+r
-- name: Copy reset config
-  ansible.builtin.copy:
-    src: reset.yaml
-    dest: /etc/kubeadm/reset.yaml
-    owner: kube
-    group: kube
-    mode: ugo+rw
 - name: Drop init token
   ansible.builtin.file:
     dest: /etc/kubeadm/init.token
