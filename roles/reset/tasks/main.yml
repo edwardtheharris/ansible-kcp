@@ -13,3 +13,7 @@
 - name: Show output
   ansible.builtin.debug:
     var: reset_out
+- name: Pull stored output from hosts
+  ansible.builtin.fetch:
+    src: /root/reset.md
+    dest: "files/{ inventory_hostname }.reset.md"
