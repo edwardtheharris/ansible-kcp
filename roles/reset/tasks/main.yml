@@ -16,4 +16,4 @@
 - name: Pull stored output from hosts
   ansible.builtin.fetch:
     src: /root/reset.md
-    dest: "files/{ inventory_hostname }.reset.md"
+    dest: "roles/reset/files/{{ inventory_hostname }}.reset.md"
