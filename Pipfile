@@ -6,9 +6,11 @@ name = "pypi"
 [packages]
 ansible = "*"
 ansible-creator = "*"
+ansible-lint = "*"
 ansible-navigator = "*"
 gitpython = "*"
 loguru = "*"
+pipenv = "*"
 redis = "*"
 
 [dev-packages]
@@ -33,10 +35,3 @@ sphinxemoji = "*"
 sphinxext-opengraph = "*"
 sphinxext-rediraffe = "*"
 sphinx-notfound-page = "*"
-
-[lint]
-ansible-lint = "*"
-
-[git]
-loguru = "*"
-gitpython = "*"
