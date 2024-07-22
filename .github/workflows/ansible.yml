@@ -12,6 +12,10 @@ name: ansible-lint
 on:
   pull_request:
     branches: ["main", "stable", "release/v*"]
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 jobs:
   build:
     ###
@@ -23,14 +27,13 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@main
         with:
-          python-version: 3.11
+          python-version: 3.12
       - name: Install requirements
         run: |
-          pip3 install pipenv
-          pipenv requirements --categories lint > lint
-          pipenv requirements > reqs
-          pip3 install -r lint
-          pip3 install -r reqs
+          python3 -m venv .venv
+          .venv/bin/pip3 install pipenv
+          .venv/bin/pipenv requirements --dev > reqs
+          python3 -m pip install -r reqs
           ansible-galaxy collection install community.crypto
       - name: Make ansible directory
         run: |
