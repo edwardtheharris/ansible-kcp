@@ -4,6 +4,7 @@ _build/
 .secret/
 *.xcf
 .gnupg
+.gnupg
 roles/reset/files/*.reset.md
 package-lock.json
 package.json
