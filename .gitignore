@@ -5,3 +5,6 @@ _build/
 *.xcf
 .gnupg
 roles/reset/files/*.reset.md
+package-lock.json
+package.json
+node_modules
