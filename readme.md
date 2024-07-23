@@ -1,10 +1,10 @@
 ---
 
-abstract: The readme for some Ansible playbooks that have the goal of deploying
-    a Root Certificate Authority to a Linux host.
+abstract: >-
+  The readme for some Ansible roles for managing bare metal k8s clusters.
 authors: Xander Harris
 date: 2024-03-08
-title: Ansible CA Readme
+title: Ansible Bare Metal K8S
 ---
 
 ## Assumptions

@@ -4,8 +4,11 @@ authors:
   - name: Xander Harris
     email: xandertheharris@gmail.com
 date: 2024-07-23
-title: Continuous Integration, Delivery, and Deployment
+title: CI/CD
 ---
+
+```{contents}
+```
 
 ## Dependabot
 

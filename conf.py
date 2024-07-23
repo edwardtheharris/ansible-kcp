@@ -77,7 +77,7 @@ myst_enable_extensions = [
 ]
 myst_footnote_transition = True
 myst_title_to_header = True
-project = "Ansible Kubernetes Control Plane"
+project = "Ansible K8S Control Plane"
 release = get_version()
 show_authors = True
 source_suffix = {
