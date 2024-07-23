@@ -39,3 +39,12 @@ And ShellCheck never hurt anybody either.
 
 ```{autoyaml} .github/workflows/shell.yml
 ```
+
+## Lint
+
+This is the configuration for the various lint tools used here.
+
+### ansible-lint
+
+```{autoyaml} .ansible-lint
+```
