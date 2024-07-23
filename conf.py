@@ -34,6 +34,7 @@ exclude_patterns = [
     ".DS_Store",
     ".pytest_cache/*",
     ".tox/*",
+    'roles/reset/files/kcp01.breeze-blocks.net.reset.md/kcp01.breeze-blocks.net/root/reset.md',
     ".venv/*",
 ]
 extensions = [
@@ -48,7 +49,6 @@ extensions = [
     "sphinx.ext.githubpages",
     "sphinx.ext.graphviz",
     "sphinx.ext.todo",
-    'sphinxcontrib.ansibleautodoc',
     "sphinxcontrib.autoyaml",
 ]
 git_untracked_check_dependencies = False

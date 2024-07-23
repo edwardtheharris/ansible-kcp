@@ -1,0 +1,17 @@
+[1;35m[WARNING]: No inventory was parsed, only implicit localhost is available[0m
+[1;35m[WARNING]: provided hosts list is empty, only localhost is available. Note that[0m
+[1;35mthe implicit localhost does not match 'all'[0m
+[0;31mERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:[0m
+[0;31mJSON: Expecting value: line 1 column 1 (char 0)[0m
+[0;31m[0m
+[0;31mSyntax Error while loading YAML.[0m
+[0;31m  mapping values are not allowed in this context[0m
+[0;31m[0m
+[0;31mThe error appears to be in '/home/duchess/Documents/src/github.com/edwardtheharris/ansible-kcp/tmp_dir_sphinx_ansible/temp_file.yaml': line 2, column 10, but may[0m
+[0;31mbe elsewhere in the file depending on the exact syntax problem.[0m
+[0;31m[0m
+[0;31mThe offending line appears to be:[0m
+[0;31m[0m
+[0;31mtasks/main.yml[0m
+[0;31m:playbook: roles/reset/tasks/main.yml[0m
+[0;31m         ^ here[0m

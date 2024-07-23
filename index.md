@@ -13,18 +13,24 @@ title: Ansible CA
 [![GitHub Pages Status](https://img.shields.io/github/actions/workflow/status/edwardtheharris/ansible-kcp/pages.yml?branch=main&style=flat-square&logo=githubpages&label=GitHub%20Pages)](https://edwardtheharris.github.io/ansible-kcp/)
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/edwardtheharris/ansible-kcp/shell.yml?branch=main&style=flat-square&logo=gnubash&label=ShellCheck)
 
-## Playbooks
+## Playbook
+
+```{rubric} site.yml
+```
+
+```{autoyaml} ./site.yml
+```
+
+### Roles
 
 ```{toctree}
 :maxdepth: 1
-:caption: Playbooks
+:caption: roles
 
-ca/index
-int/index
-sign/index
+roles/index
 ```
 
-```{index} playbooks; ca
+```{index} ansible; roles
 ```
 
 ## Readme
@@ -32,7 +38,10 @@ sign/index
 ```{toctree}
 :maxdepth: 1
 
+cicd
+license
 readme
+security
 ```
 
 ```{index} metadata; repository

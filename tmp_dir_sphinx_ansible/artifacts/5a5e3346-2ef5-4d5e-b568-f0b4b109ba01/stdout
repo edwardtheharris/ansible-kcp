@@ -1,0 +1,13 @@
+[1;35m[WARNING]: No inventory was parsed, only implicit localhost is available[0m
+[1;35m[WARNING]: provided hosts list is empty, only localhost is available. Note that[0m
+[1;35mthe implicit localhost does not match 'all'[0m
+[0;31mERROR! A playbook must be a list of plays, got a <class 'ansible.parsing.yaml.objects.AnsibleUnicode'> instead: /home/duchess/Documents/src/github.com/edwardtheharris/ansible-kcp/tmp_dir_sphinx_ansible/temp_file.yaml[0m
+[0;31m[0m
+[0;31mThe error appears to be in '/home/duchess/Documents/src/github.com/edwardtheharris/ansible-kcp/tmp_dir_sphinx_ansible/temp_file.yaml': line 1, column 1, but may[0m
+[0;31mbe elsewhere in the file depending on the exact syntax problem.[0m
+[0;31m[0m
+[0;31mThe offending line appears to be:[0m
+[0;31m[0m
+[0;31m[0m
+[0;31mtasks/main.yml[0m
+[0;31m^ here[0m

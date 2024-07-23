@@ -1,0 +1,12 @@
+- name: Reset existing cluster
+  ansible.builtin.command:
+    cmd: kubeadm reset -f &> /root/reset.md
+    removes: /etc/kubernetes/admin.conf
+  register: reset_out
+- name: Show output
+  ansible.builtin.debug:
+    var: reset_out
+- name: Pull stored output from hosts
+  ansible.builtin.fetch:
+    src: /root/reset.md
+    dest: "roles/reset/files/{{ inventory_hostname }}.reset.md"

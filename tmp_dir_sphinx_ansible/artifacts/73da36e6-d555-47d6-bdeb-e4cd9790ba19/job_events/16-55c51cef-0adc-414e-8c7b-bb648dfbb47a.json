@@ -1,0 +1,1 @@
+{"event": "verbose", "uuid": "55c51cef-0adc-414e-8c7b-bb648dfbb47a", "counter": 16, "stdout": "\u001b[0;31m:playbook: roles/reset/tasks/main.yml\u001b[0m", "start_line": 15, "end_line": 16, "runner_ident": "73da36e6-d555-47d6-bdeb-e4cd9790ba19", "created": "2024-07-23T18:46:59.051348+00:00"}
