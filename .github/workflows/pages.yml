@@ -102,8 +102,10 @@ jobs:
           .sphinx/bin/pip install -U pip pipenv
       - name: Setup pipenv
         run: |
-          PIPENV_VENV_IN_PROJECT=1 .sphinx/bin/pipenv install --dev
-          PIPENV_VENV_IN_PROJECT=1 .sphinx/bin/pipenv install --categories docs
+          PIPENV_VENV_IN_PROJECT=1
+          export PIPENV_VENV_IN_PROJECT
+          .sphinx/bin/pipenv install -v --dev
+          .sphinx/bin/pipenv install -v --categories docs
           .venv/bin/sphinx-build -a -E . deploy
       - name: Upload artifact
         uses: actions/upload-pages-artifact@main
