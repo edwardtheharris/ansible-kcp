@@ -100,6 +100,7 @@ jobs:
         run: |
           python3 -m venv .sphinx
           .sphinx/bin/pip install -U pip pipenv
+          .sphinx/bin/pipenv install --dev
           .sphinx/bin/pipenv install --categories docs
           .sphinx/bin/pipenv run sphinx-build -a -E . deploy
       - name: Upload artifact
