@@ -7,6 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 """
 # pylint: disable=invalid-name,redefined-builtin
+from . import get_version
 
 author = 'Xander Harris'
 ansible_roles_path = ['.']
@@ -94,7 +95,7 @@ myst_enable_extensions = [
 ]
 myst_title_to_header = True
 project = 'Ansible Kubernetes Control Plane'
-release = '0.0.1'
+release = get_version()
 show_authors = True
 source_suffix = {
     '.md': 'markdown'
