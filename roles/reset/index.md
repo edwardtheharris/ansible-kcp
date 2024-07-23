@@ -9,7 +9,8 @@ title: Reset Cluster
 
 ## Reset Role Usage
 
-```{autoyaml} roles/reset/tasks/main.yml
+```{literalinclude} /roles/reset/tasks/main.yml
+:language: yaml
 ```
 
 ```{index} role; reset

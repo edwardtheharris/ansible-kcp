@@ -12,13 +12,14 @@ gitpython = "*"
 loguru = "*"
 pipenv = "*"
 redis = "*"
+sphinxcontrib-yaml = "*"
 
 [dev-packages]
+ansible-lint = "*"
 molecule = "*"
 pytest = "*"
 pytest-cov = "*"
 version-query = "*"
-ansible-lint = "*"
 
 [docs]
 myst-parser = {extras = ["linkify"], version = "*"}

@@ -18,7 +18,7 @@ title: Ansible Bare Metal K8S
 ```{rubric} site.yml
 ```
 
-```{autoyaml} ./site.yml
+```{literalinclude} ./site.yml
 ```
 
 ### Roles

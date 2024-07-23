@@ -21,7 +21,8 @@ A handy tool for switching k8s contexts is called
 
 ## Tasks
 
-```{autoyaml} roles/init/tasks/main.yml
+```{literalinclude} /roles/init/tasks/main.yml
+:language: yaml
 ```
 
 ```{sectionauthor} Xander Harris <xandertheharris@gmail.com>
