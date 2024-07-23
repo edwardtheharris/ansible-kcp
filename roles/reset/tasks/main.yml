@@ -11,7 +11,6 @@
 # ```
 - name: Reset existing cluster
   ansible.builtin.command:
-    chdir: /etc/kubeadm
     cmd: kubeadm reset -f &> /root/reset.md
     removes: /etc/kubernetes/admin.conf
   register: reset_out
