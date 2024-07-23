@@ -1,5 +1,4 @@
 ---
-
 abstract: Basic information about the CI/CD processes in this repo.
 authors:
   - name: Xander Harris
@@ -12,8 +11,24 @@ title: GitHub Actions configuration
 
 Stay away from zero days with Dependabot.
 
-```{autoyaml} /.github/dependabot.yml
+<!--
+```{autoyaml} .github/dependabot.yml
 ```
+-->
+
+````{sidebar} Dependabot Config
+To get started with Dependabot version updates, you'll need to specify which
+package ecosystems to update and where the package manifests are located.
+
+```{note}
+Please see the documentation for all configuration
+[options](https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file).
+```
+
+```{literalinclude} /.github/dependabot.yml
+:language: yaml
+```
+````
 
 ## Workflows
 
@@ -40,4 +55,3 @@ And ShellCheck never hurt anybody either.
 
 ```{autoyaml} .github/workflows/shell.yml
 ```
--->
