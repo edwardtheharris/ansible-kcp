@@ -4,7 +4,7 @@ authors:
   - name: Xander Harris
     email: xandertheharris@gmail.com
 date: 2024-07-23
-title: GitHub Actions configuration
+title: Continuous Integration, Delivery, and Deployment
 ---
 
 ## Dependabot
@@ -13,20 +13,6 @@ Stay away from zero days with Dependabot.
 
 ```{autoyaml} .github/dependabot.yml
 ```
-
-````{sidebar} Dependabot Config
-To get started with Dependabot version updates, you'll need to specify which
-package ecosystems to update and where the package manifests are located.
-
-```{note}
-Please see the documentation for all configuration
-[options](https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file).
-```
-
-```{literalinclude} /.github/dependabot.yml
-:language: yaml
-```
-````
 
 ## Workflows
 

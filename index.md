@@ -5,7 +5,7 @@ authors:
    - name: Xander Harris
      email: xandertheharris@gmail.com
 date: 2024-03-08
-title: Ansible CA
+title: Ansible Bare Metal K8S
 ---
 
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/edwardtheharris/ansible-kcp/ansible.yml?branch=main&style=flat-square&logo=ansible&label=Ansible%20Lint)
