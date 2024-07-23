@@ -6,7 +6,7 @@ authors:
    - name: Xander Harris
      email: xandertheharris@gmail.com
 date: 2024-07-23
-title: Ansible CA
+title: Bare Metal k8s roles
 ---
 
 ## Roles
