@@ -1,1 +1,0 @@
-{"event": "verbose", "uuid": "55efb1ff-bd88-4221-84e3-6de1b045287d", "counter": 12, "stdout": "\u001b[0;31m- name: Reset existing cluster\u001b[0m", "start_line": 11, "end_line": 12, "runner_ident": "d4d8d18d-ce28-4fa7-a931-ecb8f899ec1d", "created": "2024-07-23T18:49:59.868173+00:00"}

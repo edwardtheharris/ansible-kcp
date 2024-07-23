@@ -1,1 +1,0 @@
-{"event": "verbose", "uuid": "8dabc6f3-6891-48e8-86e2-9d7676c77b68", "counter": 4, "stdout": "\u001b[0;31mERROR! 'ansible.builtin.command' is not a valid attribute for a Play\u001b[0m", "start_line": 3, "end_line": 4, "runner_ident": "f09e3edb-7a8d-405f-b70f-e583769d6c07", "created": "2024-07-23T18:49:15.652308+00:00"}
