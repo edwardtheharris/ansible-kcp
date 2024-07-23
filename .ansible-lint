@@ -132,6 +132,9 @@ profile: null
 # ```
 skip_list:
   - skip_this_tag
+  - command-instead-of-shell
+  - no-changed-when
+  - loop-var-prefix[missing]
 ###
 # Define required Ansible's variables to satisfy syntax check
 # extra_vars:
