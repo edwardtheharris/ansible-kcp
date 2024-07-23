@@ -1,4 +1,15 @@
 ---
+  ###
+  # ```{rubric} Prep for Kubeadm
+  # ```
+  # ---
+  # Prepare the first control plane for init.
+  #
+  # ```{literalinclude} /roles/init/tasks/main.yml
+  # :language: yaml
+  # :start-at: "- name: Create kube group\n"
+  # :end-at: "    mode: ugo+rw\n"
+  # ```
 - name: Create kube group
   ansible.builtin.group:
     name: kube
@@ -20,13 +31,9 @@
   ansible.builtin.file:
     dest: /etc/kubeadm/init.token
     state: absent
-
-- name: Reset existing cluster
+- name: Generate a boostrap token
   ansible.builtin.shell:
-    chdir: /etc/kubeadm
-    cmd: >-
-      kubeadm token generate > init.token && cat init.token
-    creates: /etc/kubeadm/init.token
+    cmd: kubeadm token generate
   register: token_out
 - name: Template token init config
   ansible.builtin.template:
@@ -35,12 +42,44 @@
     owner: kube
     group: kube
     mode: ugo+rw
-# - name: Init new cluster
-#   ansible.builtin.command:
-#     chdir: /etc/kubeadm
-#     cmd: kubeadm init --config init.yaml
-#     creates: /etc/kubernetes/admin.conf
-#   register: init_result
-# - name: Debug
-#   ansible.builtin.debug:
-#     var: init_result
+  ###
+  # ```{rubric} Init 1
+  # ```
+  # ---
+  # Run the command to initialize the first control plane.
+  #
+  # ```{literalinclude} /roles/init/tasks/main.yml
+  # :language: yaml
+  # :start-at: "- name: Init new cluster\n"
+  # ```
+- name: Init new cluster
+  ansible.builtin.shell:
+    chdir: /etc/kubeadm
+    cmd: kubeadm init --config init.yaml --upload-certs &> /root/join.md
+    creates: /etc/kubernetes/admin.conf
+  register: init_result
+- name: Debug
+  ansible.builtin.debug:
+    var: init_result
+- name: Pull stored output from host
+  ansible.builtin.fetch:
+    src: /root/join.md
+    dest: roles/join/files/
+    flat: true
+- name: Pull admin conf from remote
+  ansible.builtin.fetch:
+    src: /etc/kubernetes/admin.conf
+    dest: roles/init/files/
+    flat: true
+- name: Copy admin conf back to remote
+  ansible.builtin.copy:
+    src: roles/init/files/admin.conf
+    dest: "{{ item.path }}"
+    owner: "{{ item.owner }}"
+    group: kube
+    mode: u+rw,go-rwx
+  loop:
+    - path: /root/.kube/config
+      owner: root
+    - path: "/home/{{ kcp_nonroot }}/.kube/config"
+      owner: "{{ kcp_nonroot }}"

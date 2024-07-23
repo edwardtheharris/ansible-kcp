@@ -18,3 +18,12 @@ More information about the process for HA setup is available
 
 A handy tool for switching k8s contexts is called
 [kubie](https://github.com/sbstp/kubie).
+
+## Tasks
+
+```{literalinclude} /roles/init/tasks/main.yml
+:language: yaml
+```
+
+```{sectionauthor} Xander Harris <xandertheharris@gmail.com>
+```

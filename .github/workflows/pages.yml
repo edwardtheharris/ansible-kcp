@@ -107,7 +107,7 @@ jobs:
           .sphinx/bin/pipenv install --dev
           .sphinx/bin/pipenv install --categories docs
       - name: Build artifact
-        run: .venv/bin/sphinx-build -a -E . deploy
+        run: .venv/bin/sphinx-build -a -b html -E . deploy
       - name: Upload artifact
         uses: actions/upload-pages-artifact@main
         with:

@@ -1,0 +1,4 @@
+---
+- name: Output nothing
+  ansible.builtin.debug:
+    msg: "nothing here"

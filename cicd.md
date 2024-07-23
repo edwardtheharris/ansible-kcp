@@ -14,7 +14,8 @@ title: CI/CD
 
 Stay away from zero days with Dependabot.
 
-```{autoyaml} .github/dependabot.yml
+```{literalinclude} /.github/dependabot.yml
+:language: yaml
 ```
 
 ## Workflows
@@ -26,21 +27,24 @@ run a lot of pipelines for free.
 
 The CodeQL workflow provided by GitHub is actually pretty good also.
 
-```{autoyaml} .github/workflows/codeql.yml
+```{literalinclude} .github/workflows/codeql.yml
+:language: yaml
 ```
 
 ### pages
 
 Build and deploy the GitHub Pages docs.
 
-```{autoyaml} .github/workflows/pages.yml
+```{literalinclude} .github/workflows/pages.yml
+:language: yaml
 ```
 
 ### shell
 
 And ShellCheck never hurt anybody either.
 
-```{autoyaml} .github/workflows/shell.yml
+```{literalinclude} .github/workflows/shell.yml
+:language: yaml
 ```
 
 ## Lint
@@ -49,5 +53,6 @@ This is the configuration for the various lint tools used here.
 
 ### ansible-lint
 
-```{autoyaml} .ansible-lint
+```{literalinclude} .ansible-lint
+:language: yaml
 ```

@@ -4,6 +4,10 @@
 # ```
 # ---
 # This playbook defines the primary site deployment code for this repository.
+#
+# ```{literalinclude} /site.yml
+# :language: yaml
+# ```
 - name: Reset Kubernetes Control Planes
   hosts: kcp
   become: true
@@ -11,3 +15,10 @@
     - role: reset
       tags:
         - reset
+- name: Initialize the first control plane
+  hosts: kcp01
+  become: true
+  roles:
+    - role: init
+      tags:
+        - init

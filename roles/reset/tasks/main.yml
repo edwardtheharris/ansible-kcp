@@ -29,7 +29,7 @@
 - name: Show output
   ansible.builtin.debug:
     var: reset_out
-- name: Pull stored output from hosts
-  ansible.builtin.fetch:
-    src: /root/reset.md
-    dest: "roles/reset/files/{{ inventory_hostname }}.reset.md"
+- name: Drop reset output
+  ansible.builtin.file:
+    dest: /root/reset.md
+    state: absent

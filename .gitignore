@@ -9,3 +9,5 @@ node_modules
 package-lock.json
 package.json
 roles/reset/files/*.reset.md
+roles/join/files/join.md
+roles/init/files/admin.conf

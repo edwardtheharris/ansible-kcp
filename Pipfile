@@ -12,8 +12,10 @@ gitpython = "*"
 loguru = "*"
 pipenv = "*"
 redis = "*"
+sphinxcontrib-yaml = "*"
 
 [dev-packages]
+ansible-lint = "*"
 molecule = "*"
 pytest = "*"
 pytest-cov = "*"
