@@ -98,11 +98,10 @@ jobs:
         uses: actions/configure-pages@main
       - name: Build pages
         run: |
-          python3 -m venv .venv
-          .venv/bin/pip install -U pip pipenv
-          .venv/bin/pipenv requirements --categories docs > requirements
-          .venv/bin/python3 -m pip install -r requirements -v
-          .venv/bin/sphinx-build -a -E . deploy
+          python3 -m venv .sphinx
+          .sphinx/bin/pip install -U pip pipenv
+          .sphinx/bin/pipenv install --categories docs
+          .sphinx/bin/pipenv run sphinx-build -a -E . deploy
       - name: Upload artifact
         uses: actions/upload-pages-artifact@main
         with:
