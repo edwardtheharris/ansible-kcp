@@ -35,6 +35,7 @@ exclude_patterns = [
     "_build",
     ".DS_Store",
     ".pytest_cache/*",
+    '.sphinx/*',
     ".tox/*",
     ".venv/*",
     "Thumbs.db",
