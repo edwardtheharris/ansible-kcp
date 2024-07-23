@@ -26,6 +26,7 @@ sys.path.append(str(Path("ansible/files/githooks").resolve()))
 
 author = "Xander Harris"
 autoyaml_root = "."
+autoyaml_safe_loader = False
 copyright = "2024, Xander Harris"
 exclude_patterns = [
     "_build",
