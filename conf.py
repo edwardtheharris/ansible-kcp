@@ -1,79 +1,63 @@
-"""Configuration file for the Sphinx documentation builder.
-#
-# For the full list of built-in configuration values, see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
-
-# -- Project information -----------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-"""
 # pylint: disable=invalid-name,redefined-builtin
+"""
+Configuration file for the Sphinx documentation builder.
 
-author = 'Xander Harris'
-ansible_roles_path = ['.']
-ansible_tmp_dir = "/tmp/sphinx-ansible"
+For the full list of built-in configuration values, see the documentation:
+https://www.sphinx-doc.org/en/master/usage/configuration.html
+
+-- Project information -----------------------------------------------------
+https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+
+-- General configuration ---------------------------------------------------
+https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
+"""
+import sys
+from pathlib import Path
+import version_query
+
+
+def get_version():
+    """Get the next expected semantic version for this project."""
+    version = version_query.Version.from_str('0.0.1')
+    return version.to_str()
+
+sys.path.append(str(Path("ansible/files").resolve()))
+sys.path.append(str(Path("ansible/files/githooks").resolve()))
+
+author = "Xander Harris"
 autoyaml_root = "."
-autoyaml_depth = 10
-
-copyright = '2024, Xander Harris'
-
-# -- General configuration ---------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
-
+autoyaml_safe_loader = False
+copyright = "2024, Xander Harris"
 exclude_patterns = [
-    '_build',
-    'Thumbs.db',
-    '.DS_Store',
-    '.venv/*',
-    '.tmp/*',
-    '.pytest_cache/*',
-    '.venv/',
+    "_build",
+    "Thumbs.db",
+    ".DS_Store",
+    ".pytest_cache/*",
+    ".tox/*",
+    'roles/reset/files/kcp01.breeze-blocks.net.reset.md/kcp01.breeze-blocks.net/root/reset.md',
+    ".venv/*",
 ]
-
 extensions = [
-    'myst_parser',
-    'notfound.extension',
-    'sphinx_design',
-    'sphinx_favicon',
-    'sphinx.ext.autodoc',
-    'sphinx.ext.autosectionlabel',
-    'sphinx.ext.autosummary',
-    'sphinx.ext.duration',
-    'sphinx.ext.extlinks',
-    'sphinx.ext.githubpages',
-    'sphinx.ext.intersphinx',
-    'sphinx.ext.inheritance_diagram',
-    'sphinxcontrib.autoyaml',
-    'sphinxcontrib.sphinx_ansible',
+    "myst_parser",
+    "sphinx_copybutton",
+    "sphinx_design",
+    "sphinx_last_updated_by_git",
+    "sphinx_git",
+    "sphinx.ext.autodoc",
+    "sphinx.ext.coverage",
+    "sphinx.ext.duration",
+    "sphinx.ext.githubpages",
+    "sphinx.ext.graphviz",
+    "sphinx.ext.todo",
+    "sphinxcontrib.autoyaml",
 ]
-
-favicons = [
-    {
-        "sizes": "16x16",
-        "href": "img/ansible-16x16.png",
-    },
-    {
-        "sizes": "32x32",
-        "href": "img/ansible-32x32.png",
-    },
-    {
-        "rel": "apple-touch-icon",
-        "sizes": "180x180",
-        "href": "img/ansible-180x180.png",  # use a local file in _static
-    },
-]
-
+git_untracked_check_dependencies = False
+graphviz_output_format = "png"
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
-
-html_static_path = ['_static']
-html_theme = 'sphinx_nefertiti'
-html_theme_options = {
-    'logo': 'img/ansible.png',
-    'repository_url': 'https://github.com/edwardtheharris/ansible-k8s-ca',
-    'repository_name': 'ansible k8s ca',
-    "style": "blue",
-}
-myst_dmath_double_inline = True
+html_context = {"full_path": str(Path(".").resolve())}
+html_static_path = ["_static"]
+html_theme = "sphinx_book_theme"
 myst_enable_extensions = [
     "amsmath",
     "attrs_block",
@@ -91,11 +75,14 @@ myst_enable_extensions = [
     "substitution",
     "tasklist",
 ]
+myst_footnote_transition = True
 myst_title_to_header = True
-project = 'Ansible Certificate Authority'
-release = '0.0.1'
+project = "Ansible K8S Control Plane"
+release = get_version()
 show_authors = True
 source_suffix = {
-    '.md': 'markdown'
+    '.md': 'markdown',
+    '.rst': 'restructuredtext',
+    '.txt': 'markdown'
 }
-templates_path = ['_templates']
+templates_path = ["_templates"]

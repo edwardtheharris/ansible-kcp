@@ -1,10 +1,15 @@
 ---
 abstract: Basic information about the CI/CD processes in this repo.
-authors: Xander Harris
-date: 2024-02-19
-title: GitHub Actions configuration
+authors:
+  - name: Xander Harris
+    email: xandertheharris@gmail.com
+date: 2024-07-23
+title: CI/CD
 ---
-<!--
+
+```{contents}
+```
+
 ## Dependabot
 
 Stay away from zero days with Dependabot.
@@ -37,4 +42,12 @@ And ShellCheck never hurt anybody either.
 
 ```{autoyaml} .github/workflows/shell.yml
 ```
--->
+
+## Lint
+
+This is the configuration for the various lint tools used here.
+
+### ansible-lint
+
+```{autoyaml} .ansible-lint
+```

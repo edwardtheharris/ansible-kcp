@@ -1,0 +1,35 @@
+---
+  ###
+  # ```{rubric} Reset an existing cluster
+  # ```
+  # ---
+  # This playbook runs `kubeadm reset -f`{l=shell} on a control plane node.
+  #
+  # ```{literalinclude} /roles/reset/tasks/main.yml
+  # :language: yaml
+  # :start-at: "- name: Reset existing cluster\n"
+  # :end-at: "  register: reset_out\n"
+  # ```
+- name: Reset existing cluster
+  ansible.builtin.command:
+    cmd: kubeadm reset -f &> /root/reset.md
+    removes: /etc/kubernetes/admin.conf
+  register: reset_out
+  ###
+  # ```{rubric} Show and record output
+  # ```
+  # ---
+  # These tasks display the output from the command above, then write them to
+  # disk in a temporary location.
+  #
+  # ```{literalinclude} /roles/reset/tasks/main.yml
+  # :language: yaml
+  # :start-at: "- name: Show output\n"
+  # ```
+- name: Show output
+  ansible.builtin.debug:
+    var: reset_out
+- name: Pull stored output from hosts
+  ansible.builtin.fetch:
+    src: /root/reset.md
+    dest: "roles/reset/files/{{ inventory_hostname }}.reset.md"

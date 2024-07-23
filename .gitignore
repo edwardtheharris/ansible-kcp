@@ -1,5 +1,11 @@
 _build/
+.gnupg
+.secret/
 .venv/
 .vscode/
-.secret/
 *.xcf
+markdownlint-cli2-junit.xml
+node_modules
+package-lock.json
+package.json
+roles/reset/files/*.reset.md
