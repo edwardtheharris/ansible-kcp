@@ -1,0 +1,4 @@
+---
+- name: Output nothing
+  debug:
+    msg: "nothing here"

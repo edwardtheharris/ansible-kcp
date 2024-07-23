@@ -18,6 +18,7 @@ molecule = "*"
 pytest = "*"
 pytest-cov = "*"
 version-query = "*"
+ansible-lint = "*"
 
 [docs]
 myst-parser = {extras = ["linkify"], version = "*"}

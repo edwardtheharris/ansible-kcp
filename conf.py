@@ -29,13 +29,15 @@ autoyaml_root = "."
 autoyaml_safe_loader = False
 copyright = "2024, Xander Harris"
 exclude_patterns = [
+    'roles/init/files/admin.conf/kcp01/etc/kubernetes/admin.conf',
+    'roles/join/files/kcp01.join.md/kcp01/root/join.md',
+    'roles/reset/files/kcp01.breeze-blocks.net.reset.md/kcp01.breeze-blocks.net/root/reset.md',
     "_build",
-    "Thumbs.db",
     ".DS_Store",
     ".pytest_cache/*",
     ".tox/*",
-    'roles/reset/files/kcp01.breeze-blocks.net.reset.md/kcp01.breeze-blocks.net/root/reset.md',
     ".venv/*",
+    "Thumbs.db",
 ]
 extensions = [
     "myst_parser",

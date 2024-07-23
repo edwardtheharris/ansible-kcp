@@ -26,9 +26,9 @@ clusterName: breeze-blocks
 controllerManager: {}
 controlPlaneEndpoint: {{ kcp_aa }}
 dns: {}
-etcd:
-  local:
-    dataDir: /var/lib/etcd
+# etcd:
+#   local:
+#     dataDir: /var/lib/etcd
 imageRepository: registry.k8s.io
 kind: ClusterConfiguration
 kubernetesVersion: 1.30.0
