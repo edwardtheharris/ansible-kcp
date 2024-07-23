@@ -1,16 +1,18 @@
 ---
 
 abstract: Basic information about the CI/CD processes in this repo.
-authors: Xander Harris
-date: 2024-02-19
+authors:
+  - name: Xander Harris
+    email: xandertheharris@gmail.com
+date: 2024-07-23
 title: GitHub Actions configuration
 ---
-<!--
+
 ## Dependabot
 
 Stay away from zero days with Dependabot.
 
-```{autoyaml} .github/dependabot.yml
+```{autoyaml} /.github/dependabot.yml
 ```
 
 ## Workflows

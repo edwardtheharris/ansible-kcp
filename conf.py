@@ -68,7 +68,7 @@ favicons = [
 html_static_path = ['_static']
 html_theme = 'sphinx_book_theme'
 html_theme_options = {
-    'logo': 'img/ansible.png',
+    'logo': '_static/img/ansible.png',
     "repository_url": "https://github.com/edwardtheharris/ansible-kcp",
     "use_edit_page_button": True,
     "use_repository_button": True,
@@ -93,7 +93,7 @@ myst_enable_extensions = [
     "tasklist",
 ]
 myst_title_to_header = True
-project = 'Ansible Certificate Authority'
+project = 'Ansible Kubernetes Control Plane'
 release = '0.0.1'
 show_authors = True
 source_suffix = {
