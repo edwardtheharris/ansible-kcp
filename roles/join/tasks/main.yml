@@ -1,4 +1,27 @@
 ---
-- name: Output nothing
-  ansible.builtin.debug:
-    msg: "nothing here"
+- name: Load join command
+  ansible.builtin.shell:
+    cmd: grep -A 3 'kubeadm join' roles/join/files/join.md | head -3
+  register: join_cmd
+  delegate_to: localhost
+- name: Output join command
+  ansible.builtin.shell:
+    cmd: "{{ join_cmd.stdout }} > /root/join_result.md"
+  register: join_result
+- name: Fetch join results
+  ansible.builtin.fetch:
+    src: /root/join_result.md
+    dest: "roles/join/files/{{ inventory_hostname }}/join_result.md"
+    flat: true
+- name: Copy admin.conf
+  ansible.builtin.copy:
+    src: roles/init/files/admin.conf
+    dest: "{{ item.path }}"
+    owner: "{{ item.owner }}"
+    group: kube
+    mode: u+rw,o-rwx
+  loop:
+    - path: /root/.kube/config
+      owner: root
+    - path: "/home/{{ join_nonroot }}/.kube/config"
+      owner: "{{ join_nonroot }}"

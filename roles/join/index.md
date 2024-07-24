@@ -1,15 +1,16 @@
 ---
 abstract: >-
-    This role initializes a k8s Control Plane suitable for a high
-    availability cluster.
+    This role joins additional control planes to a high availability k8s
+    cluster.
 authors:
     - name: Xander Harris
       email: xandertheharris@gmail.com
 date: 2024-07-24
-title: K8S HA Control Plane Init
+title: HA K8S Join Control Planes
 ---
 
-{term}`HA` Clusters with Kubeadm is helped with use of the tool
+[HA Clusters with Kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/high-availability/)
+is helped with use of the tool
 [kube-vip](https://kube-vip.io/docs/installation/static/).
 
 More information about the process for HA setup is available
@@ -20,10 +21,7 @@ A handy tool for switching k8s contexts is called
 
 ## Tasks
 
-The role uses {term}`kubeadm` to handle the initialization of the primary
-control plane.
-
-```{literalinclude} /roles/init/tasks/main.yml
+```{literalinclude} /roles/join/tasks/main.yml
 :language: yaml
 ```
 

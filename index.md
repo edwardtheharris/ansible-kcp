@@ -1,11 +1,12 @@
 ---
-abstract: This is a collection of Ansible playbooks that will create a CA usable
-   for Kubernetes and etcd clusters.
+abstract: >-
+   This is a set of roles that will initialize a primary control plane,
+   then join secondary and tertiary control planes to a HA k8s cluster.
 authors:
    - name: Xander Harris
      email: xandertheharris@gmail.com
 date: 2024-03-08
-title: Ansible Bare Metal K8S
+title: Ansible Bare Metal HA K8S
 ---
 
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/edwardtheharris/ansible-kcp/ansible.yml?branch=main&style=flat-square&logo=ansible&label=Ansible%20Lint)
@@ -24,7 +25,7 @@ title: Ansible Bare Metal K8S
 ### Roles
 
 ```{toctree}
-:maxdepth: 1
+:maxdepth: 3
 :caption: roles
 
 roles/index
@@ -52,8 +53,32 @@ security
 - [community.crypto.x509_certificate](https://docs.ansible.com/ansible/latest/collections/community/crypto/x509_certificate_module.html)
 - [How to create a small CA](https://docs.ansible.com/ansible/latest/collections/community/crypto/docsite/guide_ownca.html)
 
-## Indices and tables
+### Indices and tables
 
 - {ref}`genindex`
 - {ref}`modindex`
 - {ref}`search`
+
+### Glossary
+
+```{glossary}
+HA
+   High Availability; in this context we mean specifically HA k8s clusters
+   as described
+   [here](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/high-availability/).
+
+kubeconfig
+   A file that contains context and authentication information for one or more
+   {term}`K8S` clusters. Usually kept in a folder in a user's home directory
+   ({file}`.kube/config`).
+
+kube-vip
+   A network stack that can be used to enable cloud-style network resources
+   on a bare metal {term}`K8S` cluster. More information is available
+   [here](https://kube-vip.io/docs/installation/static/).
+
+K8S
+   Kubernetes; Ancient Greek for navigator or guide, in modern English usage
+   it is a container orchestration system designed by Google and documented
+   [here](https://kubernetes.io).
+```

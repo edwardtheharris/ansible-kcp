@@ -1,5 +1,4 @@
 ---
-
 abstract: The license, or lack thereof.
 date: 2024-03-08
 title: Unlicensed
