@@ -131,10 +131,11 @@ profile: null
 # :end-before: "###\n"
 # ```
 skip_list:
-  - skip_this_tag
   - command-instead-of-shell
-  - no-changed-when
   - loop-var-prefix[missing]
+  - no-changed-when
+  - risky-shell-pipe
+  - skip_this_tag
 ###
 # Define required Ansible's variables to satisfy syntax check
 # extra_vars:

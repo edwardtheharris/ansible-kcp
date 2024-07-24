@@ -16,9 +16,16 @@
       tags:
         - reset
 - name: Initialize the first control plane
-  hosts: kcp01
+  hosts: kcp01_init
   become: true
   roles:
     - role: init
       tags:
         - init
+- name: Join the secondary and tertiary control planes
+  hosts: kcp_join
+  become: true
+  roles:
+    - role: join
+      tags:
+        - join
