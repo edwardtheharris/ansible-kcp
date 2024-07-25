@@ -29,3 +29,10 @@
     - role: join
       tags:
         - join
+- name: Kube VIP
+  hosts: kcp01_init
+  become: true
+  roles:
+    - role: kv
+      tags:
+        - kv

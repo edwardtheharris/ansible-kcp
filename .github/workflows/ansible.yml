@@ -35,6 +35,7 @@ jobs:
           .venv/bin/pipenv requirements --dev > reqs
           python3 -m pip install -r reqs
           ansible-galaxy collection install community.crypto
+          ansible-galaxy collection install community.general
       - name: Make ansible directory
         run: |
           sudo mkdir -pv /etc/ansible

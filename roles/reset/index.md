@@ -9,6 +9,9 @@ title: Reset Cluster
 
 ## Reset Role Usage
 
+This role should generally be executed first to attempt to create a fresh
+environment.
+
 ```{literalinclude} /roles/reset/tasks/main.yml
 :language: yaml
 ```

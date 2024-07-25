@@ -10,18 +10,12 @@ title: K8S HA Control Plane Init
 ---
 
 {term}`HA` Clusters with Kubeadm is helped with use of the tool
-[kube-vip](https://kube-vip.io/docs/installation/static/).
-
-More information about the process for HA setup is available
-[here](https://github.com/kubernetes/kubeadm/blob/main/docs/ha-considerations.md#kube-vip).
-
-A handy tool for switching k8s contexts is called
-[kubie](https://github.com/sbstp/kubie).
+{term}`kube-vip`.
 
 ## Tasks
 
 The role uses {term}`kubeadm` to handle the initialization of the primary
-control plane.
+control plane. It should be run after the reset role and before the join role.
 
 ```{literalinclude} /roles/init/tasks/main.yml
 :language: yaml

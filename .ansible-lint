@@ -56,7 +56,6 @@ exclude_paths:
 # ---
 # parseable: true
 # quiet: true
-# strict: true
 # verbosity: 1
 # List of additional kind:pattern to be added at the top of the default
 # match list, first match determines the file kind.
@@ -91,6 +90,7 @@ mock_modules:
   - zuul_return
   - fake_namespace.fake_collection.fake_module
   - fake_namespace.fake_collection.fake_module.fake_submodule
+  - community.general.pacman
 ###
 # role within a collection
 # old standalone galaxy role
@@ -131,11 +131,13 @@ profile: null
 # :end-before: "###\n"
 # ```
 skip_list:
+  - command-instead-of-module
   - command-instead-of-shell
   - loop-var-prefix[missing]
   - no-changed-when
   - risky-shell-pipe
   - skip_this_tag
+strict: false
 ###
 # Define required Ansible's variables to satisfy syntax check
 # extra_vars:

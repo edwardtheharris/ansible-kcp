@@ -39,14 +39,20 @@ the way to use these roles is this.
    ansible-playbook -t join site.yml
    ```
 
-4. Copy your updated {term}`kubeconfig` from the init role's file folder to
+4. Enable Kube-VIP on the control planes.
+
+   ```{code-block} shell
+   ansible-playbook -t kv site.yml
+   ```
+
+5. Copy your updated {term}`kubeconfig` from the init role's file folder to
    the appropriate directory.
 
    ```{code-block} shell
    cp roles/init/files/admin.conf $HOME/.kube/config
    ```
 
-5. Verify that your connection works and the cluster is up.
+6. Verify that your connection works and the cluster is up.
 
    ```{code-block} shell
    kubectl get nodes

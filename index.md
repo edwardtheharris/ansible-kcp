@@ -34,6 +34,12 @@ roles/index
 ```{index} ansible; roles
 ```
 
+```{graphviz}
+digraph roles {
+   reset -> init -> join -> kv
+}
+```
+
 ## Readme
 
 ```{toctree}
@@ -76,6 +82,10 @@ kube-vip
    A network stack that can be used to enable cloud-style network resources
    on a bare metal {term}`K8S` cluster. More information is available
    [here](https://kube-vip.io/docs/installation/static/).
+
+kubie
+   A handy tool for switching k8s contexts and namespaces. More information is
+   available [here](https://github.com/sbstp/kubie).
 
 K8S
    Kubernetes; Ancient Greek for navigator or guide, in modern English usage

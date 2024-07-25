@@ -1,0 +1,39 @@
+---
+- name: Ensure manifests directory
+  ansible.builtin.file:
+    state: directory
+    recurse: true
+    dest: /etc/kubernetes/manifests
+    owner: kube
+    group: kube
+    mode: ug+rw,o+r
+- name: Install prerequisites for creating the manifest
+  community.general.pacman:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - curl
+    - jq
+- name: Update the bash rc file
+  ansible.builtin.template:
+    src: bashrc.j2
+    dest: /root/.bashrc
+    owner: root
+    group: root
+    mode: ug+rw,o-rwx
+- name: Deploy the manifest
+  ansible.builtin.shell:
+    cmd: |-
+      source /root/.bashrc
+      kube-vip
+      kube-vip manifest pod \
+        --interface "{{ kv_interface }}" \
+        --address "{{ kv_aa }}" \
+        --controlplane \
+        --services \
+        --arp \
+        --leaderElection | tee /etc/kubernetes/manifests/kube-vip.yaml
+  register: kv_manifest
+- name: Output kube-vip
+  ansible.builtin.debug:
+    var: kv_manifest

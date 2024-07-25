@@ -33,3 +33,11 @@
   ansible.builtin.file:
     dest: /root/reset.md
     state: absent
+- name: Stop containerd
+  ansible.builtin.service:
+    state: stopped
+    name: containerd
+- name: Start containerd
+  ansible.builtin.service:
+    state: started
+    name: containerd
