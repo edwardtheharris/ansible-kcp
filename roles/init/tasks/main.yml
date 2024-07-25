@@ -83,3 +83,12 @@
       owner: root
     - path: "/home/{{ kcp_nonroot }}/.kube/config"
       owner: "{{ kcp_nonroot }}"
+- name: Copy admin conf to local
+  ansible.builtin.shell:
+    cmd: "scp {{ scp_cfg_src }} {{ item }}"
+  loop:
+    - "{{ scp_cfg_dest }}"
+    - "{{ scp_cfg_home }}"
+  delegate_to: localhost
+  become: true
+  become_user: duchess

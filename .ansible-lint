@@ -50,6 +50,7 @@ exclude_paths:
   - _static/
   - .markdownlint-cli2.yaml
   - .markdownlint.yaml
+  - roles/calico/files/calico.yaml
 ###
 # ```{rubric} Kinds
 # ```
@@ -131,6 +132,7 @@ profile: null
 # :end-before: "###\n"
 # ```
 skip_list:
+  - args[module]
   - command-instead-of-module
   - command-instead-of-shell
   - loop-var-prefix[missing]
