@@ -103,6 +103,8 @@ jobs:
         run: |
           PIPENV_VENV_IN_PROJECT=1
           export PIPENV_VENV_IN_PROJECT
+          sudo apt-get update
+          sudo apt-get -y install graphviz
           .sphinx/bin/pipenv install
           .sphinx/bin/pipenv install --dev
           .sphinx/bin/pipenv install --categories docs

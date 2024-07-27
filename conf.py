@@ -29,13 +29,14 @@ autoyaml_root = "."
 autoyaml_safe_loader = False
 copyright = "2024, Xander Harris"
 exclude_patterns = [
-    "_build",
-    "Thumbs.db",
-    'roles/join/files/join.md',
-    ".DS_Store",
-    ".pytest_cache/*",
-    ".tox/*",
-    ".venv/*",
+    '_build',
+    'Thumbs.db',
+    'roles/join/files/*',
+    '.DS_Store',
+    '.gnupg/*',
+    '.pytest_cache/*',
+    '.tox/*',
+    '.venv/*',
 ]
 extensions = [
     "myst_parser",

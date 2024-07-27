@@ -15,6 +15,24 @@
     cmd: kubeadm reset -f &> /root/reset.md
     removes: /etc/kubernetes/admin.conf
   register: reset_out
+- name: Clear CNI config
+  ansible.builtin.file:
+    dest: /etc/cni/net.d
+    state: absent
+- name: Re-add CNI config directory
+  ansible.builtin.file:
+    dest: /etc/cni/net.d
+    state: directory
+    owner: root
+    group: root
+    mode: u+rwx,go-rwx
+- name: Template hosts file
+  ansible.builtin.template:
+    src: hosts
+    dest: /etc/hosts
+    owner: root
+    group: root
+    mode: u+rw,go+r
   ###
   # ```{rubric} Show and record output
   # ```
@@ -37,7 +55,15 @@
   ansible.builtin.service:
     state: stopped
     name: containerd
+- name: Stop kubelet
+  ansible.builtin.service:
+    state: stopped
+    name: kubelet
 - name: Start containerd
   ansible.builtin.service:
     state: started
     name: containerd
+- name: Start kubelet
+  ansible.builtin.service:
+    state: started
+    name: kubelet

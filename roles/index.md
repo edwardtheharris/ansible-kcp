@@ -70,12 +70,10 @@ the way to use these roles is this.
 ### Individual role details
 
 ```{toctree}
-:maxdepth: 1
+:glob:
 :caption: roles
 
-init/index
-join/index
-reset/index
+*/index
 ```
 
 ```{index} roles init

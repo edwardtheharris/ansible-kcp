@@ -1,0 +1,6 @@
+# Static table lookup for hostnames.
+# See hosts(5) for details.
+
+{% for host in hosts_file %}
+{{ host.addr }} {{ host.name }}
+{% endfor %}

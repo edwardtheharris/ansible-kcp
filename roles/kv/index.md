@@ -15,7 +15,7 @@ which is best for bare metal deployments.
 ## Tasks
 
 This role enables {term}`kube-vip` for cluster networking. This role should
-be run after the join role.
+be run after the join role and before the flannel role.
 
 ```{literalinclude} /roles/kv/tasks/main.yml
 :language: yaml

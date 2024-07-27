@@ -19,6 +19,9 @@
   hosts: kcp01_init
   become: true
   roles:
+    - role: kv
+      tags:
+        - kv
     - role: init
       tags:
         - init
@@ -29,10 +32,9 @@
     - role: join
       tags:
         - join
-- name: Kube VIP
-  hosts: kcp01_init
-  become: true
+- name: Deploy Calico CNI
+  hosts: local
   roles:
-    - role: kv
+    - role: calico
       tags:
-        - kv
+        - calico

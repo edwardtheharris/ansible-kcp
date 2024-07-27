@@ -68,6 +68,16 @@ security
 ### Glossary
 
 ```{glossary}
+Calico
+   Calico is a networking and security solution that enables Kubernetes
+   workloads and non-Kubernetes/legacy workloads to communicate seamlessly and
+   securely. More information is available
+   [here](https://docs.tigera.io/calico/latest/about/).
+
+CNI
+   Container Network Interface used to manage networking between and inside
+   clusters.
+
 HA
    High Availability; in this context we mean specifically HA k8s clusters
    as described

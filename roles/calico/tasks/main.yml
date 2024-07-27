@@ -1,0 +1,8 @@
+---
+- name: Apply the calico manifest`
+  ansible.builtin.shell:
+    cmd: kubectl apply -f roles/calico/files/calico.yaml
+  register: result
+- name: Display result
+  ansible.builtin.debug:
+    var: result
