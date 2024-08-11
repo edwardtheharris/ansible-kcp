@@ -27,7 +27,7 @@ run a lot of pipelines for free.
 
 The CodeQL workflow provided by GitHub is actually pretty good also.
 
-```{literalinclude} .github/workflows/codeql.yml
+```{literalinclude} /.github/workflows/codeql.yml
 :language: yaml
 ```
 
@@ -35,7 +35,7 @@ The CodeQL workflow provided by GitHub is actually pretty good also.
 
 Build and deploy the GitHub Pages docs.
 
-```{literalinclude} .github/workflows/pages.yml
+```{literalinclude} /.github/workflows/pages.yml
 :language: yaml
 ```
 
@@ -43,7 +43,7 @@ Build and deploy the GitHub Pages docs.
 
 And ShellCheck never hurt anybody either.
 
-```{literalinclude} .github/workflows/shell.yml
+```{literalinclude} /.github/workflows/shell.yml
 :language: yaml
 ```
 
@@ -53,6 +53,6 @@ This is the configuration for the various lint tools used here.
 
 ### ansible-lint
 
-```{literalinclude} .ansible-lint
+```{literalinclude} /.ansible-lint
 :language: yaml
 ```
