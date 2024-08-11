@@ -45,7 +45,7 @@ digraph roles {
 ```{toctree}
 :maxdepth: 3
 
-cicd
+.github/index
 license
 readme
 security
@@ -82,6 +82,11 @@ HA
    High Availability; in this context we mean specifically HA k8s clusters
    as described
    [here](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/high-availability/).
+
+kubeadm
+   A program that allows the creation and management of Kubernetes clusters
+   with the command line. More information is available
+   [here](https://kubernetes.io/docs/reference/setup-tools/kubeadm/).
 
 kubeconfig
    A file that contains context and authentication information for one or more
