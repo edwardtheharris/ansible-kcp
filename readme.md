@@ -9,6 +9,11 @@ date: 2024-03-08
 title: Readme
 ---
 
+[![Ansible Lint](https://github.com/edwardtheharris/ansible-kcp/actions/workflows/ansible.yml/badge.svg)](https://github.com/edwardtheharris/ansible-kcp/actions/workflows/ansible.yml)
+[![CodeQL](https://github.com/edwardtheharris/ansible-kcp/actions/workflows/codeql.yml/badge.svg)](https://github.com/edwardtheharris/ansible-kcp/actions/workflows/codeql.yml)
+[![Documentation](https://github.com/edwardtheharris/ansible-kcp/actions/workflows/documentation.yml/badge.svg)](https://github.com/edwardtheharris/ansible-kcp/actions/workflows/documentation.yml)
+[![OSSAR](https://github.com/edwardtheharris/ansible-kcp/actions/workflows/ossar.yml/badge.svg)](https://github.com/edwardtheharris/ansible-kcp/actions/workflows/ossar.yml)
+[![ShellCheck](https://github.com/edwardtheharris/ansible-kcp/actions/workflows/shell.yml/badge.svg)](https://github.com/edwardtheharris/ansible-kcp/actions/workflows/shell.yml)
 [![wakatime](https://wakatime.com/badge/github/edwardtheharris/ansible-kcp.svg)](https://wakatime.com/badge/github/edwardtheharris/ansible-kcp)
 
 ## Assumptions
