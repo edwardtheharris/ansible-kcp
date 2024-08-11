@@ -10,6 +10,29 @@
   # :start-at: "- name: Reset existing cluster\n"
   # :end-at: "  register: reset_out\n"
   # ```
+- name: Ensure required programs
+  community.general.pacman:
+    executable: yay
+    extra_args: '--noconfirm'
+    name: "{{ item }}"
+    state: present
+  loop:
+    - kubeadm
+    - kubelet
+    - kubectl
+    - kubie
+- name: Make sure the kube group exists
+  ansible.builtin.group:
+    name: kube
+    state: present
+- name: Add required users to group
+  ansible.builtin.user:
+    name: "{{ item }}"
+    groups: kube
+    append: true
+  loop:
+    - root
+    - "{{ nonroot_user }}"
 - name: Reset existing cluster
   ansible.builtin.command:
     cmd: kubeadm reset -f &> /root/reset.md

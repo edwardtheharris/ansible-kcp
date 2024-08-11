@@ -2,10 +2,14 @@
 
 abstract: >-
   The readme for some Ansible roles for managing bare metal k8s clusters.
-authors: Xander Harris
+authors:
+  - name: Xander Harris
+    email: xandertheharris@gmail.com
 date: 2024-03-08
-title: Ansible Bare Metal K8S
+title: Readme
 ---
+
+[![wakatime](https://wakatime.com/badge/github/edwardtheharris/ansible-kcp.svg)](https://wakatime.com/badge/github/edwardtheharris/ansible-kcp)
 
 ## Assumptions
 
