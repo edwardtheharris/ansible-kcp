@@ -39,11 +39,3 @@ kcp:
     kcp02.example.com:
       ansible_user: 1.2.3.4
 ```
-
-```{toctree}
-:caption: Other Information
-
-cicd
-license
-security
-```
