@@ -1,4 +1,24 @@
 ---
+- name: Configure netfilter and ip
+  ansible.builtin.copy:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+    owner: root
+    group: root
+    mode: ug+rw,o-rwx
+  loop:
+    - src: modules-k8s.conf
+      dest: /etc/modules-load.d/k8s.conf
+    - src: sysctl-k8s.conf
+      dest: /etc/sysctl.d/k8s.conf
+- name: Enable deployed updates
+  ansible.builtin.shell:
+    cmd: sysctl --system
+- name: Enable kubelet
+  ansible.builtin.service:
+    state: restarted
+    name: kubelet
+    enabled: true
 - name: Load join command
   ansible.builtin.shell:
     cmd: grep -A 3 'kubeadm join' roles/join/files/join.md | head -3
@@ -13,6 +33,18 @@
     src: /root/join_result.md
     dest: "roles/join/files/{{ inventory_hostname }}/join_result.md"
     flat: true
+- name: Ensure .kube exists
+  ansible.builtin.file:
+    dest: "{{ item.dest }}"
+    owner: "{{ item.owner }}"
+    group: kube
+    mode: u+rwx,g+rx,o-rwx
+    state: directory
+  loop:
+    - owner: root
+      dest: /root/.kube
+    - owner: "{{ join_nonroot }}"
+      dest: "/home/{{ join_nonroot }}/.kube"
 - name: Copy admin.conf
   ansible.builtin.copy:
     src: roles/init/files/admin.conf
