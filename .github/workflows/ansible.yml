@@ -8,7 +8,7 @@
 # :language: yaml
 # :caption: .github/workflows/ansible-lint.yml
 # ```
-name: ansible-lint
+name: Ansible Lint
 on:
   pull_request:
     branches: ["main", "stable", "release/v*"]

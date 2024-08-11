@@ -31,11 +31,19 @@ The CodeQL workflow provided by GitHub is actually pretty good also.
 :language: yaml
 ```
 
-### pages
+### Documentation
 
 Build and deploy the GitHub Pages docs.
 
-```{literalinclude} /.github/workflows/pages.yml
+```{literalinclude} /.github/workflows/documentation.yml
+:language: yaml
+```
+
+### OSSAR
+
+Build and deploy the GitHub Pages docs.
+
+```{literalinclude} /.github/workflows/ossar.yml
 :language: yaml
 ```
 
