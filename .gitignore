@@ -11,6 +11,6 @@ package.json
 roles/reset/files/*.reset.md
 roles/join/files/join.md
 roles/init/files/admin.conf
-roles/join/files/kcp02*
-roles/join/files/kcp03*
+roles/join/files/kcp0*
 reflog
+ansible-navigator.log

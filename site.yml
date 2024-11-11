@@ -32,9 +32,9 @@
     - role: join
       tags:
         - join
-- name: Deploy Calico CNI
-  hosts: local
-  roles:
-    - role: calico
-      tags:
-        - calico
+# - name: Deploy Calico CNI
+#   hosts: local
+#   roles:
+#     - role: calico
+#       tags:
+#         - calico
