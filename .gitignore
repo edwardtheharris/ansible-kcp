@@ -14,3 +14,4 @@ roles/init/files/admin.conf
 roles/join/files/kcp0*
 reflog
 ansible-navigator.log
+gh.gpg
