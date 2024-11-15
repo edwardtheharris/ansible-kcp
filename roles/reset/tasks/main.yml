@@ -1,15 +1,14 @@
----
-  ###
-  # ```{rubric} Reset an existing cluster
-  # ```
-  # ---
-  # This playbook runs `kubeadm reset -f`{l=shell} on a control plane node.
-  #
-  # ```{literalinclude} /roles/reset/tasks/main.yml
-  # :language: yaml
-  # :start-at: "- name: Reset existing cluster\n"
-  # :end-at: "  register: reset_out\n"
-  # ```
+###
+# ```{rubric} Reset an existing cluster
+# ```
+# ---
+# This playbook runs `kubeadm reset -f`{l=shell} on a control plane node.
+#
+# ```{literalinclude} /roles/reset/tasks/main.yml
+# :language: yaml
+# :start-at: "- name: Reset existing cluster\n"
+# :end-at: "  register: reset_out\n"
+# ```
 - name: Ensure required programs
   community.general.pacman:
     executable: yay
@@ -21,6 +20,8 @@
     - kubelet
     - kubectl
     - kubie
+  become: true
+  become_user: "{{ nonroot_user }}"
 - name: Make sure the kube group exists
   ansible.builtin.group:
     name: kube
@@ -49,18 +50,17 @@
     owner: root
     group: root
     mode: u+rwx,go-rwx
-
-  ###
-  # ```{rubric} Show and record output
-  # ```
-  # ---
-  # These tasks display the output from the command above, then write them to
-  # disk in a temporary location.
-  #
-  # ```{literalinclude} /roles/reset/tasks/main.yml
-  # :language: yaml
-  # :start-at: "- name: Show output\n"
-  # ```
+    ###
+    # ```{rubric} Show and record output
+    # ```
+    # ---
+    # These tasks display the output from the command above, then write them to
+    # disk in a temporary location.
+    #
+    # ```{literalinclude} /roles/reset/tasks/main.yml
+    # :language: yaml
+    # :start-at: "- name: Show output\n"
+    # ```
 - name: Show output
   ansible.builtin.debug:
     var: reset_out
