@@ -49,11 +49,11 @@
         },
         "ansible-core": {
             "hashes": [
-                "sha256:3e53970b7cebfe2adb39b711c1e2f8bbfcbedac828da51dc0357a19070638e95",
-                "sha256:dab09cd49fe7e17003e13188ce1ab52a0a6e5b88bc4bf29ff101cfdcb2862395"
+                "sha256:87fbebbfe8d961e9b153e84b4438ba3a327dbfdcd4ad05a6065d9ff5d9d02e7b",
+                "sha256:d28818df3741d6cd744dab5e4ff9c658daa94ba71c8e15a12dbe9eeab30a658f"
             ],
-            "markers": "python_version >= '3.10'",
-            "version": "==2.17.6"
+            "markers": "python_version >= '3.11'",
+            "version": "==2.18.0"
         },
         "ansible-creator": {
             "hashes": [
