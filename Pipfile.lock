@@ -49,11 +49,11 @@
         },
         "ansible-core": {
             "hashes": [
-                "sha256:3e53970b7cebfe2adb39b711c1e2f8bbfcbedac828da51dc0357a19070638e95",
-                "sha256:dab09cd49fe7e17003e13188ce1ab52a0a6e5b88bc4bf29ff101cfdcb2862395"
+                "sha256:87fbebbfe8d961e9b153e84b4438ba3a327dbfdcd4ad05a6065d9ff5d9d02e7b",
+                "sha256:d28818df3741d6cd744dab5e4ff9c658daa94ba71c8e15a12dbe9eeab30a658f"
             ],
-            "markers": "python_version >= '3.10'",
-            "version": "==2.17.6"
+            "markers": "python_version >= '3.11'",
+            "version": "==2.18.0"
         },
         "ansible-creator": {
             "hashes": [
@@ -75,12 +75,12 @@
         },
         "ansible-navigator": {
             "hashes": [
-                "sha256:796dfcfe7def87697684aae1d71a56d9f881e723a44e72bbec09debc34ad0fbb",
-                "sha256:8bd99032331cb4d0b9f84e8734c0403f6155be20a3683abdd081e69854f99bc3"
+                "sha256:50f7d17f10e40fa1c70a505dac5a386bce302c6b453b330d732f11ac8813ea29",
+                "sha256:fbd90b8abefa5d71fc7e5672e6595cb24b21cf613e5798eb6ec56e4da86b3cb4"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.10'",
-            "version": "==24.9.0"
+            "version": "==24.10.0"
         },
         "ansible-runner": {
             "hashes": [
@@ -666,11 +666,11 @@
         },
         "python-daemon": {
             "hashes": [
-                "sha256:42bb848a3260a027fa71ad47ecd959e471327cb34da5965962edd5926229f341",
-                "sha256:6c57452372f7eaff40934a1c03ad1826bf5e793558e87fef49131e6464b4dae5"
+                "sha256:a66b5896f0aed5807a25c6128268eb496488b1f9c6927c487710049ba16be32a",
+                "sha256:fdb621d7e5f46e74b4de1ad6b0fff6e69cd91b4f219de1476190ebdd0f4781df"
             ],
-            "markers": "python_version >= '3'",
-            "version": "==3.0.1"
+            "markers": "python_version >= '3.7'",
+            "version": "==3.1.0"
         },
         "pyyaml": {
             "hashes": [
@@ -927,7 +927,7 @@
                 "sha256:8199222558df7c86216af4f84c30e9b34a61d8ba19366cc914424cdbd28252f6",
                 "sha256:ce74b49e8f7110f9bf04883b730f4765b774ef3ef28f722cce7c273d253aaf7d"
             ],
-            "markers": "python_version >= '3.9'",
+            "markers": "python_version >= '3.11'",
             "version": "==75.6.0"
         },
         "smmap": {
