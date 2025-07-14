@@ -11,19 +11,17 @@ ansible-navigator = "*"
 cryptography = ">=43.0.1"
 gitpython = "*"
 loguru = "*"
+pip = "*"
 pipenv = "*"
+pre-commit = "*"
 redis = "*"
 sphinxcontrib-yaml = "*"
 
 [dev-packages]
-ansible-lint = "*"
 molecule = "*"
+myst-parser = {extras = ["linkify"], version = "*"}
 pytest = "*"
 pytest-cov = "*"
-version-query = "*"
-
-[docs]
-myst-parser = {extras = ["linkify"], version = "*"}
 six = "*"
 sphinx = "*"
 sphinx-autobuild = "*"
@@ -41,3 +39,4 @@ sphinxcontrib-autoyaml = "*"
 sphinxemoji = "*"
 sphinxext-opengraph = "*"
 sphinxext-rediraffe = "*"
+version-query = "*"
