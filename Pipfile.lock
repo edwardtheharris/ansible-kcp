@@ -1186,11 +1186,11 @@
                 "logging"
             ],
             "hashes": [
-                "sha256:a7edb6c68bdd37fc6a4a790a814875bf0d3a8fda155b60df4d6c0a803f89102a",
-                "sha256:e17b7583cf7b80de1ec0098f14a4653260a0f98622c5afa61c324efcef9bae9d"
+                "sha256:1bf229a21e28de6643cc57ab1e90fa6405957cbfd7e8e353fcf1c0a1bb2d9ffd",
+                "sha256:4dabb1ff2b70d4a0111998953e1d54a7fed80c2d7c25b2b165285c5af29458e5"
             ],
             "markers": "python_version >= '3.9'",
-            "version": "==1.2.0"
+            "version": "==1.2.3"
         },
         "bracex": {
             "hashes": [
@@ -1462,12 +1462,11 @@
         },
         "gitpython": {
             "hashes": [
-                "sha256:9e0e10cda9bed1ee64bc9a6de50e7e38a9c9943241cd7f585f6df3ed28011110",
-                "sha256:c87e30b26253bf5418b01b0660f818967f3c503193838337fe5e573331249269"
+                "sha256:85b0ee964ceddf211c41b9f27a49086010a190fd8132a24e21f362a4b36a791c",
+                "sha256:8908cb2e02fb3b93b7eb0f2827125cb699869470432cc885f019b8fd0fccff77"
             ],
-            "index": "pypi",
             "markers": "python_version >= '3.7'",
-            "version": "==3.1.44"
+            "version": "==3.1.45"
         },
         "iniconfig": {
             "hashes": [
@@ -2007,12 +2006,12 @@
         },
         "version-query": {
             "hashes": [
-                "sha256:2e65774cd5a7471a3315cebde4f06cbec7e4eb3e0469d974c50f8586764fb445",
-                "sha256:57378ff9d596c8e8d605a9edbc0b7dd2592cc3d73548328adafbb1c76c93c8ea"
+                "sha256:96f9068a0c05e46f02fba9cfc0302622c96fdaa564e6a5f9d8d754399089b327",
+                "sha256:df112e9545248b446ff7645964bb7bd519b1daf39149024e01b63358db423e74"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.9'",
-            "version": "==1.6.3"
+            "version": "==1.7.0"
         },
         "wcmatch": {
             "hashes": [
