@@ -15,7 +15,6 @@ pip = "*"
 pipenv = "*"
 pre-commit = "*"
 redis = "*"
-sphinxcontrib-yaml = "*"
 
 [dev-packages]
 molecule = "*"
