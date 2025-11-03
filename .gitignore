@@ -1,4 +1,5 @@
 *.xcf
+_build/
 .ansible/
 .gnupg
 .secret/
@@ -15,3 +16,10 @@ roles/join/files/join.md
 roles/join/files/kcp02*
 roles/join/files/kcp03*
 roles/reset/files/*.reset.md
+roles/join/files/kcp0*
+reflog
+ansible-navigator.log
+roles/join/files/kcp0*
+reflog
+ansible-navigator.log
+gh.gpg

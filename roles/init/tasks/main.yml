@@ -1,15 +1,14 @@
----
-  ###
-  # ```{rubric} Prep for Kubeadm
-  # ```
-  # ---
-  # Prepare the first control plane for init.
-  #
-  # ```{literalinclude} /roles/init/tasks/main.yml
-  # :language: yaml
-  # :start-at: "- name: Create kube group\n"
-  # :end-at: "    mode: ugo+rw\n"
-  # ```
+###
+# ```{rubric} Prep for Kubeadm
+# ```
+# ---
+# Prepare the first control plane for init.
+#
+# ```{literalinclude} /roles/init/tasks/main.yml
+# :language: yaml
+# :start-at: "- name: Create kube group\n"
+# :end-at: "    mode: ugo+rw\n"
+# ```
 - name: Create kube group
   ansible.builtin.group:
     name: kube
@@ -42,16 +41,16 @@
     owner: kube
     group: kube
     mode: ugo+rw
-  ###
-  # ```{rubric} Init 1
-  # ```
-  # ---
-  # Run the command to initialize the first control plane.
-  #
-  # ```{literalinclude} /roles/init/tasks/main.yml
-  # :language: yaml
-  # :start-at: "- name: Init new cluster\n"
-  # ```
+    ###
+    # ```{rubric} Init 1
+    # ```
+    # ---
+    # Run the command to initialize the first control plane.
+    #
+    # ```{literalinclude} /roles/init/tasks/main.yml
+    # :language: yaml
+    # :start-at: "- name: Init new cluster\n"
+    # ```
 - name: Init new cluster
   ansible.builtin.shell:
     chdir: /etc/kubeadm
@@ -83,12 +82,12 @@
       owner: root
     - path: "/home/{{ kcp_nonroot }}/.kube/config"
       owner: "{{ kcp_nonroot }}"
-- name: Copy admin conf to local
-  ansible.builtin.shell:
-    cmd: "scp {{ scp_cfg_src }} {{ item }}"
-  loop:
-    - "{{ scp_cfg_dest }}"
-    - "{{ scp_cfg_home }}"
-  delegate_to: localhost
-  become: true
-  become_user: duchess
+# - name: Copy admin conf to local
+#   ansible.builtin.shell:
+#     cmd: "scp {{ scp_cfg_src }} {{ item }}"
+#   loop:
+#     - "{{ scp_cfg_dest }}"
+#     - "{{ scp_cfg_home }}"
+#   delegate_to: localhost
+#   become: true
+#   become_user: duchess
