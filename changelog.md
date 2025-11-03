@@ -1,0 +1,183 @@
+---
+abstract: All notable changes to this project will be documented in this file.
+authors:
+- name: Xander Harris
+email: xandertheharris@gmail.com
+date: 2025-09-07
+title: Breeze Blocks Ansible Kubernetes Control Plane
+---
+
+<!--markdownlint-disable-->
+## [0.0.2] - 2024-09-06
+
+### 💼 Other - 0.0.2
+
+
+- Initial commit
+- Adjust inventory location
+- Closes #4
+- Merge pull request #7 from edwardtheharris/4-reset-existing-kcp-nodes
+- 4 reset existing kcp nodes
+- Closes #4
+- Initialize first CP node
+- Closes #6
+- Update ignore
+- Closes #6
+- Update config
+- Closes #6
+- Update ignore
+- Closes #6
+- Update builder
+- Closes #6
+- Update ignore
+- Closes #6
+- Fix init
+- Closes #6
+- Merge pull request #8 from edwardtheharris/6-initialize-first-kcp-node
+- Update init
+- Closes #6
+- Add join role
+- Closes #9
+- Merge pull request #10 from edwardtheharris/9-join-control-planes
+- 9 join control planes
+- Closes #9
+- Add Kube VIP to cluster
+- Closes #11
+- Merge pull request #12 from edwardtheharris/11-integrate-kube-vip
+- Add Kube VIP to cluster
+- Closes #11
+- Properly init kube-vip
+- Closes #13
+- Merge pull request #14 from edwardtheharris/13-deploy-flannel-to-kcp-nodes
+- Add calico for networking between control planes
+- Closes #13
+- Bump pytest from 8.3.1 to 8.3.2
+- Bumps [pytest](https://github.com/pytest-dev/pytest) from 8.3.1 to 8.3.2.
+- - [Release notes](https://github.com/pytest-dev/pytest/releases)
+- - [Changelog](https://github.com/pytest-dev/pytest/blob/main/CHANGELOG.rst)
+- - [Commits](https://github.com/pytest-dev/pytest/compare/8.3.1...8.3.2)
+- ---
+- Updated-dependencies:
+- - dependency-name: pytest
+-   dependency-type: direct:development
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #15 from edwardtheharris/dependabot/pip/pytest-8.3.2
+- Bump redis from 5.0.7 to 5.0.8
+- Bumps [redis](https://github.com/redis/redis-py) from 5.0.7 to 5.0.8.
+- - [Release notes](https://github.com/redis/redis-py/releases)
+- - [Changelog](https://github.com/redis/redis-py/blob/master/CHANGES)
+- - [Commits](https://github.com/redis/redis-py/compare/v5.0.7...v5.0.8)
+- ---
+- Updated-dependencies:
+- - dependency-name: redis
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #16 from edwardtheharris/dependabot/pip/redis-5.0.8
+- Add missing steps
+- Closes #18
+- Merge pull request #19 from edwardtheharris/18-enable-execution-on-fresh-installs
+- Add missing steps
+- Closes #18
+- Fix errors
+- Closes #17
+- Fix errors
+- Closes #17
+- Merge pull request #20 from edwardtheharris/17-add-badges
+- 17 add badges
+- Closes #17
+- Merge branch 'main' of
+- Edwardtheharris/ansible-kcp into 17-add-badges
+- Closes #17
+- Fix index
+- Closes #17
+- Add the badges
+- Closes #17
+- Merge pull request #21 from edwardtheharris/17-add-badges
+- 17 add badges
+- Closes #17
+- Merge branch 'main' into 17-add-badges
+- Merge pull request #22 from edwardtheharris/17-add-badges
+- Fix index
+- Closes #17
+- Bump ansible-navigator from 24.7.0 to 24.8.0
+- Bumps [ansible-navigator](https://github.com/ansible/ansible-navigator) from 24.7.0 to 24.8.0.
+- - [Release notes](https://github.com/ansible/ansible-navigator/releases)
+- - [Changelog](https://github.com/ansible/ansible-navigator/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/ansible/ansible-navigator/compare/v24.7.0...v24.8.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible-navigator
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #25 from edwardtheharris/dependabot/pip/ansible-navigator-24.8.0
+- Bump ansible from 10.2.0 to 10.3.0
+- Bumps [ansible](https://github.com/ansible-community/ansible-build-data) from 10.2.0 to 10.3.0.
+- - [Changelog](https://github.com/ansible-community/ansible-build-data/blob/main/docs/release-process.md)
+- - [Commits](https://github.com/ansible-community/ansible-build-data/compare/10.2.0...10.3.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #23 from edwardtheharris/dependabot/pip/ansible-10.3.0
+- Bump ansible from 10.2.0 to 10.3.0
+- Bump molecule from 24.7.0 to 24.8.0
+- Bumps [molecule](https://github.com/ansible-community/molecule) from 24.7.0 to 24.8.0.
+- - [Release notes](https://github.com/ansible-community/molecule/releases)
+- - [Commits](https://github.com/ansible-community/molecule/compare/v24.7.0...v24.8.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: molecule
+-   dependency-type: direct:development
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #24 from edwardtheharris/dependabot/pip/molecule-24.8.0
+- Bump molecule from 24.7.0 to 24.8.0
+- Bump ansible-creator from 24.7.1 to 24.8.0
+- Bumps [ansible-creator](https://github.com/ansible/ansible-creator) from 24.7.1 to 24.8.0.
+- - [Release notes](https://github.com/ansible/ansible-creator/releases)
+- - [Changelog](https://github.com/ansible/ansible-creator/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/ansible/ansible-creator/compare/v24.7.1...v24.8.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible-creator
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #26 from edwardtheharris/dependabot/pip/ansible-creator-24.8.0
+- Bump ansible-creator from 24.7.1 to 24.8.0
+- Drop host file
+- Closes #27
+- Merge pull request #28 from edwardtheharris/27-dont-create-hosts-file
+- Drop host file
+- Closes #27
+- Bump cryptography from 43.0.0 to 43.0.1 in the pip group
+- Bumps the pip group with 1 update: [cryptography](https://github.com/pyca/cryptography).
+- Updates `cryptography` from 43.0.0 to 43.0.1
+- - [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)
+- - [Commits](https://github.com/pyca/cryptography/compare/43.0.0...43.0.1)
+- ---
+- Updated-dependencies:
+- - dependency-name: cryptography
+-   dependency-type: indirect
+-   dependency-group: pip
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #29 from edwardtheharris/dependabot/pip/pip-18e15a66a3
+- Bump cryptography from 43.0.0 to 43.0.1 in the pip group
+- Add reflog to ignore
+- Closes #30
+- Merge pull request #31 from edwardtheharris/30-fix-reflog-in-ignore
+- Add reflog to ignore
+- Closes #31
+<!-- generated by git-cliff -->

@@ -1,6 +1,7 @@
 _build/
 .gnupg
 .secret/
+.ansible/
 .venv/
 .vscode/
 *.xcf
