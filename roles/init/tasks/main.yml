@@ -32,8 +32,8 @@
     state: absent
 - name: Generate a boostrap token
   ansible.builtin.shell:
-    cmd: kubeadm token generate
-  register: token_out
+    cmd: kubeadm token generate > init.token
+  creates: init.token
 - name: Template token init config
   ansible.builtin.template:
     src: init.yaml
@@ -80,8 +80,8 @@
   loop:
     - path: /root/.kube/config
       owner: root
-    - path: "/home/{{ kcp_nonroot }}/.kube/config"
-      owner: "{{ kcp_nonroot }}"
+    - path: "/home/{{ init_kcp_nonroot }}/.kube/config"
+      owner: "{{ init_kcp_nonroot }}"
 # - name: Copy admin conf to local
 #   ansible.builtin.shell:
 #     cmd: "scp {{ scp_cfg_src }} {{ item }}"

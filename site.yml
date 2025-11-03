@@ -31,10 +31,6 @@
     - role: join
       tags:
         - join
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 # - name: Deploy Calico CNI
 #   hosts: local
 #   roles:
