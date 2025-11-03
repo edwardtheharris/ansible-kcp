@@ -70,6 +70,8 @@ jobs:
         uses: EnricoMi/publish-unit-test-result-action@v2
         if: always()
         with:
+          comment_title: MarkdownLint Results
+          check_name: markdownlint
           files: markdownlint-cli2-junit.xml
   ###
   # ```{rubric} Build GitHub Pages Site
@@ -84,7 +86,7 @@ jobs:
   # ```
   build:
     needs: markdownlint
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     permissions:
       pages: write
       id-token: write
@@ -126,7 +128,7 @@ jobs:
   # ```
   pages:
     needs: build
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
