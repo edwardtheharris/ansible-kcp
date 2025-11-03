@@ -3,6 +3,7 @@ _build/
 .ansible/
 .gnupg
 .secret/
+.ansible/
 .venv/
 .vscode/
 _build/
