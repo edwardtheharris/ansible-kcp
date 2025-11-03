@@ -47,3 +47,5 @@ jobs:
         ###
         # or version tag instead of 'main'
         uses: ansible/ansible-lint@main
+        with:
+          setup_python: "true"
