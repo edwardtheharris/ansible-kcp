@@ -33,7 +33,7 @@
 - name: Generate a boostrap token
   ansible.builtin.shell:
     cmd: kubeadm token generate > init.token
-  creates: init.token
+    creates: init.token
 - name: Template token init config
   ansible.builtin.template:
     src: init.yaml
