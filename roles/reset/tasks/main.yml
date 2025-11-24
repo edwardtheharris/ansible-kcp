@@ -1,19 +1,19 @@
 ---
-  ###
-  # ```{rubric} Reset an existing cluster
-  # ```
-  # ---
-  # This playbook runs `kubeadm reset -f`{l=shell} on a control plane node.
-  #
-  # ```{literalinclude} /roles/reset/tasks/main.yml
-  # :language: yaml
-  # :start-at: "- name: Reset existing cluster\n"
-  # :end-at: "  register: reset_out\n"
-  # ```
+###
+# ```{rubric} Reset an existing cluster
+# ```
+# ---
+# This playbook runs `kubeadm reset -f`{l=shell} on a control plane node.
+#
+# ```{literalinclude} /roles/reset/tasks/main.yml
+# :language: yaml
+# :start-at: "- name: Reset existing cluster\n"
+# :end-at: "  register: reset_out\n"
+# ```
 - name: Ensure required programs
   community.general.pacman:
     executable: yay
-    extra_args: '--noconfirm'
+    extra_args: "--noconfirm"
     name: "{{ item }}"
     state: present
   loop:
@@ -21,9 +21,11 @@
     - kubelet
     - kubectl
     - kubie
+  become: true
+  become_user: "{{ nonroot_user }}"
 - name: Make sure the kube group exists
   ansible.builtin.group:
-    name: kube
+    name: "{{ reset_group }}"
     state: present
 - name: Add required users to group
   ansible.builtin.user:
@@ -32,7 +34,7 @@
     append: true
   loop:
     - root
-    - "{{ nonroot_user }}"
+    - "{{ reset_nonroot_user }}"
 - name: Reset existing cluster
   ansible.builtin.command:
     cmd: kubeadm reset -f &> /root/reset.md
@@ -49,18 +51,17 @@
     owner: root
     group: root
     mode: u+rwx,go-rwx
-
-  ###
-  # ```{rubric} Show and record output
-  # ```
-  # ---
-  # These tasks display the output from the command above, then write them to
-  # disk in a temporary location.
-  #
-  # ```{literalinclude} /roles/reset/tasks/main.yml
-  # :language: yaml
-  # :start-at: "- name: Show output\n"
-  # ```
+    ###
+    # ```{rubric} Show and record output
+    # ```
+    # ---
+    # These tasks display the output from the command above, then write them to
+    # disk in a temporary location.
+    #
+    # ```{literalinclude} /roles/reset/tasks/main.yml
+    # :language: yaml
+    # :start-at: "- name: Show output\n"
+    # ```
 - name: Show output
   ansible.builtin.debug:
     var: reset_out

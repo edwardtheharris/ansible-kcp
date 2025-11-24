@@ -30,10 +30,10 @@ jobs:
           python-version: 3.12
       - name: Install requirements
         run: |
-          python3 -m venv .venv
+          python3.12 -m venv .venv
           .venv/bin/pip3 install pipenv
           .venv/bin/pipenv requirements --dev > reqs
-          python3 -m pip install -r reqs
+          python3.12 -m pip install -r reqs
           ansible-galaxy collection install community.crypto
           ansible-galaxy collection install community.general
       - name: Make ansible directory
@@ -47,3 +47,5 @@ jobs:
         ###
         # or version tag instead of 'main'
         uses: ansible/ansible-lint@main
+        with:
+          setup_python: "true"
