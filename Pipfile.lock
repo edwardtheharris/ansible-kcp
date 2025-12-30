@@ -2312,12 +2312,12 @@
         },
         "sphinxemoji": {
             "hashes": [
-                "sha256:23ecff1f1e765393e49083b45386b7da81ced97c9a18a1dfd191460a97da3b11",
-                "sha256:dae483695f8d1e90a28a6e9bbccc08d256202afcc1d0fbd33b51b3b4352d439e"
+                "sha256:0fb07a95bca5960a3b312bc05b65b0c3040456414a076c363f4ecaf546c6e09e",
+                "sha256:814da89a9a7603b7e4d85c487c7381656fa83632f20065e5ed782ab1dbbb5083"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.9'",
-            "version": "==0.3.1"
+            "version": "==0.3.2"
         },
         "sphinxext-opengraph": {
             "hashes": [
