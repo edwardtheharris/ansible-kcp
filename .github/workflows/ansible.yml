@@ -27,13 +27,13 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@main
         with:
-          python-version: 3.12
+          python-version: 3.14
       - name: Install requirements
         run: |
-          python3.12 -m venv .venv
-          .venv/bin/pip3.12 install pipenv
+          python3.14 -m venv .venv
+          .venv/bin/pip3.14 install pipenv
           .venv/bin/pipenv requirements --dev > reqs
-          python3.12 -m pip install -r reqs
+          python3.14 -m pip install -r reqs
           ansible-galaxy collection install community.crypto
           ansible-galaxy collection install community.general
       - name: Make ansible directory
