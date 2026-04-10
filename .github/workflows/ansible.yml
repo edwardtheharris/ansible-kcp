@@ -27,22 +27,23 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@main
         with:
-          python-version: 3.12
-      - name: Install requirements
-        run: |
-          python3.12 -m venv .venv
-          .venv/bin/pip3.12 install pipenv
-          .venv/bin/pipenv requirements --dev > reqs
-          python3.12 -m pip install -r reqs
-          ansible-galaxy collection install community.crypto
-          ansible-galaxy collection install community.general
+          python-version: 3.14
+      - name: Add virtualenv
+        run: python3.14 -m venv .pipenv
+      - name: Install pipenv
+        run: .pipenv/bin/pip3.14 install -v pipenv
+      - name: Install requirements from pipenv
+        run: .pipenv/bin/pipenv install --dev
+      - name: Install community.crypto
+        run: .pipenv/bin/pipenv run -v ansible-galaxy collection install community.crypto
+      - name: Install community.general
+        run: .pipenv/bin/pipenv run -v ansible-galaxy collection install community.general
       - name: Make ansible directory
-        run: |
-          sudo mkdir -pv /etc/ansible
-          SUSER=$(whoami)
-          sudo chown ${SUSER} /etc/ansible
-          touch /etc/ansible/vault
-          echo "Pass" > /etc/ansible/vault
+        run: sudo mkdir -pv /etc/ansible
+      - name: Update ansible dir ownership
+        run: SUSER=$(whoami) sudo chown ${SUSER} /etc/ansible
+      - name: Add a vault file
+        run: echo "Pass" > /etc/ansible/vault
       - name: Run ansible-lint
         ###
         # or version tag instead of 'main'
