@@ -41,7 +41,7 @@ jobs:
       - name: Make ansible directory
         run: sudo mkdir -pv /etc/ansible
       - name: Update ansible dir ownership
-        run: SUSER=$(whoami) sudo chown ${SUSER} /etc/ansible
+        run: sudo chown ${USER} /etc/ansible
       - name: Add a vault file
         run: echo "Pass" > /etc/ansible/vault
       - name: Run ansible-lint
