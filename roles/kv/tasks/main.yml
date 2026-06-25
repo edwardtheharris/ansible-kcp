@@ -40,7 +40,6 @@
     owner: root
     group: root
     mode: ug+rw,o-rwx
-
 # - name: Deploy the manifest
 #   ansible.builtin.template:
 #     src: kube-vip.yaml

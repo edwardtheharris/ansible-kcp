@@ -8,14 +8,14 @@
 # :language: yaml
 # ```
 - name: Reset Kubernetes Control Planes
-  hosts: thw
+  hosts: thw00
   become: true
   roles:
     - role: reset
       tags:
         - reset
 - name: Initialize the first control plane
-  hosts: thw
+  hosts: thw00
   become: true
   roles:
     - role: kv
