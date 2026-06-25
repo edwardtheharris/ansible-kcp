@@ -1,4 +1,3 @@
----
 ###
 # ```{rubric} The main site deployment
 # ```
@@ -9,14 +8,14 @@
 # :language: yaml
 # ```
 - name: Reset Kubernetes Control Planes
-  hosts: kcp
+  hosts: thw
   become: true
   roles:
     - role: reset
       tags:
         - reset
 - name: Initialize the first control plane
-  hosts: kcp01_init
+  hosts: thw
   become: true
   roles:
     - role: kv
@@ -26,15 +25,15 @@
       tags:
         - init
 - name: Join the secondary and tertiary control planes
-  hosts: kcp_join
+  hosts: thw-nodes
   become: true
   roles:
     - role: join
       tags:
         - join
-- name: Deploy Calico CNI
-  hosts: local
-  roles:
-    - role: calico
-      tags:
-        - calico
+# - name: Deploy Calico CNI
+#   hosts: local
+#   roles:
+#     - role: calico
+#       tags:
+#         - calico

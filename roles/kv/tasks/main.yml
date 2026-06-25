@@ -1,4 +1,23 @@
----
+- name: Add group
+  ansible.builtin.group:
+    name: kube
+    state: present
+- name: Add user
+  ansible.builtin.user:
+    state: present
+    name: kube
+    home: /etc/kubernetes
+    create_home: true
+    group: kube
+- name: Update user groups
+  ansible.builtin.user:
+    state: present
+    groups: kube
+    append: true
+    user: "{{ item }}"
+  loop:
+    - root
+    - duchess
 - name: Ensure manifests directory
   ansible.builtin.file:
     state: directory
@@ -21,10 +40,11 @@
     owner: root
     group: root
     mode: ug+rw,o-rwx
-- name: Deploy the manifest
-  ansible.builtin.template:
-    src: kube-vip.yaml
-    dest: /etc/kubernetes/manifests/kube-vip.yaml
-    owner: kube
-    group: kube
-    mode: ug+rw,g-rwx
+
+# - name: Deploy the manifest
+#   ansible.builtin.template:
+#     src: kube-vip.yaml
+#     dest: /etc/kubernetes/manifests/kube-vip.yaml
+#     owner: kube
+#     group: kube
+#     mode: ug+rw,g-rwx

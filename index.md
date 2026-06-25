@@ -46,6 +46,7 @@ digraph roles {
 :maxdepth: 3
 
 .github/index
+changelog
 license
 readme
 security
