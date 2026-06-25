@@ -94,7 +94,7 @@ jobs:
       - uses: actions/checkout@main
       - uses: actions/setup-python@main
         with:
-          python-version: 3.12
+          python-version: 3.14
       - name: Setup pages
         uses: actions/configure-pages@main
       - name: Prep environments
@@ -115,7 +115,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@main
         with:
-          path: './deploy'
+          path: "./deploy"
   ###
   # ```{rubric} Deploy the Pages site
   # ```
