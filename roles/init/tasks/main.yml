@@ -9,15 +9,6 @@
 # :start-at: "- name: Create kube group\n"
 # :end-at: "    mode: ugo+rw\n"
 # ```
-- name: Create kube group
-  ansible.builtin.group:
-    name: kube
-    state: present
-- name: Create kube user
-  ansible.builtin.user:
-    name: kube
-    group: kube
-    state: present
 - name: Create kubeadm directory
   ansible.builtin.file:
     state: directory
@@ -33,14 +24,15 @@
 - name: Generate a boostrap token
   ansible.builtin.shell:
     cmd: kubeadm token generate > init.token
-    creates: init.token
+    creates: /etc/kubeadm/init.token
+    chdir: /etc/kubeadm
   register: token_out
 - name: Template token init config
   ansible.builtin.template:
     src: init.yaml
     dest: /etc/kubeadm/init.yaml
-    owner: kube
-    group: kube
+    owner: root
+    group: root
     mode: ugo+rw
     ###
     # ```{rubric} Init 1

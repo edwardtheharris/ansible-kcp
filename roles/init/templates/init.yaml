@@ -9,7 +9,7 @@ bootstrapTokens:
     - authentication
 kind: InitConfiguration
 localAPIEndpoint:
-  advertiseAddress: {{ ansible_host }}
+  advertiseAddress: {{ kcp_advertise_address }}
   bindPort: 8443
 nodeRegistration:
   criSocket: unix:///var/run/containerd/containerd.sock
@@ -18,7 +18,7 @@ nodeRegistration:
   taints: null
 ---
 apiServer:
-  certSANs: {{ kcp_certsans }}
+  certSANs: {{ kcp_cert_sans }}
   timeoutForControlPlane: 4m0s
 apiVersion: kubeadm.k8s.io/v1beta3
 certificatesDir: /etc/kubernetes/pki
@@ -26,12 +26,12 @@ clusterName: breeze-blocks
 controllerManager: {}
 controlPlaneEndpoint: {{ kcp_control_plane_endpoint }}
 dns: {}
-# etcd:
-#   local:
-#     dataDir: /var/lib/etcd
+etcd:
+  local:
+    dataDir: /var/lib/etcd
 imageRepository: registry.k8s.io
 kind: ClusterConfiguration
-kubernetesVersion: 1.31.1
+kubernetesVersion: {{ kcp_kube_version }}
 networking:
   dnsDomain: cluster.local
   podSubnet: 10.128.0.0/12

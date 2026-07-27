@@ -1,2 +1,7 @@
 ---
 init_kcp_nonroot: string
+init_advertise_address: string
+init_cert_sans: list
+init_cluster_name: string
+init_control_plane_endpoint: string
+init_kube_version: string

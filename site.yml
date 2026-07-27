@@ -18,12 +18,16 @@
   hosts: thw00
   become: true
   roles:
-    - role: kv
-      tags:
-        - kv
     - role: init
       tags:
         - init
+      vars:
+        init_advertise_address: "{{  kcp_advertise_address }}"
+        init_cert_sans: "{{  kcp_certs_sans }}"
+        init_cluster_name: "{{  kcp_cluster_name }}"
+        init_control_plane_endpoint: "{{  kcp_control_plane_endpoint }}"
+        init_kube_version: "{{  kcp_kube_version }}"
+        init_kcp_nonroot: "{{ kcp_nonroot }}"
 - name: Join the secondary and tertiary control planes
   hosts: thw-nodes
   become: true
