@@ -8,7 +8,7 @@
 # :language: yaml
 # ```
 - name: Reset Kubernetes Control Planes
-  hosts: thw00
+  hosts: kcp
   become: true
   roles:
     - role: reset
