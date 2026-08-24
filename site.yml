@@ -15,7 +15,7 @@
       tags:
         - reset
 - name: Initialize the first control plane
-  hosts: thw00
+  hosts: thw00a,cms00a
   become: true
   roles:
     - role: init
@@ -29,7 +29,7 @@
         init_kube_version: "{{  kcp_kube_version }}"
         init_kcp_nonroot: "{{ kcp_nonroot }}"
 - name: Join the secondary and tertiary control planes
-  hosts: thw-nodes
+  hosts: thw00b,cms00b
   become: true
   roles:
     - role: join
