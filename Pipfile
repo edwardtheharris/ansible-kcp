@@ -15,6 +15,7 @@ pip = "*"
 pipenv = "*"
 pre-commit = "*"
 redis = "*"
+python-version = "*"
 
 [dev-packages]
 molecule = "*"
