@@ -1,0 +1,3 @@
+---
+reset_nonroot_user: string
+reset_group: string

@@ -1,0 +1,3 @@
+---
+reset_nonroot_user: kube
+reset_group: kube
