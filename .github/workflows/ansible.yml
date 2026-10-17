@@ -31,7 +31,7 @@ jobs:
       - name: Install pipenv
         run: python3.14 -m pip install -U pip pipenv
       - name: Get reqs
-        run: pipenv requirements > reqs
+        run: pipenv requirements --dev > reqs
       - name: Install reqs
         run: pip install -U reqs
       - name: Add virtualenv

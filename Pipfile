@@ -16,7 +16,6 @@ pre-commit = "*"
 
 [dev-packages]
 molecule = "*"
-myst-parser = {extras = ["linkify"], version = "*"}
 pytest = "*"
 pytest-cov = "*"
 sphinx = "*"
@@ -29,3 +28,4 @@ sphinx-git = "*"
 sphinx-last-updated-by-git = "*"
 sphinxemoji = "*"
 version-query = "*"
+myst-parser = {extras = ["linkify"], version = "*"}
