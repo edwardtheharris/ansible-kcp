@@ -38,10 +38,7 @@ exclude_patterns = [
     ".gnupg/*",
     ".pytest_cache/*",
     ".tox/*",
-<<<<<<< Updated upstream
-=======
     ".sphinx/*",
->>>>>>> Stashed changes
     ".venv/*",
 ]
 extensions = [
