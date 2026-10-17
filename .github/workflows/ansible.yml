@@ -28,17 +28,13 @@ jobs:
         uses: actions/setup-python@main
         with:
           python-version: 3.14
-      - name: Add virtualenv
-        run: python3.14 -m venv .pipenv
       - name: Install pipenv
-        run: .pipenv/bin/pip3.14 install -v pipenv
-      - name: Install requirements from pipenv
-        run: .pipenv/bin/pipenv install --dev
-      - name: Install community.crypto
-        run: .pipenv/bin/pipenv run -v ansible-galaxy collection install community.crypto
-      - name: Install community.general
-        run: .pipenv/bin/pipenv run -v ansible-galaxy collection install community.general
-      - name: Make ansible directory
+        run: python3.14 -m pip install -U pip pipenv
+      - name: Get reqs
+        run: pipenv requirements --dev > reqs
+      - name: Install reqs
+        run: pip install -U reqs
+      - name: Add virtualenv
         run: sudo mkdir -pv /etc/ansible
       - name: Update ansible dir ownership
         run: sudo chown ${USER} /etc/ansible
@@ -48,3 +44,5 @@ jobs:
         ###
         # or version tag instead of 'main'
         uses: ansible/ansible-lint@main
+        with:
+          setup_python: "true"

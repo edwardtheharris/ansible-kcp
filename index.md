@@ -1,10 +1,10 @@
 ---
 abstract: >-
-   This is a set of roles that will initialize a primary control plane,
-   then join secondary and tertiary control planes to a HA k8s cluster.
+  This is a set of roles that will initialize a primary control plane,
+  then join secondary and tertiary control planes to a HA k8s cluster.
 authors:
-   - name: Xander Harris
-     email: xandertheharris@gmail.com
+  - name: Xander Harris
+    email: xandertheharris@gmail.com
 date: 2024-03-08
 title: Ansible Bare Metal HA K8S
 ---
@@ -17,9 +17,11 @@ title: Ansible Bare Metal HA K8S
 ## Playbook
 
 ```{rubric} site.yml
+
 ```
 
 ```{literalinclude} ./site.yml
+
 ```
 
 ### Roles
@@ -32,6 +34,7 @@ roles/index
 ```
 
 ```{index} ansible; roles
+
 ```
 
 ```{graphviz}
@@ -46,12 +49,13 @@ digraph roles {
 :maxdepth: 3
 
 .github/index
+changelog
 license
 readme
-security
 ```
 
 ```{index} metadata; repository
+
 ```
 
 ## References

@@ -11,6 +11,7 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html#project-informatio
 -- General configuration ---------------------------------------------------
 https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 """
+
 import sys
 from pathlib import Path
 import version_query
@@ -18,8 +19,9 @@ import version_query
 
 def get_version():
     """Get the next expected semantic version for this project."""
-    version = version_query.Version.from_str('0.0.1')
+    version = version_query.Version.from_str("0.0.1")
     return version.to_str()
+
 
 sys.path.append(str(Path("ansible/files").resolve()))
 sys.path.append(str(Path("ansible/files/githooks").resolve()))
@@ -29,14 +31,15 @@ autoyaml_root = "."
 autoyaml_safe_loader = False
 copyright = "2024, Xander Harris"
 exclude_patterns = [
-    '_build',
-    'Thumbs.db',
-    'roles/join/files/*',
-    '.DS_Store',
-    '.gnupg/*',
-    '.pytest_cache/*',
-    '.tox/*',
-    '.venv/*',
+    "_build",
+    "Thumbs.db",
+    "roles/join/files/*",
+    ".DS_Store",
+    ".gnupg/*",
+    ".pytest_cache/*",
+    ".tox/*",
+    ".sphinx/*",
+    ".venv/*",
 ]
 extensions = [
     "myst_parser",
@@ -50,7 +53,6 @@ extensions = [
     "sphinx.ext.githubpages",
     "sphinx.ext.graphviz",
     "sphinx.ext.todo",
-    "sphinxcontrib.autoyaml",
 ]
 git_untracked_check_dependencies = False
 graphviz_output_format = "png"
@@ -81,9 +83,5 @@ myst_title_to_header = True
 project = "Ansible K8S Control Plane"
 release = get_version()
 show_authors = True
-source_suffix = {
-    '.md': 'markdown',
-    '.rst': 'restructuredtext',
-    '.txt': 'markdown'
-}
+source_suffix = {".md": "markdown", ".rst": "restructuredtext", ".txt": "markdown"}
 templates_path = ["_templates"]
