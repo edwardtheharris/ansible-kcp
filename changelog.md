@@ -1,0 +1,2410 @@
+---
+abstract: All notable changes to this project will be documented in this file.
+authors:
+- name: Xander Harris
+email: xandertheharris@gmail.com
+date: 2025-09-07
+title: Breeze Blocks Ansible Kubernetes Control Plane
+---
+
+<!--markdownlint-disable-->
+## [unreleased]
+
+
+### 🐛 Bug Fixes - [unreleased]
+
+
+- Update reset role
+- Update spaces
+
+
+### 💼 Other - [unreleased]
+
+
+- Bump ansible-creator from 24.8.0 to 24.9.0
+- Bumps [ansible-creator](https://github.com/ansible/ansible-creator) from 24.8.0 to 24.9.0.
+- - [Release notes](https://github.com/ansible/ansible-creator/releases)
+- - [Changelog](https://github.com/ansible/ansible-creator/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/ansible/ansible-creator/compare/v24.8.0...v24.9.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible-creator
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #32 from edwardtheharris/dependabot/pip/ansible-creator-24.9.0
+- Bump ansible-creator from 24.8.0 to 24.9.0
+- Bump pipenv from 2024.0.1 to 2024.0.3
+- Bumps [pipenv](https://github.com/pypa/pipenv) from 2024.0.1 to 2024.0.3.
+- - [Release notes](https://github.com/pypa/pipenv/releases)
+- - [Changelog](https://github.com/pypa/pipenv/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/pypa/pipenv/compare/v2024.0.1...v2024.0.3)
+- ---
+- Updated-dependencies:
+- - dependency-name: pipenv
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #38 from edwardtheharris/dependabot/pip/pipenv-2024.0.3
+- Bump pipenv from 2024.0.1 to 2024.0.3
+- Bump ansible from 10.3.0 to 10.4.0
+- Bumps [ansible](https://github.com/ansible-community/ansible-build-data) from 10.3.0 to 10.4.0.
+- - [Changelog](https://github.com/ansible-community/ansible-build-data/blob/main/docs/release-process.md)
+- - [Commits](https://github.com/ansible-community/ansible-build-data/compare/10.3.0...10.4.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Bump pytest from 8.3.2 to 8.3.3
+- Bumps [pytest](https://github.com/pytest-dev/pytest) from 8.3.2 to 8.3.3.
+- - [Release notes](https://github.com/pytest-dev/pytest/releases)
+- - [Changelog](https://github.com/pytest-dev/pytest/blob/main/CHANGELOG.rst)
+- - [Commits](https://github.com/pytest-dev/pytest/compare/8.3.2...8.3.3)
+- ---
+- Updated-dependencies:
+- - dependency-name: pytest
+-   dependency-type: direct:development
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #37 from edwardtheharris/dependabot/pip/pytest-8.3.3
+- Bump pytest from 8.3.2 to 8.3.3
+- Merge branch 'main' into dependabot/pip/ansible-10.4.0
+- Merge pull request #35 from edwardtheharris/dependabot/pip/ansible-10.4.0
+- Bump ansible from 10.3.0 to 10.4.0
+- Bump ansible-navigator from 24.8.0 to 24.9.0
+- Bumps [ansible-navigator](https://github.com/ansible/ansible-navigator) from 24.8.0 to 24.9.0.
+- - [Release notes](https://github.com/ansible/ansible-navigator/releases)
+- - [Changelog](https://github.com/ansible/ansible-navigator/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/ansible/ansible-navigator/compare/v24.8.0...v24.9.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible-navigator
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #36 from edwardtheharris/dependabot/pip/ansible-navigator-24.9.0
+- Bump ansible-navigator from 24.8.0 to 24.9.0
+- Bump ansible-creator from 24.9.0 to 24.10.0
+- Bumps [ansible-creator](https://github.com/ansible/ansible-creator) from 24.9.0 to 24.10.0.
+- - [Release notes](https://github.com/ansible/ansible-creator/releases)
+- - [Changelog](https://github.com/ansible/ansible-creator/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/ansible/ansible-creator/compare/v24.9.0...v24.10.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible-creator
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #43 from edwardtheharris/dependabot/pip/ansible-creator-24.10.0
+- Bump ansible-creator from 24.9.0 to 24.10.0
+- Bump redis from 5.0.8 to 5.1.1
+- Bumps [redis](https://github.com/redis/redis-py) from 5.0.8 to 5.1.1.
+- - [Release notes](https://github.com/redis/redis-py/releases)
+- - [Changelog](https://github.com/redis/redis-py/blob/master/CHANGES)
+- - [Commits](https://github.com/redis/redis-py/compare/v5.0.8...v5.1.1)
+- ---
+- Updated-dependencies:
+- - dependency-name: redis
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #42 from edwardtheharris/dependabot/pip/redis-5.1.1
+- Bump redis from 5.0.8 to 5.1.1
+- Bump ansible-lint from 24.7.0 to 24.9.2
+- Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 24.7.0 to 24.9.2.
+- - [Release notes](https://github.com/ansible/ansible-lint/releases)
+- - [Commits](https://github.com/ansible/ansible-lint/compare/v24.7.0...v24.9.2)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible-lint
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Enable automerge for dependabot
+- Closes #44
+- Merge pull request #45 from edwardtheharris/44-enable-dependabot-auto-merge
+- Enable automerge for dependabot
+- Closes #44
+- Merge branch 'main' into dependabot/pip/ansible-lint-24.9.2
+- Bump pipenv from 2024.0.3 to 2024.1.0
+- Bumps [pipenv](https://github.com/pypa/pipenv) from 2024.0.3 to 2024.1.0.
+- - [Release notes](https://github.com/pypa/pipenv/releases)
+- - [Changelog](https://github.com/pypa/pipenv/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/pypa/pipenv/compare/v2024.0.3...v2024.1.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: pipenv
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge branch 'main' into dependabot/pip/pipenv-2024.1.0
+- Bump molecule from 24.8.0 to 24.9.0
+- Bumps [molecule](https://github.com/ansible-community/molecule) from 24.8.0 to 24.9.0.
+- - [Release notes](https://github.com/ansible-community/molecule/releases)
+- - [Commits](https://github.com/ansible-community/molecule/compare/v24.8.0...v24.9.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: molecule
+-   dependency-type: direct:development
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge branch 'main' into dependabot/pip/molecule-24.9.0
+- Merge branch 'main' into dependabot/pip/molecule-24.9.0
+- Merge pull request #34 from edwardtheharris/dependabot/pip/molecule-24.9.0
+- Bump molecule from 24.8.0 to 24.9.0
+- Merge branch 'main' into dependabot/pip/pipenv-2024.1.0
+- Merge pull request #40 from edwardtheharris/dependabot/pip/pipenv-2024.1.0
+- Bump pipenv from 2024.0.3 to 2024.1.0
+- Bump ansible-creator from 24.10.0 to 24.10.1
+- Bumps [ansible-creator](https://github.com/ansible/ansible-creator) from 24.10.0 to 24.10.1.
+- - [Release notes](https://github.com/ansible/ansible-creator/releases)
+- - [Changelog](https://github.com/ansible/ansible-creator/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/ansible/ansible-creator/compare/v24.10.0...v24.10.1)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible-creator
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Bump ansible from 10.4.0 to 10.5.0
+- Bumps [ansible](https://github.com/ansible-community/ansible-build-data) from 10.4.0 to 10.5.0.
+- - [Changelog](https://github.com/ansible-community/ansible-build-data/blob/main/docs/release-process.md)
+- - [Commits](https://github.com/ansible-community/ansible-build-data/compare/10.4.0...10.5.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge branch 'main' into dependabot/pip/ansible-10.5.0
+- Merge pull request #46 from edwardtheharris/dependabot/pip/ansible-10.5.0
+- Bump ansible from 10.4.0 to 10.5.0
+- Merge branch 'main' into dependabot/pip/ansible-creator-24.10.1
+- Merge pull request #47 from edwardtheharris/dependabot/pip/ansible-creator-24.10.1
+- Bump ansible-creator from 24.10.0 to 24.10.1
+- Merge branch 'main' into dependabot/pip/ansible-lint-24.9.2
+- Merge pull request #39 from edwardtheharris/dependabot/pip/ansible-lint-24.9.2
+- Bump ansible-lint from 24.7.0 to 24.9.2
+- Bump ansible-lint from 24.7.0 to 24.10.0
+- Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 24.7.0 to 24.10.0.
+- - [Release notes](https://github.com/ansible/ansible-lint/releases)
+- - [Commits](https://github.com/ansible/ansible-lint/compare/v24.7.0...v24.10.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible-lint
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #57 from edwardtheharris/dependabot/pip/ansible-lint-24.10.0
+- Bump pipenv from 2024.1.0 to 2024.4.0
+- Bumps [pipenv](https://github.com/pypa/pipenv) from 2024.1.0 to 2024.4.0.
+- - [Release notes](https://github.com/pypa/pipenv/releases)
+- - [Changelog](https://github.com/pypa/pipenv/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/pypa/pipenv/compare/v2024.1.0...v2024.4.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: pipenv
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #55 from edwardtheharris/dependabot/pip/pipenv-2024.4.0
+- Bump redis from 5.1.1 to 5.2.0
+- Bumps [redis](https://github.com/redis/redis-py) from 5.1.1 to 5.2.0.
+- - [Release notes](https://github.com/redis/redis-py/releases)
+- - [Changelog](https://github.com/redis/redis-py/blob/master/CHANGES)
+- - [Commits](https://github.com/redis/redis-py/compare/v5.1.1...v5.2.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: redis
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #51 from edwardtheharris/dependabot/pip/redis-5.2.0
+- Bump ansible-navigator from 24.9.0 to 25.1.0
+- Bumps [ansible-navigator](https://github.com/ansible/ansible-navigator) from 24.9.0 to 25.1.0.
+- - [Release notes](https://github.com/ansible/ansible-navigator/releases)
+- - [Changelog](https://github.com/ansible/ansible-navigator/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/ansible/ansible-navigator/compare/v24.9.0...v25.1.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible-navigator
+-   dependency-type: direct:production
+-   update-type: version-update:semver-major
+- ...
+- Dependabot[bot] <support@github.com>
+- Fix documentation workflow
+- Closes #73
+- Merge pull request #74 from edwardtheharris/73-fix-actions-workflow
+- Fix documentation workflow
+- Closes #73
+- Merge branch 'main' into dependabot/pip/ansible-navigator-25.1.0
+- Bump pytest-cov from 5.0.0 to 6.1.1
+- Bumps [pytest-cov](https://github.com/pytest-dev/pytest-cov) from 5.0.0 to 6.1.1.
+- - [Changelog](https://github.com/pytest-dev/pytest-cov/blob/master/CHANGELOG.rst)
+- - [Commits](https://github.com/pytest-dev/pytest-cov/compare/v5.0.0...v6.1.1)
+- ---
+- Updated-dependencies:
+- - dependency-name: pytest-cov
+-   dependency-version: 6.1.1
+-   dependency-type: direct:development
+-   update-type: version-update:semver-major
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge branch 'main' into dependabot/pip/pytest-cov-6.1.1
+- Merge pull request #72 from edwardtheharris/dependabot/pip/pytest-cov-6.1.1
+- Bump pytest-cov from 5.0.0 to 6.1.1
+- Merge branch 'main' into dependabot/pip/ansible-navigator-25.1.0
+- Bump ansible-core in the pip group across 1 directory
+- Bumps the pip group with 1 update in the / directory: [ansible-core](https://github.com/ansible/ansible).
+- Updates `ansible-core` from 2.17.4 to 2.18.0
+- - [Release notes](https://github.com/ansible/ansible/releases)
+- - [Commits](https://github.com/ansible/ansible/compare/v2.17.4...v2.18.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible-core
+-   dependency-type: indirect
+-   dependency-group: pip
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge branch 'main' into dependabot/pip/pip-890dbe54fa
+- Bump ansible from 10.5.0 to 11.3.0
+- Bumps [ansible](https://github.com/ansible-community/ansible-build-data) from 10.5.0 to 11.3.0.
+- - [Changelog](https://github.com/ansible-community/ansible-build-data/blob/main/docs/release-process.md)
+- - [Commits](https://github.com/ansible-community/ansible-build-data/compare/10.5.0...11.3.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible
+-   dependency-type: direct:production
+-   update-type: version-update:semver-major
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge branch 'main' into dependabot/pip/ansible-11.3.0
+- Merge branch 'main' into dependabot/pip/ansible-11.3.0
+- Merge pull request #71 from edwardtheharris/dependabot/pip/ansible-11.3.0
+- Bump ansible from 10.5.0 to 11.3.0
+- Merge branch 'main' of
+- Edwardtheharris/ansible-kcp
+- Into dependabot/pip/pip-890dbe54fa
+- Merge pull request #58 from edwardtheharris/dependabot/pip/pip-890dbe54fa
+- Bump ansible-core from 2.17.4 to 2.18.0 in the pip group across 1 directory
+- Merge branch 'main' of
+- Edwardtheharris/ansible-kcp into
+- Dependabot/pip/ansible-navigator-25.1.0
+- Bump ansible-lint from 24.7.0 to 25.1.3
+- Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 24.7.0 to 25.1.3.
+- - [Release notes](https://github.com/ansible/ansible-lint/releases)
+- - [Commits](https://github.com/ansible/ansible-lint/compare/v24.7.0...v25.1.3)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible-lint
+-   dependency-type: direct:production
+-   update-type: version-update:semver-major
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge branch 'main' into dependabot/pip/ansible-lint-25.1.3
+- Merge branch 'main' into dependabot/pip/ansible-lint-25.1.3
+- Merge branch 'main' of
+- Edwardtheharris/ansible-kcp
+- Into dependabot/pip/ansible-lint-25.1.3
+- Merge pull request #70 from edwardtheharris/dependabot/pip/ansible-lint-25.1.3
+- Bump ansible-lint from 24.7.0 to 25.1.3
+- Merge branch 'main' into dependabot/pip/ansible-navigator-25.1.0
+- Merge pull request #66 from edwardtheharris/dependabot/pip/ansible-navigator-25.1.0
+- Bump ansible-navigator from 24.9.0 to 25.1.0
+- Bump cryptography from 44.0.3 to 45.0.2
+- Bumps [cryptography](https://github.com/pyca/cryptography) from 44.0.3 to 45.0.2.
+- - [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)
+- - [Commits](https://github.com/pyca/cryptography/compare/44.0.3...45.0.2)
+- ---
+- Updated-dependencies:
+- - dependency-name: cryptography
+-   dependency-version: 45.0.2
+-   dependency-type: direct:production
+-   update-type: version-update:semver-major
+- ...
+- Dependabot[bot] <support@github.com>
+- Bump redis from 6.0.0 to 6.1.0
+- Bumps [redis](https://github.com/redis/redis-py) from 6.0.0 to 6.1.0.
+- - [Release notes](https://github.com/redis/redis-py/releases)
+- - [Changelog](https://github.com/redis/redis-py/blob/master/CHANGES)
+- - [Commits](https://github.com/redis/redis-py/compare/v6.0.0...v6.1.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: redis
+-   dependency-version: 6.1.0
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #75 from edwardtheharris/dependabot/pip/redis-6.1.0
+- Bump redis from 6.0.0 to 6.1.0
+- Merge branch 'main' into dependabot/pip/cryptography-45.0.2
+- Merge pull request #76 from edwardtheharris/dependabot/pip/cryptography-45.0.2
+- Bump cryptography from 44.0.3 to 45.0.2
+- Bump cryptography from 45.0.2 to 45.0.3
+- Bumps [cryptography](https://github.com/pyca/cryptography) from 45.0.2 to 45.0.3.
+- - [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)
+- - [Commits](https://github.com/pyca/cryptography/compare/45.0.2...45.0.3)
+- ---
+- Updated-dependencies:
+- - dependency-name: cryptography
+-   dependency-version: 45.0.3
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Bump pipenv from 2025.0.2 to 2025.0.3
+- Bumps [pipenv](https://github.com/pypa/pipenv) from 2025.0.2 to 2025.0.3.
+- - [Release notes](https://github.com/pypa/pipenv/releases)
+- - [Changelog](https://github.com/pypa/pipenv/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/pypa/pipenv/compare/v2025.0.2...v2025.0.3)
+- ---
+- Updated-dependencies:
+- - dependency-name: pipenv
+-   dependency-version: 2025.0.3
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #79 from edwardtheharris/dependabot/pip/pipenv-2025.0.3
+- Bump pipenv from 2025.0.2 to 2025.0.3
+- Merge branch 'main' into dependabot/pip/cryptography-45.0.3
+- Bump redis from 6.1.0 to 6.2.0
+- Bumps [redis](https://github.com/redis/redis-py) from 6.1.0 to 6.2.0.
+- - [Release notes](https://github.com/redis/redis-py/releases)
+- - [Changelog](https://github.com/redis/redis-py/blob/master/CHANGES)
+- - [Commits](https://github.com/redis/redis-py/compare/v6.1.0...v6.2.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: redis
+-   dependency-version: 6.2.0
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge branch 'main' into dependabot/pip/redis-6.2.0
+- Merge pull request #78 from edwardtheharris/dependabot/pip/redis-6.2.0
+- Bump redis from 6.1.0 to 6.2.0
+- Bump requests from 2.32.3 to 2.32.4 in the pip group
+- Bumps the pip group with 1 update: [requests](https://github.com/psf/requests).
+- Updates `requests` from 2.32.3 to 2.32.4
+- - [Release notes](https://github.com/psf/requests/releases)
+- - [Changelog](https://github.com/psf/requests/blob/main/HISTORY.md)
+- - [Commits](https://github.com/psf/requests/compare/v2.32.3...v2.32.4)
+- ---
+- Updated-dependencies:
+- - dependency-name: requests
+-   dependency-version: 2.32.4
+-   dependency-type: indirect
+-   dependency-group: pip
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #81 from edwardtheharris/dependabot/pip/pip-512858e340
+- Bump requests from 2.32.3 to 2.32.4 in the pip group
+- See #2
+- Bump pytest from 8.3.5 to 8.4.0
+- Bumps [pytest](https://github.com/pytest-dev/pytest) from 8.3.5 to 8.4.0.
+- - [Release notes](https://github.com/pytest-dev/pytest/releases)
+- - [Changelog](https://github.com/pytest-dev/pytest/blob/main/CHANGELOG.rst)
+- - [Commits](https://github.com/pytest-dev/pytest/compare/8.3.5...8.4.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: pytest
+-   dependency-version: 8.4.0
+-   dependency-type: direct:development
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #80 from edwardtheharris/dependabot/pip/pytest-8.4.0
+- Bump pytest from 8.3.5 to 8.4.0
+- See #3
+- Merge branch 'main' into dependabot/pip/cryptography-45.0.3
+- Merge pull request #77 from edwardtheharris/dependabot/pip/cryptography-45.0.3
+- Bump cryptography from 45.0.2 to 45.0.3
+- Bump urllib3 from 2.4.0 to 2.5.0 in the pip group
+- Bumps the pip group with 1 update: [urllib3](https://github.com/urllib3/urllib3).
+- Updates `urllib3` from 2.4.0 to 2.5.0
+- - [Release notes](https://github.com/urllib3/urllib3/releases)
+- - [Changelog](https://github.com/urllib3/urllib3/blob/main/CHANGES.rst)
+- - [Commits](https://github.com/urllib3/urllib3/compare/2.4.0...2.5.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: urllib3
+-   dependency-version: 2.5.0
+-   dependency-type: indirect
+-   dependency-group: pip
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #84 from edwardtheharris/dependabot/pip/pip-2c7469b053
+- Bump urllib3 from 2.4.0 to 2.5.0 in the pip group
+- Bump pytest-cov from 6.1.1 to 6.2.1
+- Bumps [pytest-cov](https://github.com/pytest-dev/pytest-cov) from 6.1.1 to 6.2.1.
+- - [Changelog](https://github.com/pytest-dev/pytest-cov/blob/master/CHANGELOG.rst)
+- - [Commits](https://github.com/pytest-dev/pytest-cov/compare/v6.1.1...v6.2.1)
+- ---
+- Updated-dependencies:
+- - dependency-name: pytest-cov
+-   dependency-version: 6.2.1
+-   dependency-type: direct:development
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Bump cryptography from 45.0.3 to 45.0.4
+- Bumps [cryptography](https://github.com/pyca/cryptography) from 45.0.3 to 45.0.4.
+- - [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)
+- - [Commits](https://github.com/pyca/cryptography/compare/45.0.3...45.0.4)
+- ---
+- Updated-dependencies:
+- - dependency-name: cryptography
+-   dependency-version: 45.0.4
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #83 from edwardtheharris/dependabot/pip/cryptography-45.0.4
+- Bump cryptography from 45.0.3 to 45.0.4
+- Closes #85
+- Merge branch 'main' into dependabot/pip/pytest-cov-6.2.1
+- Merge pull request #82 from edwardtheharris/dependabot/pip/pytest-cov-6.2.1
+- Bump pytest-cov from 6.1.1 to 6.2.1
+- Closes #86
+- Bump cryptography from 45.0.4 to 45.0.5
+- Bumps [cryptography](https://github.com/pyca/cryptography) from 45.0.4 to 45.0.5.
+- - [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)
+- - [Commits](https://github.com/pyca/cryptography/compare/45.0.4...45.0.5)
+- ---
+- Updated-dependencies:
+- - dependency-name: cryptography
+-   dependency-version: 45.0.5
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #87 from edwardtheharris/dependabot/pip/cryptography-45.0.5
+- Bump cryptography from 45.0.4 to 45.0.5
+- Closes #88
+- Bump pipenv from 2025.0.3 to 2025.0.4
+- Bumps [pipenv](https://github.com/pypa/pipenv) from 2025.0.3 to 2025.0.4.
+- - [Release notes](https://github.com/pypa/pipenv/releases)
+- - [Changelog](https://github.com/pypa/pipenv/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/pypa/pipenv/compare/v2025.0.3...v2025.0.4)
+- ---
+- Updated-dependencies:
+- - dependency-name: pipenv
+-   dependency-version: 2025.0.4
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Add dependencies
+- Closes #90
+- Update lint rules
+- Closes #90
+- Drop unused workflows
+- Closes #90
+- Merge pull request #89 from edwardtheharris/dependabot/pip/pipenv-2025.0.4
+- Bump pipenv from 2025.0.3 to 2025.0.4
+- Closes #90
+- Bump gitpython from 3.1.44 to 3.1.45
+- Bumps [gitpython](https://github.com/gitpython-developers/GitPython) from 3.1.44 to 3.1.45.
+- - [Release notes](https://github.com/gitpython-developers/GitPython/releases)
+- - [Changelog](https://github.com/gitpython-developers/GitPython/blob/main/CHANGES)
+- - [Commits](https://github.com/gitpython-developers/GitPython/compare/3.1.44...3.1.45)
+- ---
+- Updated-dependencies:
+- - dependency-name: gitpython
+-   dependency-version: 3.1.45
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #91 from edwardtheharris/dependabot/pip/gitpython-3.1.45
+- Bump gitpython from 3.1.44 to 3.1.45
+- Closes #92
+- Merge pull request #93 from edwardtheharris/92-bump-gitpython-from-3144-to-3145
+- 92 bump gitpython from 3144 to 3145
+- Closes #92
+- Bump pip from 25.1.1 to 25.2
+- Bumps [pip](https://github.com/pypa/pip) from 25.1.1 to 25.2.
+- - [Changelog](https://github.com/pypa/pip/blob/main/NEWS.rst)
+- - [Commits](https://github.com/pypa/pip/compare/25.1.1...25.2)
+- ---
+- Updated-dependencies:
+- - dependency-name: pip
+-   dependency-version: '25.2'
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #94 from edwardtheharris/dependabot/pip/pip-25.2
+- Bump pip from 25.1.1 to 25.2
+- Closes #95
+- Merge pull request #96 from edwardtheharris/95-bump-pip-from-2511-to-252
+- 95 bump pip from 2511 to 252
+- Closes #95
+- Bump redis from 6.2.0 to 6.4.0
+- Bumps [redis](https://github.com/redis/redis-py) from 6.2.0 to 6.4.0.
+- - [Release notes](https://github.com/redis/redis-py/releases)
+- - [Changelog](https://github.com/redis/redis-py/blob/master/CHANGES)
+- - [Commits](https://github.com/redis/redis-py/compare/v6.2.0...v6.4.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: redis
+-   dependency-version: 6.4.0
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #97 from edwardtheharris/dependabot/pip/redis-6.4.0
+- Bump redis from 6.2.0 to 6.4.0
+- Closes #99
+- Merge pull request #100 from edwardtheharris/99-bump-redis-from-620-to-640
+- 99 bump redis from 620 to 640
+- Closes #99
+- Bump cryptography from 45.0.5 to 45.0.6
+- Bumps [cryptography](https://github.com/pyca/cryptography) from 45.0.5 to 45.0.6.
+- - [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)
+- - [Commits](https://github.com/pyca/cryptography/compare/45.0.5...45.0.6)
+- ---
+- Updated-dependencies:
+- - dependency-name: cryptography
+-   dependency-version: 45.0.6
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #98 from edwardtheharris/dependabot/pip/cryptography-45.0.6
+- Bump cryptography from 45.0.5 to 45.0.6
+- Closes #101
+- Merge pull request #102 from edwardtheharris/101-bump-cryptography-from-4505-to-4506
+- 101 bump cryptography from 4505 to 4506
+- Closes #101
+- Bump pytest-cov from 6.2.1 to 7.0.0
+- Bumps [pytest-cov](https://github.com/pytest-dev/pytest-cov) from 6.2.1 to 7.0.0.
+- - [Changelog](https://github.com/pytest-dev/pytest-cov/blob/master/CHANGELOG.rst)
+- - [Commits](https://github.com/pytest-dev/pytest-cov/compare/v6.2.1...v7.0.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: pytest-cov
+-   dependency-version: 7.0.0
+-   dependency-type: direct:development
+-   update-type: version-update:semver-major
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #106 from edwardtheharris/dependabot/pip/pytest-cov-7.0.0
+- Bump pytest-cov from 6.2.1 to 7.0.0
+- Closes #107
+- Merge pull request #108 from edwardtheharris/107-bump-pytest-cov-from-621-to-700-106
+- 107 bump pytest cov from 621 to 700 106
+- Closes #107
+- Bump version-query from 1.6.3 to 1.7.0
+- Bumps [version-query](https://github.com/mbdevpl/version-query) from 1.6.3 to 1.7.0.
+- - [Release notes](https://github.com/mbdevpl/version-query/releases)
+- - [Commits](https://github.com/mbdevpl/version-query/compare/v1.6.3...v1.7.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: version-query
+-   dependency-version: 1.7.0
+-   dependency-type: direct:development
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #110 from edwardtheharris/dependabot/pip/version-query-1.7.0
+- Bump version-query from 1.6.3 to 1.7.0
+- Closes #111
+- Merge pull request #112 from edwardtheharris/111-bump-version-query-from-163-to-170-110
+- 111 bump version query from 163 to 170 110
+- Closes #111
+- Bump cryptography from 45.0.6 to 46.0.1
+- Bumps [cryptography](https://github.com/pyca/cryptography) from 45.0.6 to 46.0.1.
+- - [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)
+- - [Commits](https://github.com/pyca/cryptography/compare/45.0.6...46.0.1)
+- ---
+- Updated-dependencies:
+- - dependency-name: cryptography
+-   dependency-version: 46.0.1
+-   dependency-type: direct:production
+-   update-type: version-update:semver-major
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #109 from edwardtheharris/dependabot/pip/cryptography-46.0.1
+- Bump cryptography from 45.0.6 to 46.0.1
+- Closes #113
+- Merge pull request #114 from edwardtheharris/113-bump-cryptography-from-4506-to-4601-109
+- 113 bump cryptography from 4506 to 4601 109
+- Closes #113
+- Bump molecule from 25.4.0 to 25.9.0
+- Bumps [molecule](https://github.com/ansible-community/molecule) from 25.4.0 to 25.9.0.
+- - [Release notes](https://github.com/ansible-community/molecule/releases)
+- - [Commits](https://github.com/ansible-community/molecule/compare/v25.4.0...v25.9.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: molecule
+-   dependency-version: 25.9.0
+-   dependency-type: direct:development
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #118 from edwardtheharris/dependabot/pip/molecule-25.9.0
+- Bump molecule from 25.4.0 to 25.9.0
+- Closes #122
+- Merge pull request #123 from edwardtheharris/122-bump-molecule-from-2540-to-2590-118
+- 122 bump molecule from 2540 to 2590 118
+- Closes #122
+- Bump ansible-creator from 25.4.1 to 25.9.0
+- Bumps [ansible-creator](https://github.com/ansible/ansible-creator) from 25.4.1 to 25.9.0.
+- - [Release notes](https://github.com/ansible/ansible-creator/releases)
+- - [Changelog](https://github.com/ansible/ansible-creator/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/ansible/ansible-creator/compare/v25.4.1...v25.9.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible-creator
+-   dependency-version: 25.9.0
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #117 from edwardtheharris/dependabot/pip/ansible-creator-25.9.0
+- Bump ansible-creator from 25.4.1 to 25.9.0
+- Closes #124
+- Bump ansible-navigator from 25.5.0 to 25.9.0
+- Bumps [ansible-navigator](https://github.com/ansible/ansible-navigator) from 25.5.0 to 25.9.0.
+- - [Release notes](https://github.com/ansible/ansible-navigator/releases)
+- - [Changelog](https://github.com/ansible/ansible-navigator/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/ansible/ansible-navigator/compare/v25.5.0...v25.9.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible-navigator
+-   dependency-version: 25.9.0
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #119 from edwardtheharris/dependabot/pip/ansible-navigator-25.9.0
+- Bump ansible-navigator from 25.5.0 to 25.9.0
+- Closes #120
+- Merge branch 'main' into 120-bump-ansible-navigator-from-2550-to-2590-119
+- Fix envrc
+- Closes #120
+- Merge pull request #121 from edwardtheharris/120-bump-ansible-navigator-from-2550-to-2590-119
+- 120 bump ansible navigator from 2550 to 2590 119
+- Closes #120
+- Merge branch '126-bump-ansible-from-1150-to-1200-116'
+- Into 124-bump-ansible-creator-from-2541-to-2590-117
+- Closes #124
+- Update lock
+- Closes #124
+- Merge pull request #125 from edwardtheharris/124-bump-ansible-creator-from-2541-to-2590-117
+- 124 bump ansible creator from 2541 to 2590 117
+- Closes #124
+- Merge pull request #127 from edwardtheharris/126-bump-ansible-from-1150-to-1200-116
+- 126 bump ansible from 1150 to 1200 116
+- Closes #126
+- Bump cryptography from 46.0.2 to 46.0.3
+- Bumps [cryptography](https://github.com/pyca/cryptography) from 46.0.2 to 46.0.3.
+- - [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)
+- - [Commits](https://github.com/pyca/cryptography/compare/46.0.2...46.0.3)
+- ---
+- Updated-dependencies:
+- - dependency-name: cryptography
+-   dependency-version: 46.0.3
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #128 from edwardtheharris/dependabot/pip/cryptography-46.0.3
+- Bump cryptography from 46.0.2 to 46.0.3
+- Closes #132
+- Bump ansible-creator from 25.9.0 to 25.10.0
+- Bumps [ansible-creator](https://github.com/ansible/ansible-creator) from 25.9.0 to 25.10.0.
+- - [Release notes](https://github.com/ansible/ansible-creator/releases)
+- - [Changelog](https://github.com/ansible/ansible-creator/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/ansible/ansible-creator/compare/v25.9.0...v25.10.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible-creator
+-   dependency-version: 25.10.0
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #129 from edwardtheharris/dependabot/pip/ansible-creator-25.10.0
+- Bump ansible-creator from 25.9.0 to 25.10.0
+- Closes #130
+- Merge pull request #131 from edwardtheharris/130-bump-ansible-creator-from-2590-to-25100-129
+- 130 bump ansible creator from 2590 to 25100 129
+- Closes #130
+- Merge branch 'main' into 132-bump-cryptography-from-4602-to-4603-128
+- Merge pull request #133 from edwardtheharris/132-bump-cryptography-from-4602-to-4603-128
+- 132 bump cryptography from 4602 to 4603 128
+- Closes #132
+- Add some defaults
+- Closes #56
+- Add some defaults
+- Closes #56
+- Update tasks
+- Closes #56
+- Fix reset role
+- Closes #56
+- Merge branch '0.0.2-tmp' into 56-add-a-fourth-node
+- Closes #56
+- Merge branch '0.0.1-tmp'
+- Into 56-add-a-fourth-node
+- Closes #56
+- Update lint workflow
+- Closes #56
+- Fix workflow
+- Closes #56
+- Update site
+- Closes #56
+- Fix creates
+- Closes #56
+- Update role
+- Closes #56
+- Bump redis from 6.4.0 to 7.0.1
+- Bumps [redis](https://github.com/redis/redis-py) from 6.4.0 to 7.0.1.
+- - [Release notes](https://github.com/redis/redis-py/releases)
+- - [Changelog](https://github.com/redis/redis-py/blob/master/CHANGES)
+- - [Commits](https://github.com/redis/redis-py/compare/v6.4.0...v7.0.1)
+- ---
+- Updated-dependencies:
+- - dependency-name: redis
+-   dependency-version: 7.0.1
+-   dependency-type: direct:production
+-   update-type: version-update:semver-major
+- ...
+- Dependabot[bot] <support@github.com>
+- Bump redis from 6.4.0 to 7.0.1
+- Bumps [redis](https://github.com/redis/redis-py) from 6.4.0 to 7.0.1.
+- - [Release notes](https://github.com/redis/redis-py/releases)
+- - [Changelog](https://github.com/redis/redis-py/blob/master/CHANGES)
+- - [Commits](https://github.com/redis/redis-py/compare/v6.4.0...v7.0.1)
+- ---
+- Updated-dependencies:
+- - dependency-name: redis
+-   dependency-version: 7.0.1
+-   dependency-type: direct:production
+-   update-type: version-update:semver-major
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #137 from edwardtheharris/dependabot/pip/redis-7.0.1
+- Bump redis from 6.4.0 to 7.0.1
+- Closes #140
+- Update workflow
+- Closes #140
+- Merge branch '140-bump-redis-from-640-to-701-137' into dependabot/pip/redis-7.0.1
+- Merge pull request #144 from edwardtheharris/dependabot/pip/redis-7.0.1
+- Bump redis from 6.4.0 to 7.0.1
+- Closes #144
+- Drop security.md
+- Closes #140
+- Merge pull request #141 from edwardtheharris/140-bump-redis-from-640-to-701-137
+- 140 bump redis from 640 to 701 137
+- Bump pip from 25.2 to 25.3
+- Bumps [pip](https://github.com/pypa/pip) from 25.2 to 25.3.
+- - [Changelog](https://github.com/pypa/pip/blob/main/NEWS.rst)
+- - [Commits](https://github.com/pypa/pip/compare/25.2...25.3)
+- ---
+- Updated-dependencies:
+- - dependency-name: pip
+-   dependency-version: '25.3'
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #134 from edwardtheharris/dependabot/pip/pip-25.3
+- Bump pip from 25.2 to 25.3
+- Closes #145
+- Merge pull request #146 from edwardtheharris/145-bump-pip-from-252-to-253-134
+- 145 bump pip from 252 to 253 134
+- Closes #145
+- Bump pytest from 8.4.2 to 9.0.0
+- Bumps [pytest](https://github.com/pytest-dev/pytest) from 8.4.2 to 9.0.0.
+- - [Release notes](https://github.com/pytest-dev/pytest/releases)
+- - [Changelog](https://github.com/pytest-dev/pytest/blob/main/CHANGELOG.rst)
+- - [Commits](https://github.com/pytest-dev/pytest/compare/8.4.2...9.0.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: pytest
+-   dependency-version: 9.0.0
+-   dependency-type: direct:development
+-   update-type: version-update:semver-major
+- ...
+- Dependabot[bot] <support@github.com>
+- Bump starlette from 0.48.0 to 0.49.1 in the pip group across 1 directory
+- Bumps the pip group with 1 update in the / directory: [starlette](https://github.com/Kludex/starlette).
+- Updates `starlette` from 0.48.0 to 0.49.1
+- - [Release notes](https://github.com/Kludex/starlette/releases)
+- - [Changelog](https://github.com/Kludex/starlette/blob/main/docs/release-notes.md)
+- - [Commits](https://github.com/Kludex/starlette/compare/0.48.0...0.49.1)
+- ---
+- Updated-dependencies:
+- - dependency-name: starlette
+-   dependency-version: 0.49.1
+-   dependency-type: indirect
+-   dependency-group: pip
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #147 from edwardtheharris/dependabot/pip/pip-91ab757ed1
+- Bump starlette from 0.48.0 to 0.49.1 in the pip group across 1 directory
+- Closes #148
+- Merge pull request #149 from edwardtheharris/148-bump-starlette-from-0480-to-0491-in-the-pip-group-across-1-directory-147
+- 148 bump starlette from 0480 to 0491 in the pip group across 1 directory 147
+- Closes #148
+- Merge branch 'main' into dependabot/pip/pytest-9.0.0
+- Merge pull request #142 from edwardtheharris/dependabot/pip/pytest-9.0.0
+- Bump pytest from 8.4.2 to 9.0.0
+- Closes #152
+- Bump pre-commit from 4.3.0 to 4.4.0
+- Bumps [pre-commit](https://github.com/pre-commit/pre-commit) from 4.3.0 to 4.4.0.
+- - [Release notes](https://github.com/pre-commit/pre-commit/releases)
+- - [Changelog](https://github.com/pre-commit/pre-commit/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/pre-commit/pre-commit/compare/v4.3.0...v4.4.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: pre-commit
+-   dependency-version: 4.4.0
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #143 from edwardtheharris/dependabot/pip/pre-commit-4.4.0
+- Bump pre-commit from 4.3.0 to 4.4.0
+- Closes #150
+- Merge branch 'main' into 150-bump-pre-commit-from-430-to-440-143
+- Merge pull request #151 from edwardtheharris/150-bump-pre-commit-from-430-to-440-143
+- 150 bump pre commit from 430 to 440 143
+- Closes #150
+- Merge branch 'main' into 152-bump-pytest-from-842-to-900-142
+- Merge pull request #153 from edwardtheharris/152-bump-pytest-from-842-to-900-142
+- 152 bump pytest from 842 to 900 142
+- Closes #152
+- Bump ansible-lint from 25.9.2 to 25.11.1
+- Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 25.9.2 to 25.11.1.
+- - [Release notes](https://github.com/ansible/ansible-lint/releases)
+- - [Commits](https://github.com/ansible/ansible-lint/compare/v25.9.2...v25.11.1)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible-lint
+-   dependency-version: 25.11.1
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #154 from edwardtheharris/dependabot/pip/ansible-lint-25.11.1
+- Bump ansible-lint from 25.9.2 to 25.11.1
+- Closes #160
+- Fix lock
+- Closes #160
+- Merge pull request #161 from edwardtheharris/160-bump-ansible-lint-from-2592-to-25111-154
+- 160 bump ansible lint from 2592 to 25111 154
+- Closes #160
+- Bump sphinxemoji from 0.3.1 to 0.3.2
+- Bumps [sphinxemoji](https://github.com/sphinx-contrib/emojicodes) from 0.3.1 to 0.3.2.
+- - [Commits](https://github.com/sphinx-contrib/emojicodes/compare/v0.3.1...v0.3.2)
+- ---
+- Updated-dependencies:
+- - dependency-name: sphinxemoji
+-   dependency-version: 0.3.2
+-   dependency-type: direct:development
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #162 from edwardtheharris/dependabot/pip/sphinxemoji-0.3.2
+- Bump sphinxemoji from 0.3.1 to 0.3.2
+- Closes #169
+- Merge pull request #170 from edwardtheharris/169-bump-sphinxemoji-from-031-to-032-162
+- 169 bump sphinxemoji from 031 to 032 162
+- Closes #169
+- Bump filelock from 3.20.0 to 3.20.1 in the pip group across 1 directory
+- Bumps the pip group with 1 update in the / directory: [filelock](https://github.com/tox-dev/py-filelock).
+- Updates `filelock` from 3.20.0 to 3.20.1
+- - [Release notes](https://github.com/tox-dev/py-filelock/releases)
+- - [Changelog](https://github.com/tox-dev/filelock/blob/main/docs/changelog.rst)
+- - [Commits](https://github.com/tox-dev/py-filelock/compare/3.20.0...3.20.1)
+- ---
+- Updated-dependencies:
+- - dependency-name: filelock
+-   dependency-version: 3.20.1
+-   dependency-type: indirect
+-   dependency-group: pip
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #163 from edwardtheharris/dependabot/pip/pip-c4ff2e68b4
+- Bump filelock from 3.20.0 to 3.20.1 in the pip group across 1 directory
+- Closes #171
+- Merge pull request #172 from edwardtheharris/171-bump-filelock-from-3200-to-3201-in-the-pip-group-across-1-directory-163
+- 171 bump filelock from 3200 to 3201 in the pip group across 1 directory 163
+- Closes #171
+- Bump pipenv from 2026.0.2 to 2026.0.3
+- Bumps [pipenv](https://github.com/pypa/pipenv) from 2026.0.2 to 2026.0.3.
+- - [Release notes](https://github.com/pypa/pipenv/releases)
+- - [Changelog](https://github.com/pypa/pipenv/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/pypa/pipenv/compare/v2026.0.2...v2026.0.3)
+- ---
+- Updated-dependencies:
+- - dependency-name: pipenv
+-   dependency-version: 2026.0.3
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Bump pre-commit from 4.5.0 to 4.5.1
+- Bumps [pre-commit](https://github.com/pre-commit/pre-commit) from 4.5.0 to 4.5.1.
+- - [Release notes](https://github.com/pre-commit/pre-commit/releases)
+- - [Changelog](https://github.com/pre-commit/pre-commit/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/pre-commit/pre-commit/compare/v4.5.0...v4.5.1)
+- ---
+- Updated-dependencies:
+- - dependency-name: pre-commit
+-   dependency-version: 4.5.1
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #164 from edwardtheharris/dependabot/pip/pre-commit-4.5.1
+- Bump pre-commit from 4.5.0 to 4.5.1
+- Closes #173
+- Merge pull request #174 from edwardtheharris/173-bump-pre-commit-from-450-to-451-164
+- 173 bump pre commit from 450 to 451 164
+- Closes #173
+- Merge branch '175-bump-pipenv-from-202602-to-202603-165' into dependabot/pip/pipenv-2026.0.3
+- Merge pull request #165 from edwardtheharris/dependabot/pip/pipenv-2026.0.3
+- Bump pipenv from 2026.0.2 to 2026.0.3
+- Closes #175
+- Merge pull request #176 from edwardtheharris/175-bump-pipenv-from-202602-to-202603-165
+- 175 bump pipenv from 202602 to 202603 165
+- Closes #175
+- Bump ansible from 13.1.0 to 13.2.0
+- Bumps [ansible](https://github.com/ansible-community/ansible-build-data) from 13.1.0 to 13.2.0.
+- - [Changelog](https://github.com/ansible-community/ansible-build-data/blob/main/docs/release-process.md)
+- - [Commits](https://github.com/ansible-community/ansible-build-data/compare/13.1.0...13.2.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible
+-   dependency-version: 13.2.0
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #178 from edwardtheharris/dependabot/pip/ansible-13.2.0
+- Bump ansible from 13.1.0 to 13.2.0
+- Closes #183
+- Merge pull request #184 from edwardtheharris/183-bump-ansible-from-1310-to-1320178
+- 183 bump ansible from 1310 to 1320178
+- Closes #183
+- Bump sphinx-favicon from 1.0.1 to 1.1.0
+- Bumps [sphinx-favicon](https://github.com/tcmetzger/sphinx-favicon) from 1.0.1 to 1.1.0.
+- - [Release notes](https://github.com/tcmetzger/sphinx-favicon/releases)
+- - [Changelog](https://github.com/tcmetzger/sphinx-favicon/blob/main/CHANGELOG)
+- - [Commits](https://github.com/tcmetzger/sphinx-favicon/compare/v1.0.1...v1.1.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: sphinx-favicon
+-   dependency-version: 1.1.0
+-   dependency-type: direct:development
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Bump urllib3 from 2.6.2 to 2.6.3 in the pip group across 1 directory
+- Bumps the pip group with 1 update in the / directory: [urllib3](https://github.com/urllib3/urllib3).
+- Updates `urllib3` from 2.6.2 to 2.6.3
+- - [Release notes](https://github.com/urllib3/urllib3/releases)
+- - [Changelog](https://github.com/urllib3/urllib3/blob/main/CHANGES.rst)
+- - [Commits](https://github.com/urllib3/urllib3/compare/2.6.2...2.6.3)
+- ---
+- Updated-dependencies:
+- - dependency-name: urllib3
+-   dependency-version: 2.6.3
+-   dependency-type: indirect
+-   dependency-group: pip
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge branch 'main' into dependabot/pip/pip-8177a8837a
+- Merge pull request #180 from edwardtheharris/dependabot/pip/pip-8177a8837a
+- Bump urllib3 from 2.6.2 to 2.6.3 in the pip group across 1 directory
+- Closes #190
+- Bump gitpython from 3.1.45 to 3.1.46
+- Bumps [gitpython](https://github.com/gitpython-developers/GitPython) from 3.1.45 to 3.1.46.
+- - [Release notes](https://github.com/gitpython-developers/GitPython/releases)
+- - [Changelog](https://github.com/gitpython-developers/GitPython/blob/main/CHANGES)
+- - [Commits](https://github.com/gitpython-developers/GitPython/compare/3.1.45...3.1.46)
+- ---
+- Updated-dependencies:
+- - dependency-name: gitpython
+-   dependency-version: 3.1.46
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge branch '188-bump-gitpython-from-3145-to-3146179' into dependabot/pip/gitpython-3.1.46
+- Merge pull request #179 from edwardtheharris/dependabot/pip/gitpython-3.1.46
+- Bump gitpython from 3.1.45 to 3.1.46
+- Closes #188
+- Merge pull request #189 from edwardtheharris/188-bump-gitpython-from-3145-to-3146179
+- 188 bump gitpython from 3145 to 3146179
+- Closes #188
+- Merge branch 'main' into 190-bump-urllib3-from-262-to-263-in-the-pip-group-across-1-directory180
+- Merge pull request #191 from edwardtheharris/190-bump-urllib3-from-262-to-263-in-the-pip-group-across-1-directory180
+- 190 bump urllib3 from 262 to 263 in the pip group across 1 directory180
+- Closes #190
+- Merge branch '199-bump-sphinx-favicon-from-101-to-110186' into dependabot/pip/sphinx-favicon-1.1.0
+- Merge pull request #186 from edwardtheharris/dependabot/pip/sphinx-favicon-1.1.0
+- Bump sphinx-favicon from 1.0.1 to 1.1.0
+- Closes #199
+- Bump ansible-lint from 25.12.1 to 26.2.0
+- Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 25.12.1 to 26.2.0.
+- - [Release notes](https://github.com/ansible/ansible-lint/releases)
+- - [Commits](https://github.com/ansible/ansible-lint/compare/v25.12.1...v26.2.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible-lint
+-   dependency-version: 26.2.0
+-   dependency-type: direct:production
+-   update-type: version-update:semver-major
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge branch '192-bump-ansible-lint-from-25121-to-2620185' into dependabot/pip/ansible-lint-26.2.0
+- Merge pull request #185 from edwardtheharris/dependabot/pip/ansible-lint-26.2.0
+- Bump ansible-lint from 25.12.1 to 26.2.0
+- Closes #192
+- Merge branch 'main' into 192-bump-ansible-lint-from-25121-to-2620185
+- Bump ansible-lint from 25.12.1 to 25.12.2
+- Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 25.12.1 to 25.12.2.
+- - [Release notes](https://github.com/ansible/ansible-lint/releases)
+- - [Commits](https://github.com/ansible/ansible-lint/compare/v25.12.1...v25.12.2)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible-lint
+-   dependency-version: 25.12.2
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #166 from edwardtheharris/dependabot/pip/ansible-lint-25.12.2
+- Bump ansible-lint from 25.12.1 to 25.12.2
+- Closes #167
+- Merge branch 'main' into 167-bump-ansible-lint-from-25121-to-25122-166
+- Merge branch 'main' into 167-bump-ansible-lint-from-25121-to-25122-166
+- Update workflows
+- Closes #167
+- Update ansible workflow
+- Closes #167
+- Merge branch 'main' into 167-bump-ansible-lint-from-25121-to-25122-166
+- Merge branch 'main' of github.com:edwardtheharris/ansible-kcp into 167-bump-ansible-lint-from-25121-to-25122-166
+- Closes #167
+- Update ansible dir ownership
+- Closes #167
+- Merge pull request #168 from edwardtheharris/167-bump-ansible-lint-from-25121-to-25122-166
+- 167 bump ansible lint from 25121 to 25122 166
+- Closes #167
+- Merge branch 'main' of github.com:edwardtheharris/ansible-kcp into 192-bump-ansible-lint-from-25121-to-2620185
+- Closes #192
+- Merge pull request #193 from edwardtheharris/192-bump-ansible-lint-from-25121-to-2620185
+- 192 bump ansible lint from 25121 to 2620185
+- Closes #192
+- Merge branch 'main' of github.com:edwardtheharris/ansible-kcp into 199-bump-sphinx-favicon-from-101-to-110186
+- Closes #199
+- Merge pull request #200 from edwardtheharris/199-bump-sphinx-favicon-from-101-to-110186
+- 199 bump sphinx favicon from 101 to 110186
+- Closes #199
+- Bump ansible-creator from 26.4.1 to 26.4.2
+- Bumps [ansible-creator](https://github.com/ansible/ansible-creator) from 26.4.1 to 26.4.2.
+- - [Release notes](https://github.com/ansible/ansible-creator/releases)
+- - [Changelog](https://github.com/ansible/ansible-creator/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/ansible/ansible-creator/compare/v26.4.1...v26.4.2)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible-creator
+-   dependency-version: 26.4.2
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #201 from edwardtheharris/dependabot/pip/ansible-creator-26.4.2
+- Bump ansible-creator from 26.4.1 to 26.4.2
+- Closes #202
+- Merge pull request #203 from edwardtheharris/202-bump-ansible-creator-from-2641-to-2642201
+- 202 bump ansible creator from 2641 to 2642201
+- Closes #202
+- Bump cryptography from 46.0.7 to 47.0.0
+- Bumps [cryptography](https://github.com/pyca/cryptography) from 46.0.7 to 47.0.0.
+- - [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)
+- - [Commits](https://github.com/pyca/cryptography/compare/46.0.7...47.0.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: cryptography
+-   dependency-version: 47.0.0
+-   dependency-type: direct:production
+-   update-type: version-update:semver-major
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #204 from edwardtheharris/dependabot/pip/cryptography-47.0.0
+- Bump cryptography from 46.0.7 to 47.0.0
+- Closes #198
+- Merge pull request #209 from edwardtheharris/198-bump-ansible-navigator-from-25120-to-2640197
+- 198 bump ansible navigator from 25120 to 2640197
+- Closes #198
+- Bump ansible from 13.5.0 to 13.6.0
+- Bumps [ansible](https://github.com/ansible-community/ansible-build-data) from 13.5.0 to 13.6.0.
+- - [Changelog](https://github.com/ansible-community/ansible-build-data/blob/main/docs/release-process.md)
+- - [Commits](https://github.com/ansible-community/ansible-build-data/compare/13.5.0...13.6.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible
+-   dependency-version: 13.6.0
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #205 from edwardtheharris/dependabot/pip/ansible-13.6.0
+- Bump ansible from 13.5.0 to 13.6.0
+- Closes #210
+- Merge pull request #211 from edwardtheharris/210-bump-ansible-from-1350-to-1360205
+- 210 bump ansible from 1350 to 1360205
+- Closes #210
+- Bump pre-commit from 4.5.1 to 4.6.0
+- Bumps [pre-commit](https://github.com/pre-commit/pre-commit) from 4.5.1 to 4.6.0.
+- - [Release notes](https://github.com/pre-commit/pre-commit/releases)
+- - [Changelog](https://github.com/pre-commit/pre-commit/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/pre-commit/pre-commit/compare/v4.5.1...v4.6.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: pre-commit
+-   dependency-version: 4.6.0
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #208 from edwardtheharris/dependabot/pip/pre-commit-4.6.0
+- Bump pre-commit from 4.5.1 to 4.6.0
+- Closes #216
+- Bump gitpython from 3.1.46 to 3.1.47
+- Bumps [gitpython](https://github.com/gitpython-developers/GitPython) from 3.1.46 to 3.1.47.
+- - [Release notes](https://github.com/gitpython-developers/GitPython/releases)
+- - [Changelog](https://github.com/gitpython-developers/GitPython/blob/main/CHANGES)
+- - [Commits](https://github.com/gitpython-developers/GitPython/compare/3.1.46...3.1.47)
+- ---
+- Updated-dependencies:
+- - dependency-name: gitpython
+-   dependency-version: 3.1.47
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #207 from edwardtheharris/dependabot/pip/gitpython-3.1.47
+- Bump gitpython from 3.1.46 to 3.1.47
+- Closes #212
+- Merge branch 'main' into 212-bump-gitpython-from-3146-to-3147207
+- Merge pull request #213 from edwardtheharris/212-bump-gitpython-from-3146-to-3147207
+- 212 bump gitpython from 3146 to 3147207
+- Closes #212
+- Merge branch 'main' into 216-bump-pre-commit-from-451-to-460208
+- Bump pip from 26.0.1 to 26.1
+- Bumps [pip](https://github.com/pypa/pip) from 26.0.1 to 26.1.
+- - [Changelog](https://github.com/pypa/pip/blob/main/NEWS.rst)
+- - [Commits](https://github.com/pypa/pip/compare/26.0.1...26.1)
+- ---
+- Updated-dependencies:
+- - dependency-name: pip
+-   dependency-version: '26.1'
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge branch '214-bump-pip-from-2601-to-261206' into dependabot/pip/pip-26.1
+- Merge pull request #206 from edwardtheharris/dependabot/pip/pip-26.1
+- Bump pip from 26.0.1 to 26.1
+- Closes #214
+- Merge branch 'main' into 214-bump-pip-from-2601-to-261206
+- Merge pull request #215 from edwardtheharris/214-bump-pip-from-2601-to-261206
+- 214 bump pip from 2601 to 261206
+- Closes #214
+- Merge branch 'main' into 216-bump-pre-commit-from-451-to-460208
+- Merge pull request #217 from edwardtheharris/216-bump-pre-commit-from-451-to-460208
+- 216 bump pre commit from 451 to 460208
+- Closes #216
+- Bump pipenv from 2026.5.2 to 2026.6.1
+- Bumps [pipenv](https://github.com/pypa/pipenv) from 2026.5.2 to 2026.6.1.
+- - [Release notes](https://github.com/pypa/pipenv/releases)
+- - [Changelog](https://github.com/pypa/pipenv/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/pypa/pipenv/compare/v2026.5.2...v2026.6.1)
+- ---
+- Updated-dependencies:
+- - dependency-name: pipenv
+-   dependency-version: 2026.6.1
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #219 from edwardtheharris/dependabot/pip/pipenv-2026.6.1
+- Bump pipenv from 2026.5.2 to 2026.6.1
+- Closes #224
+- Bump ansible-creator from 26.4.2 to 26.4.3
+- Bumps [ansible-creator](https://github.com/ansible/ansible-creator) from 26.4.2 to 26.4.3.
+- - [Release notes](https://github.com/ansible/ansible-creator/releases)
+- - [Changelog](https://github.com/ansible/ansible-creator/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/ansible/ansible-creator/compare/v26.4.2...v26.4.3)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible-creator
+-   dependency-version: 26.4.3
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #218 from edwardtheharris/dependabot/pip/ansible-creator-26.4.3
+- Bump ansible-creator from 26.4.2 to 26.4.3
+- Closes #221
+- Merge pull request #222 from edwardtheharris/221-bump-ansible-creator-from-2642-to-2643218
+- 221 bump ansible creator from 2642 to 2643218
+- Closes #221
+- Merge branch 'main' into 224-bump-pipenv-from-202652-to-202661219-223
+- Merge pull request #225 from edwardtheharris/224-bump-pipenv-from-202652-to-202661219-223
+- 224 bump pipenv from 202652 to 202661219 223
+- Closes #224
+- Bump version-query from 1.7.0 to 1.7.1
+- Bumps [version-query](https://github.com/mbdevpl/version-query) from 1.7.0 to 1.7.1.
+- - [Release notes](https://github.com/mbdevpl/version-query/releases)
+- - [Commits](https://github.com/mbdevpl/version-query/compare/v1.7.0...v1.7.1)
+- ---
+- Updated-dependencies:
+- - dependency-name: version-query
+-   dependency-version: 1.7.1
+-   dependency-type: direct:development
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #228 from edwardtheharris/dependabot/pip/version-query-1.7.1
+- Bump version-query from 1.7.0 to 1.7.1
+- Closes #234
+- Bump gitpython from 3.1.47 to 3.1.49
+- Bumps [gitpython](https://github.com/gitpython-developers/GitPython) from 3.1.47 to 3.1.49.
+- - [Release notes](https://github.com/gitpython-developers/GitPython/releases)
+- - [Changelog](https://github.com/gitpython-developers/GitPython/blob/main/CHANGES)
+- - [Commits](https://github.com/gitpython-developers/GitPython/compare/3.1.47...3.1.49)
+- ---
+- Updated-dependencies:
+- - dependency-name: gitpython
+-   dependency-version: 3.1.49
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge branch '226-bump-gitpython-from-3147-to-3149220' into dependabot/pip/gitpython-3.1.49
+- Merge pull request #220 from edwardtheharris/dependabot/pip/gitpython-3.1.49
+- Bump gitpython from 3.1.47 to 3.1.49
+- Closes #226
+- Merge branch 'main' into 226-bump-gitpython-from-3147-to-3149220
+- Merge pull request #227 from edwardtheharris/226-bump-gitpython-from-3147-to-3149220
+- 226 bump gitpython from 3147 to 3149220
+- Closes #226
+- Merge branch 'main' into 234-bump-version-query-from-170-to-171228
+- Merge pull request #235 from edwardtheharris/234-bump-version-query-from-170-to-171228
+- 234 bump version query from 170 to 171228
+- Closes #234
+- Bump pip from 26.1 to 26.1.1
+- Bumps [pip](https://github.com/pypa/pip) from 26.1 to 26.1.1.
+- - [Changelog](https://github.com/pypa/pip/blob/main/NEWS.rst)
+- - [Commits](https://github.com/pypa/pip/compare/26.1...26.1.1)
+- ---
+- Updated-dependencies:
+- - dependency-name: pip
+-   dependency-version: 26.1.1
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #229 from edwardtheharris/dependabot/pip/pip-26.1.1
+- Bump pip from 26.1 to 26.1.1
+- Closes #236
+- Merge pull request #237 from edwardtheharris/236-bump-pip-from-261-to-2611229
+- 236 bump pip from 261 to 2611229
+- Closes #236
+- Bump myst-parser from 5.0.0 to 5.1.0
+- Bumps [myst-parser](https://github.com/executablebooks/MyST-Parser) from 5.0.0 to 5.1.0.
+- - [Release notes](https://github.com/executablebooks/MyST-Parser/releases)
+- - [Changelog](https://github.com/executablebooks/MyST-Parser/blob/master/CHANGELOG.md)
+- - [Commits](https://github.com/executablebooks/MyST-Parser/compare/v5.0.0...v5.1.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: myst-parser
+-   dependency-version: 5.1.0
+-   dependency-type: direct:development
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #238 from edwardtheharris/dependabot/pip/myst-parser-5.1.0
+- Bump myst-parser from 5.0.0 to 5.1.0
+- Closes #239
+- Merge pull request #240 from edwardtheharris/239-bump-myst-parser-from-500-to-510238
+- 239 bump myst parser from 500 to 510238
+- Closes #239
+- Bump gitpython from 3.1.49 to 3.1.50
+- Bumps [gitpython](https://github.com/gitpython-developers/GitPython) from 3.1.49 to 3.1.50.
+- - [Release notes](https://github.com/gitpython-developers/GitPython/releases)
+- - [Changelog](https://github.com/gitpython-developers/GitPython/blob/main/CHANGES)
+- - [Commits](https://github.com/gitpython-developers/GitPython/compare/3.1.49...3.1.50)
+- ---
+- Updated-dependencies:
+- - dependency-name: gitpython
+-   dependency-version: 3.1.50
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #230 from edwardtheharris/dependabot/pip/gitpython-3.1.50
+- Bump gitpython from 3.1.49 to 3.1.50
+- Closes #233
+- Merge pull request #242 from edwardtheharris/233-bump-urllib3-from-263-to-270-in-the-pip-group-across-1-directory232
+- 233 bump urllib3 from 263 to 270 in the pip group across 1 directory232
+- Closes #233
+- Bump sphinxcontrib-autoyaml from 1.1.3 to 1.2.0
+- Bumps sphinxcontrib-autoyaml from 1.1.3 to 1.2.0.
+- ---
+- Updated-dependencies:
+- - dependency-name: sphinxcontrib-autoyaml
+-   dependency-version: 1.2.0
+-   dependency-type: direct:development
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Bump cryptography from 47.0.0 to 48.0.0
+- Bumps [cryptography](https://github.com/pyca/cryptography) from 47.0.0 to 48.0.0.
+- - [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)
+- - [Commits](https://github.com/pyca/cryptography/compare/47.0.0...48.0.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: cryptography
+-   dependency-version: 48.0.0
+-   dependency-type: direct:production
+-   update-type: version-update:semver-major
+- ...
+- Dependabot[bot] <support@github.com>
+- Bump cryptography from 47.0.0 to 48.0.0
+- Bumps [cryptography](https://github.com/pyca/cryptography) from 47.0.0 to 48.0.0.
+- - [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)
+- - [Commits](https://github.com/pyca/cryptography/compare/47.0.0...48.0.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: cryptography
+-   dependency-version: 48.0.0
+-   dependency-type: direct:production
+-   update-type: version-update:semver-major
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #231 from edwardtheharris/dependabot/pip/cryptography-48.0.0
+- Bump cryptography from 47.0.0 to 48.0.0
+- Closes #231
+- Merge branch 'main' into 241-bump-cryptography-from-4700-to-4800231
+- Merge branch '241-bump-cryptography-from-4700-to-4800231' into dependabot/pip/cryptography-48.0.0
+- Merge pull request #244 from edwardtheharris/dependabot/pip/cryptography-48.0.0
+- Bump cryptography from 47.0.0 to 48.0.0
+- Closes #241
+- Merge pull request #243 from edwardtheharris/241-bump-cryptography-from-4700-to-4800231
+- 241 bump cryptography from 4700 to 4800231
+- Closes #241
+- Merge branch '249-bump-sphinxcontrib-autoyaml-from-113-to-12024' into dependabot/pip/sphinxcontrib-autoyaml-1.2.0
+- Merge pull request #246 from edwardtheharris/dependabot/pip/sphinxcontrib-autoyaml-1.2.0
+- Bump sphinxcontrib-autoyaml from 1.1.3 to 1.2.0
+- Closes #249
+- Bump ansible from 13.6.0 to 13.7.0
+- Bumps [ansible](https://github.com/ansible-community/ansible-build-data) from 13.6.0 to 13.7.0.
+- - [Changelog](https://github.com/ansible-community/ansible-build-data/blob/main/docs/release-process.md)
+- - [Commits](https://github.com/ansible-community/ansible-build-data/compare/13.6.0...13.7.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible
+-   dependency-version: 13.7.0
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #245 from edwardtheharris/dependabot/pip/ansible-13.7.0
+- Bump ansible from 13.6.0 to 13.7.0
+- Closes #245
+- Merge branch 'main' into 247-bump-ansible-from-1360-to-1370245
+- Merge pull request #248 from edwardtheharris/247-bump-ansible-from-1360-to-1370245
+- 247 bump ansible from 1360 to 1370245
+- Closes #247
+- Merge branch 'main' into 249-bump-sphinxcontrib-autoyaml-from-113-to-12024
+- Merge pull request #250 from edwardtheharris/249-bump-sphinxcontrib-autoyaml-from-113-to-12024
+- 249 bump sphinxcontrib autoyaml from 113 to 12024
+- Closes #249
+- Bump redis from 7.4.0 to 8.0.0
+- Bumps [redis](https://github.com/redis/redis-py) from 7.4.0 to 8.0.0.
+- - [Release notes](https://github.com/redis/redis-py/releases)
+- - [Changelog](https://github.com/redis/redis-py/blob/master/CHANGES)
+- - [Commits](https://github.com/redis/redis-py/compare/v7.4.0...v8.0.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: redis
+-   dependency-version: 8.0.0
+-   dependency-type: direct:production
+-   update-type: version-update:semver-major
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #251 from edwardtheharris/dependabot/pip/redis-8.0.0
+- Bump redis from 7.4.0 to 8.0.0
+- Closes #253
+- Merge pull request #254 from edwardtheharris/253-bump-redis-from-740-to-800251
+- 253 bump redis from 740 to 800251
+- Closes #253
+- Bump pip from 26.1.1 to 26.1.2
+- Bumps [pip](https://github.com/pypa/pip) from 26.1.1 to 26.1.2.
+- - [Changelog](https://github.com/pypa/pip/blob/main/NEWS.rst)
+- - [Commits](https://github.com/pypa/pip/compare/26.1.1...26.1.2)
+- ---
+- Updated-dependencies:
+- - dependency-name: pip
+-   dependency-version: 26.1.2
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #252 from edwardtheharris/dependabot/pip/pip-26.1.2
+- Bump pip from 26.1.1 to 26.1.2
+- Closes #192
+- Merge pull request #255 from edwardtheharris/192-bump-ansible-lint-from-25121-to-2620185
+- 192 bump ansible lint from 25121 to 2620185
+- Closes #192
+- Bump starlette from 1.0.0 to 1.0.1 in the pip group across 1 directory
+- Bumps the pip group with 1 update in the / directory: [starlette](https://github.com/Kludex/starlette).
+- Updates `starlette` from 1.0.0 to 1.0.1
+- - [Release notes](https://github.com/Kludex/starlette/releases)
+- - [Changelog](https://github.com/Kludex/starlette/blob/main/docs/release-notes.md)
+- - [Commits](https://github.com/Kludex/starlette/compare/1.0.0...1.0.1)
+- ---
+- Updated-dependencies:
+- - dependency-name: starlette
+-   dependency-version: 1.0.1
+-   dependency-type: indirect
+-   dependency-group: pip
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #256 from edwardtheharris/dependabot/pip/pip-f07ca4ca9c
+- Bump starlette from 1.0.0 to 1.0.1 in the pip group across 1 directory
+- Closes #223
+- Merge pull request #257 from edwardtheharris/223-bump-pipenv-from-202652-to-202661219
+- 223 bump pipenv from 202652 to 202661219
+- Closes #223
+- Bump pipenv from 2026.6.1 to 2026.6.2
+- Bumps [pipenv](https://github.com/pypa/pipenv) from 2026.6.1 to 2026.6.2.
+- - [Release notes](https://github.com/pypa/pipenv/releases)
+- - [Changelog](https://github.com/pypa/pipenv/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/pypa/pipenv/compare/v2026.6.1...v2026.6.2)
+- ---
+- Updated-dependencies:
+- - dependency-name: pipenv
+-   dependency-version: 2026.6.2
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Bump ansible from 13.7.0 to 14.0.0
+- Bumps [ansible](https://github.com/ansible-community/ansible-build-data) from 13.7.0 to 14.0.0.
+- - [Changelog](https://github.com/ansible-community/ansible-build-data/blob/main/docs/release-process.md)
+- - [Commits](https://github.com/ansible-community/ansible-build-data/compare/13.7.0...14.0.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible
+-   dependency-version: 14.0.0
+-   dependency-type: direct:production
+-   update-type: version-update:semver-major
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #258 from edwardtheharris/dependabot/pip/ansible-14.0.0
+- Bump ansible from 13.7.0 to 14.0.0
+- Closes #260
+- Merge branch '260-bump-pipenv-from-202661-to-202662259' into dependabot/pip/pipenv-2026.6.2
+- Merge pull request #259 from edwardtheharris/dependabot/pip/pipenv-2026.6.2
+- Bump pipenv from 2026.6.1 to 2026.6.2
+- Closes #260
+- Merge pull request #261 from edwardtheharris/260-bump-pipenv-from-202661-to-202662259
+- 260 bump pipenv from 202661 to 202662259
+- Closes #260
+- Bump cryptography from 48.0.0 to 49.0.0
+- Bumps [cryptography](https://github.com/pyca/cryptography) from 48.0.0 to 49.0.0.
+- - [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)
+- - [Commits](https://github.com/pyca/cryptography/compare/48.0.0...49.0.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: cryptography
+-   dependency-version: 49.0.0
+-   dependency-type: direct:production
+-   update-type: version-update:semver-major
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #262 from edwardtheharris/dependabot/pip/cryptography-49.0.0
+- Bump cryptography from 48.0.0 to 49.0.0
+- Closes #266
+- Merge pull request #268 from edwardtheharris/266-bump-cryptography-from-4800-to-4900262
+- 266 bump cryptography from 4800 to 4900262
+- Closes #266
+- Bump starlette from 1.0.1 to 1.3.1 in the pip group across 1 directory
+- Bumps the pip group with 1 update in the / directory: [starlette](https://github.com/Kludex/starlette).
+- Updates `starlette` from 1.0.1 to 1.3.1
+- - [Release notes](https://github.com/Kludex/starlette/releases)
+- - [Changelog](https://github.com/Kludex/starlette/blob/main/docs/release-notes.md)
+- - [Commits](https://github.com/Kludex/starlette/compare/1.0.1...1.3.1)
+- ---
+- Updated-dependencies:
+- - dependency-name: starlette
+-   dependency-version: 1.3.1
+-   dependency-type: indirect
+-   dependency-group: pip
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #271 from edwardtheharris/dependabot/pip/pip-ea269f03c1
+- Bump starlette from 1.0.1 to 1.3.1 in the pip group across 1 directory
+- Closes #272
+- Bump pytest from 9.0.3 to 9.1.0
+- Bumps [pytest](https://github.com/pytest-dev/pytest) from 9.0.3 to 9.1.0.
+- - [Release notes](https://github.com/pytest-dev/pytest/releases)
+- - [Changelog](https://github.com/pytest-dev/pytest/blob/main/CHANGELOG.rst)
+- - [Commits](https://github.com/pytest-dev/pytest/compare/9.0.3...9.1.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: pytest
+-   dependency-version: 9.1.0
+-   dependency-type: direct:development
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #263 from edwardtheharris/dependabot/pip/pytest-9.1.0
+- Bump pytest from 9.0.3 to 9.1.0
+- Closes #267
+- Bump starlette from 1.0.1 to 1.3.1 in the pip group across 1 directory
+- Bumps the pip group with 1 update in the / directory: [starlette](https://github.com/Kludex/starlette).
+- Updates `starlette` from 1.0.1 to 1.3.1
+- - [Release notes](https://github.com/Kludex/starlette/releases)
+- - [Changelog](https://github.com/Kludex/starlette/blob/main/docs/release-notes.md)
+- - [Commits](https://github.com/Kludex/starlette/compare/1.0.1...1.3.1)
+- ---
+- Updated-dependencies:
+- - dependency-name: starlette
+-   dependency-version: 1.3.1
+-   dependency-type: indirect
+-   dependency-group: pip
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #264 from edwardtheharris/dependabot/pip/pip-ea269f03c1
+- Bump starlette from 1.0.1 to 1.3.1 in the pip group across 1 directory
+- Closes #265
+- Merge branch 'main' into 265-bump-starlette-from-101-to-131-in-the-pip-group-across-1-directory264
+- Merge pull request #269 from edwardtheharris/265-bump-starlette-from-101-to-131-in-the-pip-group-across-1-directory264
+- 265 bump starlette from 101 to 131 in the pip group across 1 directory264
+- Closes #265
+- Merge branch 'main' into 267-bump-pytest-from-903-to-910263
+- Merge pull request #270 from edwardtheharris/267-bump-pytest-from-903-to-910263
+- 267 bump pytest from 903 to 910263
+- Closes #267
+- Merge branch 'main' into 272-bump-starlette-from-101-to-131-in-the-pip-group-across-1-directory271
+- Merge pull request #273 from edwardtheharris/272-bump-starlette-from-101-to-131-in-the-pip-group-across-1-directory271
+- 272 bump starlette from 101 to 131 in the pip group across 1 directory271
+- Closes #272
+- Bump ansible from 14.0.0 to 14.1.0
+- Bumps [ansible](https://github.com/ansible-community/ansible-build-data) from 14.0.0 to 14.1.0.
+- - [Changelog](https://github.com/ansible-community/ansible-build-data/blob/main/docs/release-process.md)
+- - [Commits](https://github.com/ansible-community/ansible-build-data/compare/14.0.0...14.1.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible
+-   dependency-version: 14.1.0
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #276 from edwardtheharris/dependabot/pip/ansible-14.1.0
+- Bump ansible from 14.0.0 to 14.1.0
+- Closes #277
+- Merge pull request #278 from edwardtheharris/277-bump-ansible-from-1400-to-1410276
+- 277 bump ansible from 1400 to 1410276
+- Closes #277
+- Bump pytest from 9.1.0 to 9.1.1
+- Bumps [pytest](https://github.com/pytest-dev/pytest) from 9.1.0 to 9.1.1.
+- - [Release notes](https://github.com/pytest-dev/pytest/releases)
+- - [Changelog](https://github.com/pytest-dev/pytest/blob/main/CHANGELOG.rst)
+- - [Commits](https://github.com/pytest-dev/pytest/compare/9.1.0...9.1.1)
+- ---
+- Updated-dependencies:
+- - dependency-name: pytest
+-   dependency-version: 9.1.1
+-   dependency-type: direct:development
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #274 from edwardtheharris/dependabot/pip/pytest-9.1.1
+- Bump pytest from 9.1.0 to 9.1.1
+- Closes #278
+- Merge pull request #280 from edwardtheharris/279-bump-pytest-from-910-to-911274
+- 279 bump pytest from 910 to 911274
+- Closes #279
+- Bump ansible-creator from 26.4.3 to 26.6.0
+- Bumps [ansible-creator](https://github.com/ansible/ansible-creator) from 26.4.3 to 26.6.0.
+- - [Release notes](https://github.com/ansible/ansible-creator/releases)
+- - [Changelog](https://github.com/ansible/ansible-creator/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/ansible/ansible-creator/compare/v26.4.3...v26.6.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible-creator
+-   dependency-version: 26.6.0
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #275 from edwardtheharris/dependabot/pip/ansible-creator-26.6.0
+- Bump ansible-creator from 26.4.3 to 26.6.0
+- Closes #281
+- Merge pull request #282 from edwardtheharris/281-bump-ansible-creator-from-2643-to-2660275
+- 281 bump ansible creator from 2643 to 2660275
+- Closes #281
+- Merge branch 'main' of
+- Edwardtheharris/ansible-kcp
+- Into 56-add-a-fourth-node
+- Closes #56
+- Update site
+- Closes #56
+- Merge branch '56-add-a-fourth-node' of
+- Edwardtheharris/ansible-kcp into 56-add-a-fourth-node
+- Closes #56
+- Merge branch '56-add-a-fourth-node' of
+- Edwardtheharris/ansible-kcp into 56-add-a-fourth-node
+- Closes #56
+- Update kv role
+- Closes #56
+- Drop kv role
+- Closes #56
+- Update roles
+- Closes #54
+- Bump redis from 8.0.0 to 8.0.1
+- Bumps [redis](https://github.com/redis/redis-py) from 8.0.0 to 8.0.1.
+- - [Release notes](https://github.com/redis/redis-py/releases)
+- - [Changelog](https://github.com/redis/redis-py/blob/master/CHANGES)
+- - [Commits](https://github.com/redis/redis-py/compare/v8.0.0...v8.0.1)
+- ---
+- Updated-dependencies:
+- - dependency-name: redis
+-   dependency-version: 8.0.1
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #283 from edwardtheharris/dependabot/pip/redis-8.0.1
+- Bump redis from 8.0.0 to 8.0.1
+- Closes #284
+- Merge pull request #285 from edwardtheharris/284-bump-redis-from-800-to-801283
+- 284 bump redis from 800 to 801283
+- Closes #284
+- Bump ansible-lint from 26.4.0 to 26.6.0
+- Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 26.4.0 to 26.6.0.
+- - [Release notes](https://github.com/ansible/ansible-lint/releases)
+- - [Commits](https://github.com/ansible/ansible-lint/compare/v26.4.0...v26.6.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible-lint
+-   dependency-version: 26.6.0
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Bump ansible-navigator from 26.4.0 to 26.6.0
+- Bumps [ansible-navigator](https://github.com/ansible/ansible-navigator) from 26.4.0 to 26.6.0.
+- - [Release notes](https://github.com/ansible/ansible-navigator/releases)
+- - [Changelog](https://github.com/ansible/ansible-navigator/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/ansible/ansible-navigator/compare/v26.4.0...v26.6.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible-navigator
+-   dependency-version: 26.6.0
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #286 from edwardtheharris/dependabot/pip/ansible-navigator-26.6.0
+- Bump ansible-navigator from 26.4.0 to 26.6.0
+- Closes #291
+- Merge pull request #292 from edwardtheharris/291-bump-ansible-navigator-from-2640-to-2660286
+- 291 bump ansible navigator from 2640 to 2660286
+- Closes #291
+- Merge branch '295-bump-ansible-lint-from-2640-to-2660287' into dependabot/pip/ansible-lint-26.6.0
+- Merge pull request #287 from edwardtheharris/dependabot/pip/ansible-lint-26.6.0
+- Bump ansible-lint from 26.4.0 to 26.6.0
+- Closes #295
+- Bump molecule from 26.4.0 to 26.6.0
+- Bumps [molecule](https://github.com/ansible-community/molecule) from 26.4.0 to 26.6.0.
+- - [Release notes](https://github.com/ansible-community/molecule/releases)
+- - [Commits](https://github.com/ansible-community/molecule/compare/v26.4.0...v26.6.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: molecule
+-   dependency-version: 26.6.0
+-   dependency-type: direct:development
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #288 from edwardtheharris/dependabot/pip/molecule-26.6.0
+- Bump molecule from 26.4.0 to 26.6.0
+- Closes #293
+- Merge branch 'main' into 293-bump-molecule-from-2640-to-2660288
+- Merge pull request #294 from edwardtheharris/293-bump-molecule-from-2640-to-2660288
+- 293 bump molecule from 2640 to 2660288
+- Closes #294
+- Merge branch 'main' into 295-bump-ansible-lint-from-2640-to-2660287
+- Bump ansible-creator from 26.6.0 to 26.6.1
+- Bumps [ansible-creator](https://github.com/ansible/ansible-creator) from 26.6.0 to 26.6.1.
+- - [Release notes](https://github.com/ansible/ansible-creator/releases)
+- - [Changelog](https://github.com/ansible/ansible-creator/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/ansible/ansible-creator/compare/v26.6.0...v26.6.1)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible-creator
+-   dependency-version: 26.6.1
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge branch 'main' into dependabot/pip/ansible-creator-26.6.1
+- Merge pull request #289 from edwardtheharris/dependabot/pip/ansible-creator-26.6.1
+- Bump ansible-creator from 26.6.0 to 26.6.1
+- Closes #290
+- Merge branch 'main' into 290-bump-ansible-creator-from-2660-to-2661289
+- Merge pull request #297 from edwardtheharris/290-bump-ansible-creator-from-2660-to-2661289
+- 290 bump ansible creator from 2660 to 2661289
+- Closes #290
+- Merge branch 'main' into 295-bump-ansible-lint-from-2640-to-2660287
+- Merge pull request #296 from edwardtheharris/295-bump-ansible-lint-from-2640-to-2660287
+- 295 bump ansible lint from 2640 to 2660287
+- Closes #295
+- Bump soupsieve from 2.8.3 to 2.8.4 in the pip group across 1 directory
+- Bumps the pip group with 1 update in the / directory: [soupsieve](https://github.com/facelessuser/soupsieve).
+- Updates `soupsieve` from 2.8.3 to 2.8.4
+- - [Release notes](https://github.com/facelessuser/soupsieve/releases)
+- - [Commits](https://github.com/facelessuser/soupsieve/compare/2.8.3...2.8.4)
+- ---
+- Updated-dependencies:
+- - dependency-name: soupsieve
+-   dependency-version: 2.8.4
+-   dependency-type: indirect
+-   dependency-group: pip
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #298 from edwardtheharris/dependabot/pip/pip-0462f47e4d
+- Bump soupsieve from 2.8.3 to 2.8.4 in the pip group across 1 directory
+- Closes #299
+- Merge pull request #300 from edwardtheharris/299-bump-soupsieve-from-283-to-284-in-the-pip-group-across-1-directory298
+- 299 bump soupsieve from 283 to 284 in the pip group across 1 directory298
+- Closes #299
+- Bump gitpython from 3.1.50 to 3.1.51
+- Bumps [gitpython](https://github.com/gitpython-developers/GitPython) from 3.1.50 to 3.1.51.
+- - [Release notes](https://github.com/gitpython-developers/GitPython/releases)
+- - [Changelog](https://github.com/gitpython-developers/GitPython/blob/main/CHANGES)
+- - [Commits](https://github.com/gitpython-developers/GitPython/compare/3.1.50...3.1.51)
+- ---
+- Updated-dependencies:
+- - dependency-name: gitpython
+-   dependency-version: 3.1.51
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #301 from edwardtheharris/dependabot/pip/gitpython-3.1.51
+- Bump gitpython from 3.1.50 to 3.1.51
+- Closes #301
+- Merge pull request #303 from edwardtheharris/302-bump-gitpython-from-3150-to-3151301
+- 302 bump gitpython from 3150 to 3151301
+- Closes #302
+- Bump ansible from 14.1.0 to 14.2.0
+- Bumps [ansible](https://github.com/ansible-community/ansible-build-data) from 14.1.0 to 14.2.0.
+- - [Changelog](https://github.com/ansible-community/ansible-build-data/blob/main/docs/release-process.md)
+- - [Commits](https://github.com/ansible-community/ansible-build-data/compare/14.1.0...14.2.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible
+-   dependency-version: 14.2.0
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Bump gitpython from 3.1.51 to 3.1.52
+- Bumps [gitpython](https://github.com/gitpython-developers/GitPython) from 3.1.51 to 3.1.52.
+- - [Release notes](https://github.com/gitpython-developers/GitPython/releases)
+- - [Changelog](https://github.com/gitpython-developers/GitPython/blob/main/CHANGES)
+- - [Commits](https://github.com/gitpython-developers/GitPython/compare/3.1.51...3.1.52)
+- ---
+- Updated-dependencies:
+- - dependency-name: gitpython
+-   dependency-version: 3.1.52
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #304 from edwardtheharris/dependabot/pip/gitpython-3.1.52
+- Bump gitpython from 3.1.51 to 3.1.52
+- Closes #307
+- Merge pull request #308 from edwardtheharris/307-bump-gitpython-from-3151-to-3152304
+- 307 bump gitpython from 3151 to 3152304
+- Closes #307
+- Merge branch '311-bump-ansible-from-1410-to-1420306' into dependabot/pip/ansible-14.2.0
+- Merge pull request #306 from edwardtheharris/dependabot/pip/ansible-14.2.0
+- Bump ansible from 14.1.0 to 14.2.0
+- Closes #311
+- Bump sphinx-book-theme from 1.2.0 to 1.4.0
+- Bumps [sphinx-book-theme](https://github.com/executablebooks/sphinx-book-theme) from 1.2.0 to 1.4.0.
+- - [Release notes](https://github.com/executablebooks/sphinx-book-theme/releases)
+- - [Changelog](https://github.com/executablebooks/sphinx-book-theme/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/executablebooks/sphinx-book-theme/compare/v1.2.0...v1.4.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: sphinx-book-theme
+-   dependency-version: 1.4.0
+-   dependency-type: direct:development
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #305 from edwardtheharris/dependabot/pip/sphinx-book-theme-1.4.0
+- Bump sphinx-book-theme from 1.2.0 to 1.4.0
+- Closes #309
+- Merge branch 'main' into 309-bump-sphinx-book-theme-from-120-to-140305
+- Merge pull request #310 from edwardtheharris/309-bump-sphinx-book-theme-from-120-to-140305
+- 309 bump sphinx book theme from 120 to 140305
+- Closes #309
+- Merge branch 'main' into 311-bump-ansible-from-1410-to-1420306
+- Merge pull request #312 from edwardtheharris/311-bump-ansible-from-1410-to-1420306
+- 311 bump ansible from 1410 to 1420306
+- Closes #311
+- Bump the pip group across 1 directory with 2 updates
+- Bumps the pip group with 2 updates in the / directory: [gitpython](https://github.com/gitpython-developers/GitPython) and [setuptools](https://github.com/pypa/setuptools).
+- Updates `gitpython` from 3.1.52 to 3.1.54
+- - [Release notes](https://github.com/gitpython-developers/GitPython/releases)
+- - [Changelog](https://github.com/gitpython-developers/GitPython/blob/main/CHANGES)
+- - [Commits](https://github.com/gitpython-developers/GitPython/compare/3.1.52...3.1.54)
+- Updates `setuptools` from 82.0.1 to 83.0.0
+- - [Release notes](https://github.com/pypa/setuptools/releases)
+- - [Changelog](https://github.com/pypa/setuptools/blob/main/NEWS.rst)
+- - [Commits](https://github.com/pypa/setuptools/compare/v82.0.1...v83.0.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: gitpython
+-   dependency-version: 3.1.54
+-   dependency-type: direct:production
+-   dependency-group: pip
+- - dependency-name: setuptools
+-   dependency-version: 83.0.0
+-   dependency-type: indirect
+-   dependency-group: pip
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #313 from edwardtheharris/dependabot/pip/pip-01f4205b4b
+- Bump the pip group across 1 directory with 2 updates
+- Closes #316
+- Merge pull request #317 from edwardtheharris/316-bump-the-pip-group-across-1-directory-with-2-updates313
+- 316 bump the pip group across 1 directory with 2 updates313
+- Closes #316
+- Bump pre-commit from 4.6.0 to 4.6.1
+- Bumps [pre-commit](https://github.com/pre-commit/pre-commit) from 4.6.0 to 4.6.1.
+- - [Release notes](https://github.com/pre-commit/pre-commit/releases)
+- - [Changelog](https://github.com/pre-commit/pre-commit/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/pre-commit/pre-commit/compare/v4.6.0...v4.6.1)
+- ---
+- Updated-dependencies:
+- - dependency-name: pre-commit
+-   dependency-version: 4.6.1
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #315 from edwardtheharris/dependabot/pip/pre-commit-4.6.1
+- Bump pre-commit from 4.6.0 to 4.6.1
+- Closes #320
+- Bump gitpython from 3.1.52 to 3.1.57
+- Bumps [gitpython](https://github.com/gitpython-developers/GitPython) from 3.1.52 to 3.1.57.
+- - [Release notes](https://github.com/gitpython-developers/GitPython/releases)
+- - [Changelog](https://github.com/gitpython-developers/GitPython/blob/main/CHANGES)
+- - [Commits](https://github.com/gitpython-developers/GitPython/compare/3.1.52...3.1.57)
+- ---
+- Updated-dependencies:
+- - dependency-name: gitpython
+-   dependency-version: 3.1.57
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #314 from edwardtheharris/dependabot/pip/gitpython-3.1.57
+- Bump gitpython from 3.1.52 to 3.1.57
+- Closes #318
+- Merge branch 'main' of github.com:edwardtheharris/ansible-kcp into 318-bump-gitpython-from-3152-to-3157314
+- Closes #318
+- Merge pull request #319 from edwardtheharris/318-bump-gitpython-from-3152-to-3157314
+- 318 bump gitpython from 3152 to 3157314
+- Closes #318
+- Merge branch 'main' into 320-bump-pre-commit-from-460-to-461315
+- Merge pull request #321 from edwardtheharris/320-bump-pre-commit-from-460-to-461315
+- 320 bump pre commit from 460 to 461315
+- Closes #320
+- Merge branch 'main' of github.com:edwardtheharris/ansible-kcp into 56-add-a-fourth-node
+- Closes #56
+- Merge branch 'main' into 56-add-a-fourth-node
+- Merge branch 'main' into 56-add-a-fourth-node
+- Merge branch '56-add-a-fourth-node' of github.com:edwardtheharris/ansible-kcp into 56-add-a-fourth-node
+- Closes #56
+- Bump cryptography in the pip group across 1 directory
+- Bumps the pip group with 1 update in the / directory: [cryptography](https://github.com/pyca/cryptography).
+- Updates `cryptography` from 49.0.0 to 50.0.0
+- - [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)
+- - [Commits](https://github.com/pyca/cryptography/compare/49.0.0...50.0.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: cryptography
+-   dependency-version: 50.0.0
+-   dependency-type: direct:production
+-   dependency-group: pip
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #324 from edwardtheharris/dependabot/pip/pip-18c674f953
+- Bump cryptography from 49.0.0 to 50.0.0 in the pip group across 1 directory
+- Closes #324
+- Merge pull request #326 from edwardtheharris/325-bump-cryptography-from-4900-to-5000-in-the-pip-group-across-1-directory---324324
+- 325 bump cryptography from 4900 to 5000 in the pip group across 1 directory   324324
+- Closes #325
+- Bump pip from 26.1.2 to 26.2
+- Bumps [pip](https://github.com/pypa/pip) from 26.1.2 to 26.2.
+- - [Changelog](https://github.com/pypa/pip/blob/main/NEWS.rst)
+- - [Commits](https://github.com/pypa/pip/compare/26.1.2...26.2)
+- ---
+- Updated-dependencies:
+- - dependency-name: pip
+-   dependency-version: '26.2'
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #323 from edwardtheharris/dependabot/pip/pip-26.2
+- Bump pip from 26.1.2 to 26.2
+- Closes #327
+- Merge pull request #328 from edwardtheharris/327-bump-redis-from-801-to-810---322322
+- 327 bump redis from 801 to 810   322322
+- Closes #327
+- Bump redis from 8.0.1 to 8.1.0
+- Bumps [redis](https://github.com/redis/redis-py) from 8.0.1 to 8.1.0.
+- - [Release notes](https://github.com/redis/redis-py/releases)
+- - [Changelog](https://github.com/redis/redis-py/blob/master/CHANGES)
+- - [Commits](https://github.com/redis/redis-py/compare/v8.0.1...v8.1.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: redis
+-   dependency-version: 8.1.0
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #322 from edwardtheharris/dependabot/pip/redis-8.1.0
+- Bump redis from 8.0.1 to 8.1.0
+- Closes #329
+- Merge pull request #330 from edwardtheharris/329-bump-redis-from-801-to-810---322322
+- 329 bump redis from 801 to 810   322322
+- Closes #329
+- Bump gitpython from 3.1.57 to 3.1.59
+- Bumps [gitpython](https://github.com/gitpython-developers/GitPython) from 3.1.57 to 3.1.59.
+- - [Release notes](https://github.com/gitpython-developers/GitPython/releases)
+- - [Changelog](https://github.com/gitpython-developers/GitPython/blob/main/CHANGES)
+- - [Commits](https://github.com/gitpython-developers/GitPython/compare/3.1.57...3.1.59)
+- ---
+- Updated-dependencies:
+- - dependency-name: gitpython
+-   dependency-version: 3.1.59
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #336 from edwardtheharris/dependabot/pip/gitpython-3.1.59
+- Bump gitpython from 3.1.57 to 3.1.59
+- Closes #337
+- Merge pull request #338 from edwardtheharris/337-bump-gitpython-from-3157-to-3159---336336
+- 337 bump gitpython from 3157 to 3159   336336
+- Bump molecule from 26.6.0 to 26.8.0
+- Bumps [molecule](https://github.com/ansible/molecule) from 26.6.0 to 26.8.0.
+- - [Release notes](https://github.com/ansible/molecule/releases)
+- - [Commits](https://github.com/ansible/molecule/compare/v26.6.0...v26.8.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: molecule
+-   dependency-version: 26.8.0
+-   dependency-type: direct:development
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #335 from edwardtheharris/dependabot/pip/molecule-26.8.0
+- Bump molecule from 26.6.0 to 26.8.0
+- Closes #339
+- Merge pull request #340 from edwardtheharris/339-bump-molecule-from-2660-to-2680---335335
+- 339 bump molecule from 2660 to 2680   335335
+- Closes #339
+- Merge branch 'main' of github.com:edwardtheharris/ansible-kcp into 56-add-a-fourth-node
+- Update reset role
+- Bump pipenv from 2026.6.2 to 2026.7.1
+- Bumps [pipenv](https://github.com/pypa/pipenv) from 2026.6.2 to 2026.7.1.
+- - [Release notes](https://github.com/pypa/pipenv/releases)
+- - [Changelog](https://github.com/pypa/pipenv/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/pypa/pipenv/compare/v2026.6.2...v2026.7.1)
+- ---
+- Updated-dependencies:
+- - dependency-name: pipenv
+-   dependency-version: 2026.7.1
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Bump ansible from 14.2.0 to 14.3.1
+- Bumps [ansible](https://github.com/ansible-community/ansible-build-data) from 14.2.0 to 14.3.1.
+- - [Changelog](https://github.com/ansible-community/ansible-build-data/blob/main/docs/release-process.md)
+- - [Commits](https://github.com/ansible-community/ansible-build-data/compare/14.2.0...14.3.1)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible
+-   dependency-version: 14.3.0
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Bump pip from 26.2 to 26.2.1
+- Bumps [pip](https://github.com/pypa/pip) from 26.2 to 26.2.1.
+- - [Changelog](https://github.com/pypa/pip/blob/main/NEWS.rst)
+- - [Commits](https://github.com/pypa/pip/compare/26.2...26.2.1)
+- ---
+- Updated-dependencies:
+- - dependency-name: pip
+-   dependency-version: 26.2.1
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #333 from edwardtheharris/dependabot/pip/pip-26.2.1
+- Bump pip from 26.2 to 26.2.1
+- Closes #341
+- Merge branch '341-bump-pipenv-from-202662-to-202671---331331' into dependabot/pip/ansible-14.3.0
+- Merge pull request #334 from edwardtheharris/dependabot/pip/ansible-14.3.0
+- Bump ansible from 14.2.0 to 14.3.1
+- Closes #341
+- Merge branch '341-bump-pipenv-from-202662-to-202671---331331' into dependabot/pip/pipenv-2026.7.1
+- Merge pull request #331 from edwardtheharris/dependabot/pip/pipenv-2026.7.1
+- Bump pipenv from 2026.6.2 to 2026.7.1
+- Closes #341
+- Merge pull request #342 from edwardtheharris/341-bump-pipenv-from-202662-to-202671---331331
+- 341 bump pipenv from 202662 to 202671   331331
+- Closes #341
+- Merge branch 'main' of github.com:edwardtheharris/ansible-kcp into 56-add-a-fourth-node
+- Update spaces
+- Bump ansible-navigator from 26.6.0 to 26.8.0
+- Bumps [ansible-navigator](https://github.com/ansible/ansible-navigator) from 26.6.0 to 26.8.0.
+- - [Release notes](https://github.com/ansible/ansible-navigator/releases)
+- - [Changelog](https://github.com/ansible/ansible-navigator/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/ansible/ansible-navigator/compare/v26.6.0...v26.8.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible-navigator
+-   dependency-version: 26.8.0
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Bump pre-commit from 4.6.1 to 4.6.2
+- Bumps [pre-commit](https://github.com/pre-commit/pre-commit) from 4.6.1 to 4.6.2.
+- - [Release notes](https://github.com/pre-commit/pre-commit/releases)
+- - [Changelog](https://github.com/pre-commit/pre-commit/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/pre-commit/pre-commit/compare/v4.6.1...v4.6.2)
+- ---
+- Updated-dependencies:
+- - dependency-name: pre-commit
+-   dependency-version: 4.6.2
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #344 from edwardtheharris/dependabot/pip/pre-commit-4.6.2
+- Bump pre-commit from 4.6.1 to 4.6.2
+- Closes #349
+- Merge branch '349-bump-gitpython-from-3159-to-3162-in-the-pip-group-across-1-directory---348348' into dependabot/pip/ansible-navigator-26.8.0
+- Merge pull request #345 from edwardtheharris/dependabot/pip/ansible-navigator-26.8.0
+- Bump ansible-navigator from 26.6.0 to 26.8.0
+- Closes #349
+- Merge pull request #350 from edwardtheharris/349-bump-gitpython-from-3159-to-3162-in-the-pip-group-across-1-directory---348348
+- 349 bump gitpython from 3159 to 3162 in the pip group across 1 directory   348348
+- Closes #349
+- Merge pull request #138 from edwardtheharris/56-add-a-fourth-node
+- 56 fix reset role
+- Closes #56
+- Bump gitpython from 3.1.59 to 3.1.62 in the pip group across 1 directory
+- Bumps the pip group with 1 update in the / directory: [gitpython](https://github.com/gitpython-developers/GitPython).
+- Updates `gitpython` from 3.1.59 to 3.1.62
+- - [Release notes](https://github.com/gitpython-developers/GitPython/releases)
+- - [Changelog](https://github.com/gitpython-developers/GitPython/blob/main/CHANGES)
+- - [Commits](https://github.com/gitpython-developers/GitPython/compare/3.1.59...3.1.62)
+- ---
+- Updated-dependencies:
+- - dependency-name: gitpython
+-   dependency-version: 3.1.62
+-   dependency-type: direct:production
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #348 from edwardtheharris/dependabot/pip/pip-c86b6bad83
+- Bump gitpython from 3.1.59 to 3.1.62 in the pip group across 1 directory
+- Closes #351
+- Bump ansible-creator from 26.6.1 to 26.8.0
+- Bumps [ansible-creator](https://github.com/ansible/ansible-creator) from 26.6.1 to 26.8.0.
+- - [Release notes](https://github.com/ansible/ansible-creator/releases)
+- - [Changelog](https://github.com/ansible/ansible-creator/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/ansible/ansible-creator/compare/v26.6.1...v26.8.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible-creator
+-   dependency-version: 26.8.0
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge branch '351-bump-gitpython-from-3159-to-3162-in-the-pip-group-across-1-directory---348348' into dependabot/pip/ansible-creator-26.8.0
+- Merge pull request #343 from edwardtheharris/dependabot/pip/ansible-creator-26.8.0
+- Bump ansible-creator from 26.6.1 to 26.8.0
+- Closes #351
+- Bump pipenv from 2026.7.1 to 2026.8.0
+- Bumps [pipenv](https://github.com/pypa/pipenv) from 2026.7.1 to 2026.8.0.
+- - [Release notes](https://github.com/pypa/pipenv/releases)
+- - [Changelog](https://github.com/pypa/pipenv/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/pypa/pipenv/compare/v2026.7.1...v2026.8.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: pipenv
+-   dependency-version: 2026.8.0
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #346 from edwardtheharris/dependabot/pip/pipenv-2026.8.0
+- Bump pipenv from 2026.7.1 to 2026.8.0
+- Closes #351
+- Bump ansible-lint from 26.6.0 to 26.8.0
+- Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 26.6.0 to 26.8.0.
+- - [Release notes](https://github.com/ansible/ansible-lint/releases)
+- - [Commits](https://github.com/ansible/ansible-lint/compare/v26.6.0...v26.8.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible-lint
+-   dependency-version: 26.8.0
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #347 from edwardtheharris/dependabot/pip/ansible-lint-26.8.0
+- Bump ansible-lint from 26.6.0 to 26.8.0
+- Closes #351
+- Merge pull request #352 from edwardtheharris/351-bump-gitpython-from-3159-to-3162-in-the-pip-group-across-1-directory---348348
+- 351 bump gitpython from 3159 to 3162 in the pip group across 1 directory   348348
+- Closes #351
+
+
+### ⚙️ Miscellaneous Tasks - [unreleased]
+
+
+- Merge branch 'main' of github.com:edwardtheharris/ansible-kcp into 56-add-a-fourth-node
+- Merge branch 'main' of github.com:edwardtheharris/ansible-kcp into 56-add-a-fourth-node
+- Merge branch 'main' of github.com:edwardtheharris/ansible-kcp into 56-add-a-fourth-node
+- Merge branch 'main' of github.com:edwardtheharris/ansible-kcp into 56-fix-reset-role
+## [0.0.2] - 2025-11-03
+
+### 💼 Other - 0.0.2
+
+
+- Add the badges
+- Closes #17
+- Merge pull request #21 from edwardtheharris/17-add-badges
+- 17 add badges
+- Closes #17
+- Merge branch 'main' into 17-add-badges
+- Merge pull request #22 from edwardtheharris/17-add-badges
+- Fix index
+- Closes #17
+- Bump ansible-navigator from 24.7.0 to 24.8.0
+- Bumps [ansible-navigator](https://github.com/ansible/ansible-navigator) from 24.7.0 to 24.8.0.
+- - [Release notes](https://github.com/ansible/ansible-navigator/releases)
+- - [Changelog](https://github.com/ansible/ansible-navigator/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/ansible/ansible-navigator/compare/v24.7.0...v24.8.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible-navigator
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #25 from edwardtheharris/dependabot/pip/ansible-navigator-24.8.0
+- Bump ansible from 10.2.0 to 10.3.0
+- Bumps [ansible](https://github.com/ansible-community/ansible-build-data) from 10.2.0 to 10.3.0.
+- - [Changelog](https://github.com/ansible-community/ansible-build-data/blob/main/docs/release-process.md)
+- - [Commits](https://github.com/ansible-community/ansible-build-data/compare/10.2.0...10.3.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #23 from edwardtheharris/dependabot/pip/ansible-10.3.0
+- Bump ansible from 10.2.0 to 10.3.0
+- Bump molecule from 24.7.0 to 24.8.0
+- Bumps [molecule](https://github.com/ansible-community/molecule) from 24.7.0 to 24.8.0.
+- - [Release notes](https://github.com/ansible-community/molecule/releases)
+- - [Commits](https://github.com/ansible-community/molecule/compare/v24.7.0...v24.8.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: molecule
+-   dependency-type: direct:development
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #24 from edwardtheharris/dependabot/pip/molecule-24.8.0
+- Bump molecule from 24.7.0 to 24.8.0
+- Bump ansible-creator from 24.7.1 to 24.8.0
+- Bumps [ansible-creator](https://github.com/ansible/ansible-creator) from 24.7.1 to 24.8.0.
+- - [Release notes](https://github.com/ansible/ansible-creator/releases)
+- - [Changelog](https://github.com/ansible/ansible-creator/blob/main/CHANGELOG.md)
+- - [Commits](https://github.com/ansible/ansible-creator/compare/v24.7.1...v24.8.0)
+- ---
+- Updated-dependencies:
+- - dependency-name: ansible-creator
+-   dependency-type: direct:production
+-   update-type: version-update:semver-minor
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #26 from edwardtheharris/dependabot/pip/ansible-creator-24.8.0
+- Bump ansible-creator from 24.7.1 to 24.8.0
+- Drop host file
+- Closes #27
+- Merge pull request #28 from edwardtheharris/27-dont-create-hosts-file
+- Drop host file
+- Closes #27
+- Bump cryptography from 43.0.0 to 43.0.1 in the pip group
+- Bumps the pip group with 1 update: [cryptography](https://github.com/pyca/cryptography).
+- Updates `cryptography` from 43.0.0 to 43.0.1
+- - [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)
+- - [Commits](https://github.com/pyca/cryptography/compare/43.0.0...43.0.1)
+- ---
+- Updated-dependencies:
+- - dependency-name: cryptography
+-   dependency-type: indirect
+-   dependency-group: pip
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #29 from edwardtheharris/dependabot/pip/pip-18e15a66a3
+- Bump cryptography from 43.0.0 to 43.0.1 in the pip group
+- Add reflog to ignore
+- Closes #30
+- Merge pull request #31 from edwardtheharris/30-fix-reflog-in-ignore
+- Add reflog to ignore
+- Closes #31
+- Add changelog
+## [0.0.1] - 2025-11-03
+
+### 💼 Other - 0.0.1
+
+
+- Initial commit
+- Adjust inventory location
+- Closes #4
+- Merge pull request #7 from edwardtheharris/4-reset-existing-kcp-nodes
+- 4 reset existing kcp nodes
+- Closes #4
+- Initialize first CP node
+- Closes #6
+- Update ignore
+- Closes #6
+- Update config
+- Closes #6
+- Update ignore
+- Closes #6
+- Update builder
+- Closes #6
+- Update ignore
+- Closes #6
+- Fix init
+- Closes #6
+- Merge pull request #8 from edwardtheharris/6-initialize-first-kcp-node
+- Update init
+- Closes #6
+- Add join role
+- Closes #9
+- Merge pull request #10 from edwardtheharris/9-join-control-planes
+- 9 join control planes
+- Closes #9
+- Add Kube VIP to cluster
+- Closes #11
+- Merge pull request #12 from edwardtheharris/11-integrate-kube-vip
+- Add Kube VIP to cluster
+- Closes #11
+- Properly init kube-vip
+- Closes #13
+- Merge pull request #14 from edwardtheharris/13-deploy-flannel-to-kcp-nodes
+- Add calico for networking between control planes
+- Closes #13
+- Bump pytest from 8.3.1 to 8.3.2
+- Bumps [pytest](https://github.com/pytest-dev/pytest) from 8.3.1 to 8.3.2.
+- - [Release notes](https://github.com/pytest-dev/pytest/releases)
+- - [Changelog](https://github.com/pytest-dev/pytest/blob/main/CHANGELOG.rst)
+- - [Commits](https://github.com/pytest-dev/pytest/compare/8.3.1...8.3.2)
+- ---
+- Updated-dependencies:
+- - dependency-name: pytest
+-   dependency-type: direct:development
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #15 from edwardtheharris/dependabot/pip/pytest-8.3.2
+- Bump redis from 5.0.7 to 5.0.8
+- Bumps [redis](https://github.com/redis/redis-py) from 5.0.7 to 5.0.8.
+- - [Release notes](https://github.com/redis/redis-py/releases)
+- - [Changelog](https://github.com/redis/redis-py/blob/master/CHANGES)
+- - [Commits](https://github.com/redis/redis-py/compare/v5.0.7...v5.0.8)
+- ---
+- Updated-dependencies:
+- - dependency-name: redis
+-   dependency-type: direct:production
+-   update-type: version-update:semver-patch
+- ...
+- Dependabot[bot] <support@github.com>
+- Merge pull request #16 from edwardtheharris/dependabot/pip/redis-5.0.8
+- Add missing steps
+- Closes #18
+- Merge pull request #19 from edwardtheharris/18-enable-execution-on-fresh-installs
+- Add missing steps
+- Closes #18
+- Fix errors
+- Closes #17
+- Fix errors
+- Closes #17
+- Merge pull request #20 from edwardtheharris/17-add-badges
+- 17 add badges
+- Closes #17
+- Merge branch 'main' of
+- Edwardtheharris/ansible-kcp into 17-add-badges
+- Closes #17
+- Fix index
+- Closes #17
+- Update ignore, rc
+- Update changelog
+<!-- generated by git-cliff -->
