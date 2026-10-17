@@ -1,6 +1,10 @@
 # git-cliff ~ configuration file
 # https://git-cliff.org/docs/configuration
 
+[remote.github]
+owner = "edwardtheharris"
+repo = "ansible-kcp"
+
 
 [changelog]
 # A Tera template to be rendered as the changelog's footer.
